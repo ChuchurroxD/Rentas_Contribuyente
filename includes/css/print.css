@@ -1,0 +1,368 @@
+BODY {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: Arial
+}
+TD {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: Arial
+}
+A {
+	FONT-SIZE: 11px; COLOR: blue; FONT-FAMILY: Verdana, Geneva, Arial; TEXT-DECORATION: none;	display : none;
+}
+A:hover	{COLOR: #336699}
+B.caption	{FONT-SIZE: 12px;}
+A.ne	{FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: black; FONT-FAMILY: Verdana, Geneva, Arial;TEXT-DECORATION: none}
+.titles	{FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: white; FONT-FAMILY: Verdana, Geneva, Arial;TEXT-DECORATION: none}
+
+.BOTON	{ FONT-WEIGHT: bold;border: 1px solid #000000;
+	display : none;
+} 
+
+
+
+.inputbox {
+	border: 1px solid #cccccc;
+		display : none;
+}
+
+HR {
+	BORDER-RIGHT: #6699cc 1px solid; BORDER-TOP: #6699cc 1px solid; BORDER-LEFT: #6699cc 1px solid; BORDER-BOTTOM: #6699cc 1px solid; HEIGHT: 1px
+}
+HR.sub {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid; HEIGHT: 1px
+}
+
+IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px;
+}
+
+.estandard {
+	FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #BACDE2
+}
+ 
+/****/
+.row0 {
+	background-color: #d1d1d1;
+}
+.row1 {
+	background-color: #e1e1e1;
+}
+
+TD.mio, a.mio:link,a.mio:hover,a.mio:visited {
+	color: black;
+	background-color: E3CEB5;
+}
+
+TD.auntut, a.auntut:link,a.auntut:hover,a.auntut:visited {
+	color: black;
+	background-color: #FED440;
+}
+
+TD.auncon, a.auncon:link,a.auncon:hover,a.auncon:visited {
+	color: black;
+	background-color: #FFF2AD;
+}
+
+TD.info, a.info:link,a.info:hover,a.info:visited {
+	color: black;
+	background-color: #d1d1d1;
+}
+
+a.edit:link,a.edit:hover,a.edit:visited {
+	color: white;
+	background-color: red;
+	text-decoration: none;
+}
+
+tr.eval0,td.eval0,a.eval0:link,a.eval0:hover,a.eval0:visited {
+	background-color: #e1cfcf;
+	color: #336699;
+}
+
+tr.eval1,td.eval1,a.eval1:link,a.eval1:hover,a.eval1:visited {
+	background-color: #eeeed1;
+	color: #336699;
+}
+
+#small{
+	text-decoration: none;
+	color: #336699;
+	font-size : 9px;
+}
+
+.vert{
+	text-decoration: underline;
+	font-weight:  bold;
+	color: #336699;
+	font-size : 13px;
+}
+.row3 {
+	background-color: #ae8efe;
+}
+.row4 {
+	background-color: #de9ede;
+}/****/
+
+TABLE.listar {
+	FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: Verdana;
+	BACKGROUND-COLOR: #9AADC2
+}
+
+TABLE.listar TH {
+	BACKGROUND-COLOR: #FFFFEF;
+}
+
+TABLE.editar {
+	FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: Verdana;
+	border-width:1;
+	border-style:Solid;
+}
+
+TABLE.editar TH {
+	BACKGROUND-COLOR: #FFFFEF
+}
+
+.form_grid {
+	border-width:1;
+	border-style:Solid;
+}
+
+.message {
+	border:1px Solid #000000;
+	BACKGROUND-COLOR: #FFFFDF;
+	padding: 1px 5px; 
+	FONT-SIZE: 13px; 	
+}
+
+
+.bigbox {
+	border: 1px solid #666666;
+	FONT-SIZE: 26px; 	
+	BACKGROUND-COLOR: #FFFFEF;
+}
+
+
+/* mod_quickicon PANEL */
+#cpanel {  text-align: center;  vertical-align: middle; }
+
+#cpanel div.icon   { margin: 3px; }
+#cpanel div.icon a { 
+	display: block; float: left;
+	height: 97px !important;
+	height: 100px; 
+	width: 108px !important;
+	width: 110px; 
+	vertical-align: middle; 
+	text-decoration : none;
+	border: 1px solid #DDD;
+	padding: 2px 5px 1px 5px;
+}
+
+#cpanel div.icon a:link    {  color : #808080;  }
+#cpanel div.icon a:hover   { 
+	color : #333; 
+	background-color: #D2E7C0;  
+	border: 1px solid #6D7F5F;
+	padding: 3px 4px 0px 6px; 
+}
+#cpanel div.icon a:active  {  color : #808080;  }
+#cpanel div.icon a:visited {  color : #808080;  }
+
+#cpanel div.icon img { margin-top: 13px; }
+#cpanel div.icon span { display: block; padding-top: 3px;}
+
+
+
+table.cpanel td {
+	text-align: center;
+}
+
+/*** MOSTRAR OCULTAR***/
+#onglet {position:absolute;left:110px;top:40px}
+
+/* MENU  y TOOLBAR */ 
+table.menubar {
+	width: 100%;
+	display : none;
+}
+.footer{	
+	display : none;
+}
+#paginador{
+	display : none;
+}
+
+.menubackgr {
+	background: #F1F3F5;
+	border-bottom: 1px solid #cccccc;
+}
+#wrapper1 div {
+    border: 0px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 5px 0px 5px;
+    display: inline;
+}
+
+.menudottedline {
+	border-bottom: 1px solid #cccccc;
+	border-top: 1px solid #ffffff;
+	background-color: #F1F3F5;
+}
+
+table#toolbar a.toolbar {
+	color : #808080;
+	text-decoration : none;
+	display: block;
+	border: 1px solid #DDD;
+	width: 55px;
+	padding: 2px 1px 2px 1px;
+}
+table#toolbar a.toolbar:hover {
+	color : #C64934;
+	border: 1px solid #c24733;
+	background-color: #f1e8e6;
+	padding: 3px 0px 1px 2px;
+}
+table#toolbar a.toolbar:active {
+	color : #FF9900;
+}
+
+
+/************** LISTADO *****************/
+table.adminlist {
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid #ddd;
+	border-spacing: 0px;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table.adminlist th {
+	margin: 0px;
+	padding: 6px 4px 2px 4px;
+	height: 25px;
+	background: url(../images/background.jpg); 
+	background-repeat: repeat;
+	font-size: 11px;
+	color: #000;
+}
+table.adminlist th.title {
+	text-align: left;
+}
+
+table.adminlist th a:link, table.adminlist th a:visited {
+	color: #c64934;
+	text-decoration: none;
+}
+
+table.adminlist th a:hover {
+	text-decoration: underline;
+}
+
+table.adminlist tr.row0 {
+	background-color: #F9F9F9;
+}
+table.adminlist tr.row1 {
+	background-color: #FFF;
+}
+table.adminlist td {
+	border-bottom: 1px solid #e5e5e5;
+	padding: 4px;
+}
+table.adminlist tr.row0:hover {
+	background-color: #f1f1f1;
+}
+table.adminlist tr.row1:hover {
+	background-color: #f1f1f1;
+}
+table.adminlist td.options {
+	background-color: #ffffff;
+	font-size: 8px;
+}
+/******** ADMIN FORMS *******/
+table.adminform {
+	background-color: #f9f9f9;
+	border: solid 1px #d5d5d5;
+	width: 100%;
+	padding: 10px;
+	border-collapse: collapse;
+}
+table.adminform tr.row0 {
+	background-color: #f9f9f9;
+}
+table.adminform tr.row1 {
+	background-color: #eeeeee;
+}
+table.adminform th {
+	font-size: 11px;
+	padding-top: 6px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	text-align: left;
+	height: 25px;
+	background: url(../images/background.jpg);
+	color: #000;
+	background-repeat: repeat;
+}
+table.adminform td {
+	padding: 3px;
+	text-align: left;
+}
+table.adminform td.editor {
+	font-size: 9px;
+}
+/***********************************/
+table.adminheading {
+	background-color: #FFF;
+	font-family : Arial, Helvetica, sans-serif;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	width: 100%;
+	border-collapse: collapse;
+	color: #77995C;
+	font-size : 18px;
+	font-weight: bold;
+	text-align: left;
+}
+table.adminheading th {
+	background: url(../images/cpanel.png) no-repeat left;
+	text-align: left;
+	height: 50px;
+	width: 99%;
+	padding-left: 50px;
+	border-bottom: 5px solid #fff;
+}
+/*************************************/
+
+.pathway {
+	border: 1px inset;
+	background-color: #FFF;
+	padding: 2px;
+	width: 95%;
+	margin: 3px;
+}
+ 
+ .message {
+ 	font-family : "Trebuchet MS", Arial, Helvetica, sans-serif;
+ 	font-weight: bold;
+ 	font-size : 14px;
+ 	color : #0000bb;
+ 	text-align: center;
+ 	background-color: #FFFFE1;
+ 	border: 1px solid #000000;
+}
+
+@page {
+  margin: 10%;
+  counter-increment: page;
+  @top-center {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    content: counter(page);
+  }
+}

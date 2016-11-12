@@ -1,0 +1,272 @@
+BODY {FONT-SIZE: 8pt; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: Arial}
+A {	FONT-SIZE: 11px; COLOR: blue; FONT-FAMILY: Verdana, Geneva, Arial; TEXT-DECORATION: none}
+A:hover	{COLOR: #336699}
+
+a.edit:link,a.edit:hover,a.edit:visited {
+	color: white;
+	background-color: red;
+	text-decoration: none;
+}
+
+.BOTON	{ FONT-WEIGHT: bold;border: 1px solid #000000} 
+.inputbox {	background-color: #ffffef;}
+
+.bigbox {	border: 1px solid #666666;
+	FONT-SIZE: 26px; 		BACKGROUND-COLOR: #FFFFEF;
+}
+HR {BORDER-RIGHT: #6699cc 1px solid; BORDER-TOP: #6699cc 1px solid; BORDER-LEFT: #6699cc 1px solid; BORDER-BOTTOM: #6699cc 1px solid; HEIGHT: 1px}
+IMG {BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px;}
+ 
+/** TABLAS **/
+.row0 {
+	background-color: #d1d1d1;
+}
+.row1 {
+	background-color: #e1e1e1;
+}
+
+.row3 {
+	background-color: #ae8efe;
+}
+.row4 {
+	background-color: #de9ede;
+}/****/
+
+
+
+TD {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: Arial
+}
+
+
+#small{
+	text-decoration: none;
+	color: #336699;
+	font-size : 9px;
+}
+
+.form_grid {
+	border-width:1;
+	border-style:Solid;
+}
+
+.message {
+	border:1px Solid #000000;
+	BACKGROUND-COLOR: #FFFFDF;
+	padding: 1px 5px; 
+	FONT-SIZE: 13px; 	
+}
+
+
+/*** MOSTRAR OCULTAR***/
+#onglet {position:absolute;left:110px;top:40px}
+
+/* MENU  y TOOLBAR */ 
+table.menubar {
+	width: 100%;
+}
+.menubackgr {
+	background: #F1F3F5;
+	border-bottom: 1px solid #cccccc;
+}
+#wrapper1 div {
+    border: 0px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 5px 0px 5px;
+    display: inline;
+}
+
+.menudottedline {
+	border-bottom: 1px solid #cccccc;
+	border-top: 1px solid #ffffff;
+	background-color: #F1F3F5;
+}
+
+table#toolbar a.toolbar {
+	color : #606060; /*08*/
+	text-decoration : none;
+	display: block;
+	border: 1px solid #aaa; /*ddd*/
+	width: 65px;/*55*/
+	padding: 2px 1px 2px 1px;
+	background-color: #d1c8c6;/*sin fondo */
+	FONT-WEIGHT: bold;
+	text-align:center;
+}
+table#toolbar a.toolbar:hover {
+	color : #C64934;
+	border: 1px solid #c24733;
+	background-color: #f1e8e6;
+	padding: 3px 0px 1px 2px;
+}
+table#toolbar a.toolbar:active {
+	color : #FF9900;
+}
+
+
+/************** LISTADO *****************/
+table.adminlist {
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid #ddd;
+	border-spacing: 0px;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table.adminlist th {
+	margin: 0px;
+	padding: 6px 4px 2px 4px;
+	height: 25px;
+	background-color:#6699cc;
+	background-repeat: repeat;
+	font-size: 11px;
+	color: #fff;
+}
+table.adminlist th.title {
+	text-align: left;
+}
+
+table.adminlist th a:link, table.adminlist th a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+table.adminlist th a:hover {
+	text-decoration: underline;
+}
+
+table.adminlist tr.row0 {
+	background-color: #F9F9F9;
+}
+table.adminlist tr.row1 {
+	background-color: #FFF;
+}
+table.adminlist td {
+	border-bottom: 1px solid #e5e5e5;
+	padding: 4px;
+}
+table.adminlist tr.row0:hover {
+	background-color: #ffffdf;
+}
+table.adminlist tr.row1:hover {
+	background-color: #ffffdf;
+}
+table.adminlist td.options {
+	background-color: #ffffff;
+	font-size: 8px;
+}
+/******** ADMIN FORMS *******/
+table.adminform {
+	background-color: #f9f9f9;
+	border: solid 1px #d5d5d5;
+	width: 100%;
+	padding: 10px;
+	border-collapse: collapse;
+}
+table.adminform tr.row0 {
+	background-color: #000000;
+}
+table.adminform tr.row1 {
+	background-color: #eeeeee;
+}
+table.adminform th {
+	font-size: 11px;
+	padding-top: 6px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	text-align: left;
+	height: 25px;
+	background: url(../images/background.jpg);
+	color: #000;
+	background-repeat: repeat;
+}
+table.adminform td {
+	padding: 3px;
+	text-align: left;
+}
+table.adminform td.editor {
+	font-size: 9px;
+}
+/***********************************/
+table.adminheading {
+	background-color: #FFF;
+	font-family : Arial, Helvetica, sans-serif;	
+	width: 100%;
+	border-collapse: collapse;
+	color: #336699;
+	font-size : 14px;
+	font-weight: bold;	
+}
+table.adminheading th {	
+	text-align: left;
+	/*height: 30px;*/
+	width: 99%;
+	padding-left: 5px;
+	border-bottom: 5px solid #eee;
+}
+/*************************************/
+.pathway {
+	border: 1px inset;
+	background-color: #FFF;
+	padding: 2px;
+	width: 95%;
+	margin: 3px;
+}
+ 
+.message {
+ 	font-family : "Trebuchet MS", Arial, Helvetica, sans-serif;
+ 	font-weight: bold;
+ 	font-size : 14px;
+ 	color : #0000bb;
+ 	text-align: center;
+ 	background-color: #FFFFE1;
+ 	border: 1px solid #000000;
+}
+ 
+.verde {
+  	color : #009900; 
+}
+.rojo {
+  	color : #990000; 
+}
+
+table.adminlist td.money {
+  	text-align: right;
+}
+
+/*** Menu ***/
+
+table#menubar td.menubar {		
+	text-decoration : none;
+	
+	/*border: 1px solid #DDD;*/
+	width: 85px;
+	padding-left: 10px;
+	border-top: 1px solid #cdcdcd;
+	border-bottom: 1px solid #336699;
+	background-color: #336699;		
+}
+table#menubar td.menubar a{		
+	color : #FFFFFF;
+}
+
+table#menubar td.menubar:hover {
+	color : #C64934;
+	border: 1px solid #dddded;
+	background-color: #e1e8f6;	
+}
+table#menubar td.menubar:hover a{
+	color : #000000;
+}
+table#menubar td.menubar:active {
+	color : #FF9900;
+}
+/**** FIN menu left *****/
+#content{
+	border: 4px solid #6699cc;
+}

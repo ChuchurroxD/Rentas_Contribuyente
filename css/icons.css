@@ -1,0 +1,414 @@
+.params {
+    background-image: url(../images/icons/terminal.png) !important;
+}
+
+.acceso {
+    background-image: url(../images/icons/lock_go.png) !important;
+}
+
+.mantenedor {
+    background-image: url(../images/icons/tables.png) !important;
+}
+
+.warning {
+    background-image: url(../images/icons/warning.gif) !important;
+}
+.roles {
+    background-image: url(../images/icons/roles_add.png) !important;
+}
+.clear{
+    background-image: url(../images/icons/clear.png) !important;
+}
+.onerol {
+    background-image: url(../images/icons/drive_user.png) !important;
+}
+
+.tarea {
+    background-image: url(../images/icons/form-link.png) !important;
+}
+
+.grupos {
+    background-image: url(../images/icons/form-group.png) !important;
+}
+
+.permisos {
+    background-image: url(../images/icons/security.png) !important;
+}
+
+.tributo {
+    background-image: url(../images/icons/coins.png) !important;
+}
+
+.maps {
+    background-image: url(../images/icons/vias.png) !important;
+}
+
+.pdf-icon {
+    background-image: url(../images/icons/pdf.png) !important;
+}
+
+.house {
+    background-image: url(../images/icons/house.png) !important;
+}
+
+.house_pasa {
+    background-image: url(../images/icons/house_go.png) !important;
+}
+
+.report_pred {
+    background-image: url(../images/icons/icon-list.gif) !important;
+}
+
+.tablas {
+    background-image: url(../images/icons/grid_edit.png) !important;
+}
+
+.parametro {
+    background-image: url(../images/icons/params.png) !important;
+
+}
+
+.recaudar{
+    background-image: url(../images/icons/folder.gif) !important;
+}
+
+.tfraccion{
+    background-image: url(../images/icons/icon-list.gif) !important;
+}
+
+.asist{
+    background-image: url(../images/icons/clock.png) !important;
+}
+
+.horr{
+    background-image: url(../images/icons/clock_pause.png) !important;
+}
+.horrtra{
+    background-image: url(../images/icons/construction.png) !important;
+}
+
+.fechnolab{
+    background-image: url(../images/icons/date_magnify.png) !important;
+}
+
+.pappep{
+    background-image: url(../images/icons/page_white_copy.png) !important;
+}
+
+.catt{
+    background-image: url(../images/icons/text_columns.png) !important;
+}
+
+.licc{
+    background-image: url(../images/icons/vcard.png) !important;
+}
+
+.suss{
+    background-image: url(../images/icons/vcard_delete.png) !important;
+}
+
+.asiss1{
+    background-image: url(../images/icons/zoom_layer.png) !important;
+}
+
+.contra{
+    background-image: url(../images/icons/text_dropcaps.png) !important;
+}
+.pperi{
+    background-image: url(../images/icons/paypal.png) !important;
+}
+
+.vacca{
+    background-image: url(../images/icons/group_go.png) !important;
+}
+
+.papseg{
+    background-image: url(../images/icons/document_quote.png) !important;
+}
+
+.horlimp{
+    background-image: url(../images/icons/calendar.png) !important;
+}
+
+.papobras{
+    background-image: url(../images/icons/page_white_magnify.png) !important;
+}
+
+.person{
+    background-image: url(../images/icons/premium_support.png) !important;
+}
+
+.trabaj{
+    background-image: url(../images/icons/reseller_programm.png) !important;
+}
+
+.refresh{
+    background-image: url(../images/icons/arrow_refresh.png) !important;
+}
+
+.proghor{
+    background-image: url(../images/icons/user_edit.png) !important;
+}
+
+.genlic{
+    background-image: url(../images/icons/text_signature.png) !important;
+}
+
+.gensus{
+    background-image: url(../images/icons/table_delete.png) !important;
+}
+
+.provac{
+    background-image: url(../images/icons/toolbox.png) !important;
+}
+.asigvac{
+    background-image: url(../images/icons/winrar_view.png) !important;
+}
+.proghorser{
+    background-image: url(../images/icons/time_add.png) !important;
+}
+
+.regasis{
+    background-image: url(../images/icons/tab_edit.png) !important;
+}
+.regasisseg{
+    background-image: url(../images/icons/folder_user.png) !important;
+}
+.regasisobr{
+    background-image: url(../images/icons/calculator_dit.png) !important;
+}
+
+.verfalt{
+    background-image: url(../images/icons/clock_red.png) !important;
+}
+
+.bloqhuell{
+    background-image: url(../images/icons/perfomance.png) !important;
+}
+.nomarcturno{
+    background-image: url(../images/icons/table_row_delete.png) !important;
+}
+.asistrb{
+    background-image: url(../images/icons/user_g.png) !important;
+}
+
+.papeperm{
+    background-image: url(../images/icons/page_white_stack.png) !important;
+}
+
+.marchuel{
+    background-image: url(../images/icons/page_white_camera.png) !important;
+}
+
+.rrr1{
+    background-image: url(../images/icons/book.png) !important;
+}
+
+.rrr2{
+    background-image: url(../images/icons/bookmark.png) !important;
+}
+
+.rrr3{
+    background-image: url(../images/icons/driveuser.png) !important;
+}
+
+.rrr4{
+    background-image: url(../images/icons/page_white_world.png) !important;
+}
+
+.rrr5{
+    background-image: url(../images/icons/report2.png) !important;
+}
+
+.rrr6{
+    background-image: url(../images/icons/report_magnify.png) !important;
+}
+
+.papel{
+    background-image: url(../images/icons/page_white_text.png) !important;
+}
+
+.practi{
+    background-image: url(../images/icons/user_gray.png) !important;
+}
+
+.regimen{
+    background-image: url(../images/icons/application_form_edit.png) !important;
+}
+
+.conceptos{
+    background-image: url(../images/icons/coins_add.png) !important;
+}
+
+.trab_conc{
+    background-image: url(../images/icons/user_add.png) !important;
+}
+
+.prestamos{
+    background-image: url(../images/icons/money.png) !important;
+}
+
+.judicial{
+    background-image: url(../images/icons/params.png) !important;
+}
+
+.quinta{
+    background-image: url(../images/icons/calculator_edit.png) !important;
+}
+
+.sindical{
+    background-image: url(../images/icons/update.gif) !important;
+}
+
+.reportes{
+    background-image: url(../images/icons/application_view_tile.png) !important;
+}
+
+.otro_dscto{
+    background-image: url(../images/icons/coins_delete.png) !important;
+}
+
+.planilla{
+    background-image: url(../images/icons/application_split.png) !important;
+}
+.print{
+    background-image: url(../images/icons/printer.png) !important;
+}
+.correo{
+    background-image: url(../images/icons/email_attach.png) !important;
+}
+.ver{
+    background-image: url(../images/icons/ver.png) !important;
+}
+.area{
+    background-image: url(../images/icons/area.png) !important;
+}
+.grupoT {
+    background-image: url(../images/icons/group.png) !important;
+}
+.permisos {
+    background-image: url(../images/icons/permisos.png) !important;
+}
+.vacacionesI {
+    background-image: url(../images/icons/vacacionesI.png) !important;
+}
+.vacaciones {
+    background-image: url(../images/icons/vacaciones.png) !important;
+}
+.suspensiones {
+    background-image: url(../images/icons/suspensiones.gif) !important;
+}
+.licencias {
+    background-image: url(../images/icons/licencias.jpg) !important;
+}
+.tipoL {
+    background-image: url(../images/icons/tipoP.png) !important;
+}
+.tipoP {
+    background-image: url(../images/icons/tipoP.png) !important;
+}
+.tipoS {
+    background-image: url(../images/icons/tipoP.png) !important;
+}
+.condicionT {
+    background-image: url(../images/icons/condicionT.png) !important;
+
+}
+.areaT {
+    background-image: url(../images/icons/areaT.png) !important;
+}
+.condLab {
+    background-image: url(../images/icons/group_link.png) !important;
+}
+.print2 {
+    background-image: url(../images/print_f2.png) !important;
+}
+.nuevo{
+    background-image: url(../images/icons/listado.png) !important;
+}
+.cancelar{
+    background-image: url(../images/icons/cancel.png) !important;
+}
+.edit{
+    background-image: url(../images/icons/edit.png) !important;
+}
+.buscar{
+    background-image: url(../images/icons/search.gif) !important;
+}
+
+.enviar {
+    background-image: url(../images/icons/email.png) !important;
+}
+.archivo {
+    background-image: url(../images/icons/folder.gif) !important;
+}
+
+.check {
+    background-image: url(../images/icons/check.png) !important;
+}
+
+.upload-icon {
+    background: url('../images/icons/image_add.png') no-repeat 0 0 !important;
+}
+.calendario {
+    background-image: url(../images/dynCalendar.gif) !important;
+}
+.guard {
+    background-image: url(../images/update.gif) !important;
+}
+.voucher {
+    background-image: url(../images/icons/folder.gif) !important;
+}
+.cargararchivo {
+    background-image: url(../images/upload.gif) !important;
+}
+.dentro{
+    background-image: url(../images/icons/dentro.png) !important;
+}
+.antes{
+    background-image: url(../images/icons/first.gif) !important;
+}
+.print3{
+    background-image: url(../images/print_b.gif) !important;
+}
+.cerrarP{
+    background-image: url(../images/icons/lock.png) !important;
+}
+.fotoImagen{
+    background-image: url(../images/image_add.png) !important;
+}
+.ii{
+    background-image: url(../images/icons/i.png) !important;
+}
+.pp{
+    background-image: url(../images/icons/paypal.png) !important;
+}
+
+.descargar {
+    background-image: url(../images/icons/check.png) !important;
+}
+
+.x-action-col-cell img.icon-del {
+    background-image: url(../images/icons/check.png);
+}
+
+
+
+.grupo {
+    background-image: url(../images/icons/group.png)!important;
+}
+
+.subscriptions {
+    background-image: url(../images/icons/subscriptions.png)!important;
+}
+
+.templates {
+    background-image: url(../images/icons/templates.png)!important;
+}
+
+.tickets {
+    background-image: url(../images/icons/tickets.png)!important;
+}
+.exce {
+    background-image: url(../images/eexcel.gif)!important;
+}

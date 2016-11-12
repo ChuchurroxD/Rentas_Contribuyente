@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PushState</title>
+        
+    </head>
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="http://pruebita2.azurewebsites.net/socket.io/socket.io.js"></script>
+        
+        <script>
+            $(document).ready(function (){
+            var socket=io.connect('http://pruebita2.azurewebsites.net/');
+//            socket.emit("datos_cliente",'hola');
+           
+                    socket.on("datos_servidor", function(data) {
+                        //$("#mensaje").html(data);
+                        alert("llego yeaa");
+                    });
+                    
+                    socket.on("mensaje_servidor", function(data) {
+                        //$("#mensaje").htm l(data);
+                        alert(data+" :cliente");
+                    });
+                    
+                    $("#boton").on('click',function (){
+                        
+                        var mensaje=$("#caja").val();                       
+                        socket.emit("mensaje_cliente",mensaje);
+                        
+                    });
+                    
+                });
+        </script>
+        
+        <p>mensaje:</p>
+        <div id="mensaje"></div>
+        <input type="text" id="caja">
+        <input type="button" value="enviar" id="boton">
+        
+        
+    </body>
+</html>

@@ -1,0 +1,11 @@
+#demoIzq, #demoDer, #demoMed { 
+	border:0px dashed; 
+	width:195px;  
+	text-align:center; 
+	margin:0 1px 0 1px; 
+}
+
+#demoDer, #demoMed { 
+	float:right; 
+}
+
