@@ -48,7 +48,7 @@ class Contribuyente_Model
 				break;	
 			case 'mostrar_relaciones':
 				echo $this->mostrar_relaciones();
-
+                break;
 			case 'mostrar_combo_tipo_pago':
 				echo $this->mostrar_combo_tipo_pago();
 				break;	
@@ -115,13 +115,17 @@ class Contribuyente_Model
     }
 
     function mostrar_periodo() {     	    
-    	$this->prepararComboPeriodo(15);        
+    	$this->prepararComboPeriodo(15);  
+        $anioActual = date ("Y");  
         echo '
             <select class="form-control" id="param_periodo" name="param_periodo" onchange="mostrarPrediosPorPeriodo();">';
                 
         while (odbc_fetch_row($this->result)) {
         	$anio = odbc_result($this->result, "anio");
         	$descripcion = odbc_result($this->result, "descripcion");
+            if ($anio == $anioActual) {
+                echo'<option value="'.$anio.'" selected>'.utf8_encode($descripcion).'</option>';
+            }
             echo'<option value="'.$anio.'">'.utf8_encode($descripcion).'</option>';
         }
         echo '</select>';
@@ -207,7 +211,7 @@ class Contribuyente_Model
 
     function prepararConsultaPredios($codigo) {		
 		$consultaSql = "EXEC _Pred_Predio_Contribuyente @persona_ID = '".$_SESSION['usuContribuyente']."', @TipoConsulta  = '".$codigo."', @idPeriodo = '".$this->param['param_periodo']."'";          
-        //echo $consultaSql;
+        echo $consultaSql;
         $this->result = odbc_exec($this->conexion,$consultaSql);
     }
 
@@ -234,10 +238,28 @@ class Contribuyente_Model
                 	echo '<td style="text-align: center; font-size: 10px; width: 5%; color: #000;"><img src="../../assets/images/check.png" style="height: 13px; width: 20%;" alt=""></td>';
                 }
                 														                
-            echo '</tr>';
+            echo '<td style="text-align: center; font-size: 10px; height: 10px; width: 10%;">
+                        <div class="hidden-sm hidden-xs action-buttons"> 
+                            <a href="" onclick="detallesPredio('."'".$Predio_id."'".')"><i><img src="../../assets/images/ver.png" alt="" ></i> Detalles</a>                                                      
+                        </div>
+                        <div class="hidden-md hidden-lg">
+                            <div class="inline pos-rel">
+                                <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
+                                    <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
+                                </button>
+
+                                <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+                                    <li>
+                                        <a href="" onclick="detallesPredio('."'".$Predio_id."'".')"><i><img src="../../assets/images/ver.png" alt=""></i> Detalles</a>                                     
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+            </tr>';
         }      
         echo '<tr>
-                <td style="text-align: center; font-size: 10px; width: 100%; font-weight: bold; color: #7c150a;" bgcolor="#ffe9e6" colspan="7">Total de Predios: '.$item.'</td>														                
+                <td style="text-align: center; font-size: 10px; width: 100%; font-weight: bold; color: #7c150a;" bgcolor="#ffe9e6" colspan="8">Total de Predios: '.$item.'</td>														                
             </tr>';     
         $this->cerrarAbrir();
     }
@@ -265,11 +287,29 @@ class Contribuyente_Model
                 	echo '<td style="text-align: center; font-size: 10px; width: 5%; color: #000;"><img src="../../assets/images/check.png" style="height: 13px; width: 20%;" alt=""></td>';
                 }
                 														                
-            echo '</tr>';
-        } 
+            echo '<td style="text-align: center; font-size: 10px; height: 10px; width: 10%;">
+                        <div class="hidden-sm hidden-xs action-buttons"> 
+                            <a href="" onclick="detallesPredio('."'".$Predio_id."'".');"><i><img src="../../assets/images/ver.png" alt="" ></i> Detalles</a>                                                      
+                        </div>
+                        <div class="hidden-md hidden-lg">
+                            <div class="inline pos-rel">
+                                <button class="btn btn-minier btn-yellow dropdown-toggle" data-toggle="dropdown" data-position="auto">
+                                    <i class="ace-icon fa fa-caret-down icon-only bigger-120"></i>
+                                </button>
+
+                                <ul class="dropdown-menu dropdown-only-icon dropdown-yellow dropdown-menu-right dropdown-caret dropdown-close">
+                                    <li>
+                                        <a href="" onclick="detallesPredio('."'".$Predio_id."'".');"><i><img src="../../assets/images/ver.png" alt=""></i> Detalles</a>                                     
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+            </tr>';
+        }      
         echo '<tr>
-                <td style="text-align: center; font-size: 10px; width: 100%; font-weight: bold; color: #7c150a;" bgcolor="#ffe9e6" colspan="7">Total de Predios: '.$item.'</td>														                
-            </tr>';       
+                <td style="text-align: center; font-size: 10px; width: 100%; font-weight: bold; color: #7c150a;" bgcolor="#ffe9e6" colspan="8">Total de Predios: '.$item.'</td>                                                                     
+            </tr>';     
         $this->cerrarAbrir();
     }
 
@@ -413,7 +453,7 @@ class Contribuyente_Model
                 <td style="text-align: center; font-size: 10px; height: 10px; width: 20%;">
                         <div class="hidden-sm hidden-xs action-buttons"> 
                             <a href="" onclick="detallesPago('.$Pagos_id.')"><i><img src="../../assets/images/ver.png" alt="" ></i> Detalles</a>                                                      
-                            <a href="" onclick="imprimir_pago('.$Pagos_id.')"><i><img src="../../assets/images/print.png" alt="" ></i> Inprimir</a>                             
+                            <a href="" onclick="imprimir_pago('.$Pagos_id.')"><i><img src="../../assets/images/print.png" alt="" ></i> Imprimir</a>                             
                         </div>
                         <div class="hidden-md hidden-lg">
                             <div class="inline pos-rel">

@@ -12,7 +12,12 @@ window.addEventListener("load", alCargarDocumento);
 
 
 window.onload = function()
-{      
+{  
+    $('#tablaLiquidacion').dataTable({
+        "bPaginate": true,
+        "bFilter": false,
+        "bInfo": false
+    });   
     $('#mensaje').html("Información del Predio en el Año Actual por defecto"); 
     mostrarMenu();
     mostrarPeriodo();
@@ -25,12 +30,15 @@ window.onload = function()
     $('#recibosCobranza').hide(); 
     $('#pagos').hide(); 
     $('#valores').hide(); 
-    $('#pagosDetalle').hide();    
+    $('#pagosDetalle').hide(); 
+    $('#detalle_liquidacion').hide();
+    $('#fraccionamientoDetalle').hide();   
+    $('#predioDetalle').hide();
     mostrarContribuyente();    
-    mostrarPrediosActual();
-    mostrarTipoPago();  
+    mostrarPrediosActual();    
+    mostrarTipoPago();
     mostrarCajero(); 
-    mostrarCaja();
+    mostrarCaja();  
 };
 
 $(function() {
@@ -45,9 +53,12 @@ $(function() {
         $('#recibosCobranza').hide(); 
         $('#pagos').hide(); 
         $('#valores').hide();
-        $('#pagosDetalle').hide();  
+        $('#pagosDetalle').hide();
+        $('#detalle_liquidacion').hide();
+        $('#fraccionamientoDetalle').hide(); 
+        $('#predioDetalle').hide();   
         mostrarPeriodo(); 
-        mostrarPredios();    
+        mostrarPrediosPorPeriodo();    
     }); 
 
     $('#verDeudas').on('click', function(){
@@ -61,7 +72,13 @@ $(function() {
         $('#recibosCobranza').hide(); 
         $('#pagos').hide(); 
         $('#valores').hide(); 
-        $('#pagosDetalle').hide();            
+        $('#pagosDetalle').hide();
+        $('#detalle_liquidacion').hide();
+        $('#fraccionamientoDetalle').hide(); 
+        $('#predioDetalle').hide(); 
+        mostrarPeriodoDeuda();   
+        mostrarTributos();  
+        mostrarEstadoDeuda();       
     }); 
 
     $('#verCuentaCorriente').on('click', function(){ 
@@ -75,7 +92,10 @@ $(function() {
         $('#recibosCobranza').hide(); 
         $('#pagos').hide(); 
         $('#valores').hide();
-        $('#pagosDetalle').hide();    
+        $('#pagosDetalle').hide();
+        $('#detalle_liquidacion').hide();
+        $('#fraccionamientoDetalle').hide(); 
+        $('#predioDetalle').hide();     
     });
 
     $('#verRelaciones').on('click', function(){ 
@@ -89,7 +109,10 @@ $(function() {
         $('#recibosCobranza').hide(); 
         $('#pagos').hide(); 
         $('#valores').hide();
-        $('#pagosDetalle').hide();    
+        $('#pagosDetalle').hide();
+        $('#detalle_liquidacion').hide();
+        $('#fraccionamientoDetalle').hide();   
+        $('#predioDetalle').hide();       
         mostrarRelaciones();
     });
 
@@ -104,7 +127,11 @@ $(function() {
         $('#recibosCobranza').hide(); 
         $('#pagos').hide(); 
         $('#valores').hide(); 
-        $('#pagosDetalle').hide();   
+        $('#pagosDetalle').hide();
+        $('#detalle_liquidacion').hide();
+        $('#fraccionamientoDetalle').hide();  
+        $('#predioDetalle').hide(); 
+        mostrarFraccionamientos();  
     });
 
     $('#verLiquidaciones').on('click', function(){ 
@@ -118,7 +145,12 @@ $(function() {
         $('#recibosCobranza').hide(); 
         $('#pagos').hide(); 
         $('#valores').hide();  
-        $('#pagosDetalle').hide();  
+        $('#pagosDetalle').hide(); 
+        $('#detalle_liquidacion').hide();
+        $('#fraccionamientoDetalle').hide();   
+        $('#predioDetalle').hide();
+        mostrarComboPeriodoLiquidacion();          
+        mostrarLiquidacionTodos();  
     });
 
     $('#verRecibosCobranza').on('click', function(){ 
@@ -132,7 +164,12 @@ $(function() {
         $('#recibosCobranza').show(); 
         $('#pagos').hide(); 
         $('#valores').hide();
-        $('#pagosDetalle').hide();  
+        $('#pagosDetalle').hide(); 
+        $('#detalle_liquidacion').hide();
+        $('#fraccionamientoDetalle').hide();   
+        $('#predioDetalle').hide();
+        mostrarPeriodoRecibos();
+        mostrarRecibos();
     });
 
     $('#verPagos').on('click', function(){ 
@@ -146,9 +183,12 @@ $(function() {
         $('#recibosCobranza').hide(); 
         $('#pagos').show(); 
         $('#valores').hide(); 
-        $('#pagosDetalle').hide();          
+        $('#pagosDetalle').hide();
+        $('#detalle_liquidacion').hide();
+        $('#fraccionamientoDetalle').hide();  
+        $('#predioDetalle').hide();
         mostrarPagos();
-         
+        
     });
 
     $('#verValores').on('click', function(){ 
@@ -163,7 +203,10 @@ $(function() {
         $('#recibosCobranza').hide(); 
         $('#pagos').hide(); 
         $('#valores').show(); 
-        $('#pagosDetalle').hide();         
+        $('#pagosDetalle').hide();
+        $('#detalle_liquidacion').hide();
+        $('#fraccionamientoDetalle').hide(); 
+        $('#predioDetalle').hide();         
         mostrarPeriodoValores();
         mostrarValoresActual();  
     });
@@ -171,14 +214,45 @@ $(function() {
     $('#busqueda').on('click', function(){ 
         event.preventDefault();
         mostrarPagosBusqueda();
-        $('#mensajePagos').hide(); 
+        $('#mensajePagos').hide();
+        $('#detalle_liquidacion').hide();
+        $('#fraccionamientoDetalle').hide();   
     });
 
     $('#volverPago').on('click', function(){ 
         event.preventDefault();
         $('#pagos').show(); 
         $('#pagosDetalle').hide();
+        $('#detalle_liquidacion').hide();
+        $('#fraccionamientoDetalle').hide();  
         mostrarPagos();
+    });
+
+    $('#volverLiquidacion').on('click', function(){ 
+        event.preventDefault();
+        $('#liquidaciones').show(); 
+        $('#detalle_liquidacion').hide();
+        $('#fraccionamientoDetalle').hide();          
+        //
+        var param_anio_liqui= document.getElementById('param_periodo_liquidacion').value;
+        var param_mes_liqui= document.getElementById('param_mes_liquidacion').value;
+        if (param_mes_liqui == '0' && param_anio_liqui == '0') {
+            mostrarLiquidacionTodos();
+        } else {
+            mostrarLiquiPeriodo();
+        }
+    });
+
+    $('#volverFraccionamiento').on('click', function(){ 
+        event.preventDefault();
+        $('#fraccionamiento').show(); 
+        $('#fraccionamientoDetalle').hide();          
+        mostrarFraccionamientos();
+    });   
+
+    $('#listarRecibos').on('click', function(){ 
+        event.preventDefault();        
+        mostrarRecibosBusqueda();
     });
 });
 
@@ -210,7 +284,7 @@ function mostrarContribuyente(){
             if(data.length > 0) {
                $.each(data, function (i, value) {
                     $("#nombres").html(value["paterno"]+' '+value["materno"]+' '+value["nombres"]);
-                    $("#docIdentidad").html(value["tipoDocumentoDescripcion"]);
+                    $("#docIdentidad").html(value["tipoDocumentoDescripcion"]+' - '+value["documento"]);
                     $("#codigo").html(value["persona_ID"]);
                     $("#direccion").html(value["direccCompleta"]);
                     $("#sector").html(value["sector"]);
@@ -238,7 +312,7 @@ function mostrarPeriodo(){
 
 function mostrarRelaciones(){
     event.preventDefault();
-    var param_opcion = 'mostrar_relaciones'
+    var param_opcion = 'mostrar_relaciones';
     //alert(grupo);
     $.ajax({
         type:'POST',
@@ -429,8 +503,310 @@ function pago_detalle(pagoID){
 
 function imprimir_pago(pagoID){ 
     event.preventDefault();   
-    alert(pagoID)  ;
-       
+    open("../Reportes/reporte_pago.php?pagoID=" + pagoID + "", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes, top=100,left=300, width: 800,height: 400");    
 }
+
+function mostrarComboPeriodoLiquidacion(){
+    event.preventDefault();
+    var param_opcion = 'mostrar_combo_periodo_liquidacion'    
+    $.ajax({
+        type:'POST',
+        data:'param_opcion='+param_opcion,        
+        url: "../../controller/controlInformacion/combos_controller.php",
+        success:function(data){         
+            $('#periodoLiquidacion').html(data);                                            
+        }
+    });
+}
+
+function mostrarLiquidacionTodos(){
+    event.preventDefault();
+    var param_opcion = 'mostrar_todas_liquidaciones'    
+    $.ajax({
+        type:'POST',
+        data:'param_opcion='+param_opcion,        
+        url: "../../controller/controlInformacion/liquidacion_controller.php",
+        success:function(data){         
+            $('#tablaLiquidacion').DataTable().destroy();
+            $('#cuerpoLiquidacion').html(data);
+            $('#tablaLiquidacion').DataTable();
+            mostrarTotalLiquidacion();                                            
+        }
+    });
+}
+
+function mostrarLiquiPeriodo(){
+    event.preventDefault();
+    var param_anio = document.getElementById('param_periodo_liquidacion').value; 
+    var param_mes = document.getElementById('param_mes_liquidacion').value; 
+    var param_opcion = 'mostrar_busqueda_liquidaciones';
+    $.ajax({
+        type:'POST',
+        data:'param_opcion='+param_opcion+'&param_anio='+param_anio+'&param_mes='+param_mes,        
+        url: "../../controller/controlInformacion/liquidacion_controller.php",
+        success:function(data){         
+            $('#tablaLiquidacion').DataTable().destroy();
+            $('#cuerpoLiquidacion').html(data);
+            $('#tablaLiquidacion').DataTable();
+            mostrarTotalLiquidacionBusqueda();                                            
+        }
+    });
+}
+
+function mostrarTotalLiquidacion(){
+    event.preventDefault();    
+    var param_opcion = 'mostrar_total_liquidaciones';
+    $.ajax({
+        type:'POST',
+        data:'param_opcion='+param_opcion,        
+        url: "../../controller/controlInformacion/liquidacion_controller.php",
+        success:function(data){         
+            $('#cuerpoLiquidacionTotal').html(data);                                        
+        }
+    });
+}
+
+function mostrarTotalLiquidacionBusqueda(){
+    event.preventDefault();    
+    var param_anio = document.getElementById('param_periodo_liquidacion').value; 
+    var param_mes = document.getElementById('param_mes_liquidacion').value; 
+    var param_opcion = 'mostrar_total_liquidaciones_busqueda';
+    $.ajax({
+        type:'POST',
+        data:'param_opcion='+param_opcion+'&param_anio='+param_anio+'&param_mes='+param_mes,        
+        url: "../../controller/controlInformacion/liquidacion_controller.php",
+        success:function(data){         
+            $('#cuerpoLiquidacionTotal').html(data);                                        
+        }
+    });
+}
+
+function detallesLiquidacion(liquidacionID){ 
+    event.preventDefault();      
+    $('#liquidaciones').hide(); 
+    $('#detalle_liquidacion').show();
+    $('#mensajeLiquidacion').html("DETALLE DE LIQUIDACIÓN N° "+liquidacionID); 
+    var param_opcion = 'mostrar_liquidacion_detalle';
+    $.ajax({
+        type:'POST',
+        data:'param_opcion='+param_opcion+'&param_liquidacionID='+liquidacionID,  
+        url: "../../controller/controlInformacion/liquidacion_controller.php",            
+        success:function(data){         
+            $('#cuerpoLiquidacionDetalle').html(data);                
+        }
+    });    
+}
+
+function imprimir_liquidacion(liquidacionID){ 
+    event.preventDefault();   
+    open("../Reportes/reporte_liquidacion.php?liquidacionID=" + liquidacionID + "", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes, top=100,left=300, width: 800,height: 400");    
+}
+
+function mostrarPeriodoDeuda(){
+    event.preventDefault();
+    var param_opcion = 'mostrar_combo_periodo_deuda'    
+    $.ajax({
+        type:'POST',
+        data:'param_opcion='+param_opcion,        
+        url: "../../controller/controlInformacion/combos_controller.php",
+        success:function(data){         
+            $('#periodoDeuda').html(data);                                            
+        }
+    });
+}
+
+function mostrarTributos(){
+    event.preventDefault();
+    var param_opcion = 'mostrar_combo_tributo_deuda'    
+    $.ajax({
+        type:'POST',
+        data:'param_opcion='+param_opcion,        
+        url: "../../controller/controlInformacion/combos_controller.php",
+        success:function(data){         
+            $('#tributos').html(data);                                            
+        }
+    });
+}
+
+function mostrarEstadoDeuda(){
+    event.preventDefault();    
+    var param_opcion = 'mostrar_deuda_total';
+    $.ajax({
+        type:'POST',
+        data:'param_opcion='+param_opcion,        
+        url: "../../controller/controlInformacion/estadoDeuda_controller.php",
+        success:function(data){         
+            $('#cuerpoEstadoDeuda').html(data);                                        
+        }
+    });
+}
+
+function mostrarBusquedaDeuda(){
+    event.preventDefault();    
+    var param_periodo_deuda = document.getElementById('param_periodo_deuda').value; 
+    var param_tributo_deuda = document.getElementById('param_tributo_deuda').value; 
+    var param_opcion = 'mostrar_total_deuda_busqueda';
+    $.ajax({
+        type:'POST',
+        data:'param_opcion='+param_opcion+'&param_periodo_deuda='+param_periodo_deuda+'&param_tributo_deuda='+param_tributo_deuda,        
+        url: "../../controller/controlInformacion/estadoDeuda_controller.php",
+        success:function(data){         
+            $('#cuerpoEstadoDeuda').html(data);                                        
+        }
+    });
+}
+
+function imprimirDeuda(){ 
+    event.preventDefault();
+    var periodo = document.getElementById('param_periodo_deuda').value; 
+    var tributo = document.getElementById('param_tributo_deuda').value;    
+    open("../Reportes/reporte_deuda.php?periodo="+periodo+"&tributo="+tributo+"", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes, top=100,left=300, width: 800,height: 400");    
+}
+
+function mostrarFraccionamientos(){
+    event.preventDefault();        
+    var param_opcion = 'mostrar_fraccionamientos';
+    $.ajax({
+        type:'POST',
+        data:'param_opcion='+param_opcion,        
+        url: "../../controller/controlInformacion/fraccionamiento_controller.php",
+        success:function(data){         
+            $('#cuerpoFraccionamiento').html(data);                                        
+        }
+    });
+}
+
+function detallesFraccionamiento(fraccionamientoID){ 
+    event.preventDefault();      
+    $('#fraccionamiento').hide(); 
+    $('#fraccionamientoDetalle').show();
+    mostrarDatosFraccionamiento(fraccionamientoID);
+    mostrarTributosAfectados(fraccionamientoID);
+    mostrarCronograma(fraccionamientoID);
+}
+
+
+function mostrarDatosFraccionamiento(fraccionamientoID){ 
+    event.preventDefault();      
+    var param_opcion = 'mostrar_datos_fraccionamientos';
+    $.ajax({
+        type:'POST',
+        data:'param_opcion='+param_opcion+'&param_fraccionamientoID='+fraccionamientoID,        
+        url: "../../controller/controlInformacion/fraccionamiento_controller.php",
+        success:function(data){         
+            $('#tablaDatos').html(data);                                        
+        }
+    });
+}
+
+function mostrarTributosAfectados(fraccionamientoID){ 
+    event.preventDefault();      
+    var param_opcion = 'mostrar_tributos_afectados';
+    $.ajax({
+        type:'POST',
+        data:'param_opcion='+param_opcion+'&param_fraccionamientoID='+fraccionamientoID,        
+        url: "../../controller/controlInformacion/fraccionamiento_controller.php",
+        success:function(data){         
+            $('#cuerpoTributosAfectados').html(data);                                        
+        }
+    });
+}
+
+function mostrarCronograma(fraccionamientoID){ 
+    event.preventDefault();      
+    var param_opcion = 'mostrar_cronograma_fraccionamiento';
+    $.ajax({
+        type:'POST',
+        data:'param_opcion='+param_opcion+'&param_fraccionamientoID='+fraccionamientoID,        
+        url: "../../controller/controlInformacion/fraccionamiento_controller.php",
+        success:function(data){         
+            $('#cuerpoCronograma').html(data);                                        
+        }
+    });
+}
+
+function detallesPredio(predioID){ 
+    event.preventDefault(); 
+    //alert(predioID);     
+    $('#predios').hide(); 
+    $('#predioDetalle').show();    
+    mostrarDatosPredio(predioID);
+    mostrarDatosPisos(predioID);
+}
+
+function mostrarDatosPredio(predioID){
+    event.preventDefault();    
+    var param_periodo_predio = document.getElementById('param_periodo').value;     
+    var param_opcion = 'mostrar_datos_predio';
+    $.ajax({
+        type:'POST',
+        data:'param_opcion='+param_opcion+'&param_periodo_predio='+param_periodo_predio+'&param_predio='+predioID,
+        url: "../../controller/controlInformacion/predio_controller.php",
+        success:function(data){         
+            $('#tablaDatosPredio').html(data);                                        
+        }
+    });
+}
+
+function mostrarDatosPisos(predioID){
+    event.preventDefault();    
+    var param_periodo_predio = document.getElementById('param_periodo').value;     
+    var param_opcion = 'mostrar_datos_pisos';
+    $.ajax({
+        type:'POST',
+        data:'param_opcion='+param_opcion+'&param_periodo_predio='+param_periodo_predio+'&param_predio='+predioID,
+        url: "../../controller/controlInformacion/predio_controller.php",
+        success:function(data){         
+            $('#cuerpoDetallePredio').html(data);                                        
+        }
+    });
+}
+
+function mostrarPeriodoRecibos(){
+    event.preventDefault();
+    var param_opcion = 'mostrar_periodo_recibos'
+    //alert(grupo);
+    $.ajax({
+        type:'POST',
+        data:'param_opcion='+param_opcion,        
+        url: "../../controller/controlInformacion/combos_controller.php",
+        success:function(data){         
+            $('#añoProcesar').html(data);                                            
+        }
+    });
+}
+
+function mostrarRecibos(){
+    event.preventDefault();        
+    var param_opcion = 'mostrar_recibos';
+    $.ajax({
+        type:'POST',
+        data:'param_opcion='+param_opcion,
+        url: "../../controller/controlInformacion/recibos_controller.php",
+        success:function(data){         
+            $('#cuerpoRecibos').html(data);                                        
+        }
+    });
+}
+
+function mostrarRecibosBusqueda(){
+    event.preventDefault();  
+    var param_periodo_recibo = document.getElementById('param_periodo_recibo').value;
+    var param_mes_inicial = document.getElementById('param_mes_inicial').value;
+    var param_mes_final = document.getElementById('param_mes_final').value;      
+    var param_opcion = 'mostrar_recibos_busqueda';
+    $.ajax({
+        type:'POST',
+        data:'param_opcion='+param_opcion+'&param_periodo_recibo='+param_periodo_recibo+'&param_mes_inicial='+param_mes_inicial+'&param_mes_final='+param_mes_final,
+        url: "../../controller/controlInformacion/recibos_controller.php",
+        success:function(data){         
+            $('#cuerpoRecibos').html(data);                                        
+        }
+    });
+}
+
+
+
+
 
 

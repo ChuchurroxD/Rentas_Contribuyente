@@ -12,7 +12,7 @@
 				</button>
 
 				<div class="navbar-header pull-left">
-					<a href="home.php" class="navbar-brand">
+					<a href="../home/home.php" class="navbar-brand">
 						<small>
 							<i class="fa fa-leaf"></i>
 							SISTEMA DE ADMINISTRACIÓN TRIBUTARIA

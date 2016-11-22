@@ -37,7 +37,7 @@ $(document).ready(function() {
                 encode : true,
                 success: function(data){
                     if(data == '1')
-                        location.href = "view/home/home.php";
+                        location.href = "view/Informacion/contribuyente.php";
                     else
                     {                        
                        if(data == '0')

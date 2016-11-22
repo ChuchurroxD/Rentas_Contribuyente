@@ -14,7 +14,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta charset=utf-8 />
-	<title>BSE Events</title>
+	<title>SISTEMA TRIBUTARIO</title>
 	<link rel="stylesheet" href="../default/assets/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="../default/assets/font-awesome/4.2.0/css/font-awesome.min.css" />
 	
@@ -207,7 +207,7 @@
 															<table id="tablaPredios" class="table table-striped table-bordered">
 																<thead>	
 																	<tr>
-														                <td bgcolor="#f4f600" colspan="7"><center><label for="socio" class="control-label" id="mensaje" style='text-align: center; font-size: 10px; font-weight: bold; color: #000;'></label></center></td>												                
+														                <td bgcolor="#f4f600" colspan="8"><center><label for="socio" class="control-label" id="mensaje" style='text-align: center; font-size: 10px; font-weight: bold; color: #000;'></label></center></td>												                
 														            </tr>										
 														            <tr>
 														                <td style="text-align: center; font-size: 10px; width: 3%; color: #000;" bgcolor="#bde8f9">#</td>
@@ -216,7 +216,8 @@
 														                <td style="text-align: center; font-size: 10px; width: 10%; color: #000;" bgcolor="#bde8f9">% Condominio</td>
 														                <td style="text-align: center; font-size: 10px; width: 8%; color: #000;" bgcolor="#bde8f9">Adquisición</td>	
 														                <td style="text-align: center; font-size: 10px; width: 8%; color: #000;" bgcolor="#bde8f9">Posesión</td>
-														                <td style="text-align: center; font-size: 10px; width: 5%; color: #000;" bgcolor="#bde8f9">Actual</td>														                
+														                <td style="text-align: center; font-size: 10px; width: 5%; color: #000;" bgcolor="#bde8f9">Actual</td>											
+														                <td style="text-align: center; font-size: 10px; width: 10%; color: #000;" bgcolor="#bde8f9">Operaciones</td>
 														            </tr>							         
 																</thead>
 																<tbody id="cuerpoPredios">	
@@ -232,6 +233,96 @@
 									</div>
 								</div><!-- ./row -->
 
+								<div class="row" id='predioDetalle'>	
+									<div class="col-sm-12">											
+										<div class="widget-box">
+											<div class="widget-header widget-header-flat widget-header-small">
+												<h5 class="widget-title" style="font-weight: bold;">
+													<center>CARACTERISTICAS DEL PREDIO</center>	
+												</h5>									
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main">
+													<div class="row">
+														<div class="col-md-12">															
+															<div id="tablaDatosPredio">
+																<table>        
+													                <tr>                                                                    
+													                    <td colspan="4" style="font-size: 10.5px; width: 1000px;  height: 25px; text-align: center;" bgcolor="#f4f600"><strong>Información del Predio en el Año: 2016</strong>&nbsp;</td>                                                       
+													                </tr>
+													                <tr>                                                                    
+													                    <td colspan="4" style="font-size: 10.5px; width: 1000px;  height: 25px; text-align: center;" bgcolor="#fbeded"><strong>Caracteristicas General</strong>&nbsp;</td>                                                       
+													                </tr>
+													                <tr>                                                                      
+													                    <td style="font-size: 10.5px; width: 300px; height: 25px;"><strong>&nbsp;&nbsp;Año:</strong>&nbsp;</td>
+													                    <td style="font-size: 11px; width: 300px; height: 25px;"><strong>&nbsp;&nbsp;Código Predio:</strong>&nbsp;</td>
+													                    <td style="font-size: 10.5px; width: 200px; height: 25px;"><strong>&nbsp;&nbsp;Ubicación:</strong>&nbsp;</td>
+													                    <td style="font-size: 10.5px; width: 200px; height: 25px;"><strong>&nbsp;&nbsp;Tipo Predio</strong>&nbsp;</td>
+													                </tr>
+													                <tr>                                                                      
+													                    <td style="font-size: 10.5px; width: 300px; height: 25px;"><strong>&nbsp;&nbsp;Tipo Inmueble:</strong>&nbsp;</td>
+													                    <td style="font-size: 10.5px; width: 300px; height: 25px;"><strong>&nbsp;&nbsp;Estado:</strong>&nbsp;</td>
+													                    <td style="font-size: 10.5px; width: 200px; height: 25px;"><strong>&nbsp;&nbsp;Área Terreno:</strong>&nbsp;</td>													                
+													                    <td style="font-size: 10.5px; width: 200px; height: 25px;"><strong>&nbsp;&nbsp;Área Construida</strong></td>
+													                </tr>
+													                <tr>                                                                      
+													                    <td style="font-size: 10.5px; width: 300px; height: 25px;"><strong>&nbsp;&nbsp;Fuente (m):</strong>&nbsp;</td>
+													                    <td style="font-size: 10.5px; width: 300px; height: 25px;"><strong>&nbsp;&nbsp;Valor Construc.:</strong>&nbsp;</td>
+													                    <td style="font-size: 10.5px; width: 200px; height: 25px;"><strong>&nbsp;&nbsp;Valor Otras Inst.:</strong>&nbsp;</td>													                
+													                    <td style="font-size: 10.5px; width: 200px; height: 25px;"><strong>&nbsp;&nbsp;Valor Área Común</strong></td>
+													                </tr>
+													                <tr>                                                                      
+													                    <td style="font-size: 10.5px; width: 300px; height: 25px;"><strong>&nbsp;&nbsp;DAquisición:</strong>&nbsp;</td>
+													                    <td style="font-size: 10.5px; width: 300px; height: 25px;"><strong>&nbsp;&nbsp;Fecha Adquisición:</strong>&nbsp;</td>
+													                    <td style="font-size: 10.5px; width: 200px; height: 25px;"><strong>&nbsp;&nbsp;Posesión:</strong>&nbsp;</td>		                   
+													                </tr>                                                                   
+													        	</table>
+															</div><br>															
+														</div>													
+														                       															
+														<div class="col-md-12">															
+															<table id="tablaDetallePredio" class="table table-striped table-bordered">
+																<thead>	
+																	<tr>                                                                    
+													                    <td colspan="17" style="font-size: 10.5px; width: 1000px;  height: 25px; text-align: center;" bgcolor="#fbeded"><strong>Pisos del Predio</strong>&nbsp;</td>                                                       
+													                </tr>														
+														            <tr>														              
+														                <td style="text-align: center; font-size: 9px; width: 5%; color: #000;" bgcolor="#bde8f9">Piso</td>
+														                <td style="text-align: center; font-size: 9px; width: 5%; color: #000;" bgcolor="#bde8f9">Sec.</td>
+														                <td style="text-align: center; font-size: 9px; width: 3%; color: #000;" bgcolor="#bde8f9">Antiguedad</td>
+														                <td style="text-align: center; font-size: 9px; width: 5%; color: #000;" bgcolor="#bde8f9">Mu</td>
+														                <td style="text-align: center; font-size: 9px; width: 5%; color: #000;" bgcolor="#bde8f9">Te</td>
+														                <td style="text-align: center; font-size: 9px; width: 5%; color: #000;" bgcolor="#bde8f9">Pi</td>
+														                <td style="text-align: center; font-size: 9px; width: 5%; color: #000;" bgcolor="#bde8f9">Pu</td>
+														                <td style="text-align: center; font-size: 9px; width: 5%; color: #000;" bgcolor="#bde8f9">Re</td>			
+														                <td style="text-align: center; font-size: 9px; width: 5%; color: #000;" bgcolor="#bde8f9">Ba</td>
+														                <td style="text-align: center; font-size: 9px; width: 5%; color: #000;" bgcolor="#bde8f9">In</td>
+														                <td style="text-align: center; font-size: 9px; width: 8%; color: #000;" bgcolor="#bde8f9">Área</td>
+														                <td style="text-align: center; font-size: 9px; width: 8%; color: #000;" bgcolor="#bde8f9">A. Común</td>
+														                <td style="text-align: center; font-size: 9px; width: 8%; color: #000;" bgcolor="#bde8f9">Valor</td>
+														                <td style="text-align: center; font-size: 9px; width: 25%; color: #000;" bgcolor="#bde8f9">Clasif.</td>
+														                <td style="text-align: center; font-size: 9px; width: 10%; color: #000;" bgcolor="#bde8f9">Material</td>
+														                <td style="text-align: center; font-size: 9px; width: 10%; color: #000;" bgcolor="#bde8f9">Estado</td>
+														                <td style="text-align: center; font-size: 9px; width: 10%; color: #000;" bgcolor="#bde8f9">Cond.</td>             
+														            </tr>							         
+																</thead>
+																<tbody id="cuerpoDetallePredio">	
+																															            
+														            																
+																</tbody>
+															</table>															
+														</div>
+														<div class="form-group col-sm-12">							                            
+							                               	<center><a href="" id="volverPredio"><i><img src="../../assets/images/volver.png" alt=""></i> Volver</a></center>																
+							                            </div>
+													</div><!-- /.widget-main -->
+												</div><!-- /.widget-body -->
+											</div><!-- /.widget-box -->									
+										</div>
+									</div>										
+								</div><!-- ./row -->
+
 								<div class="row" id="estadoDeudas">	
 									<div class="col-sm-12">									
 										<div class="widget-box">
@@ -244,7 +335,57 @@
 											<div class="widget-body">
 												<div class="widget-main">
 													<div class="row">
-														                       																			
+														<div class="form-horizontal">
+														 	<table>
+														 		<tr>														 			
+														 			<td style="width: 1500px; height: 0px">
+														 				<div class="form-group col-sm-12">
+											                               	<label for="socio" class="col-md-3 control-label" style='text-align: center; font-size: 11.5px;'><strong>Año:</strong></label>
+											                               	<div class="col-md-6" id="periodoDeuda">
+											                            		                  		               
+											                               	</div>	                               
+								                            			</div>
+														 			</td>
+														 			<td style="width: 1500px; height: 0px">
+														 				<div class="form-group col-sm-12">                   	
+											                               	<label for="socio" class="col-md-2 control-label" style='text-align: center; font-size: 11.5px;'><strong>Tributo:</strong></label>
+											                               	<div class="col-md-10" id="tributos">
+											                            		                      		                
+											                               	</div>
+								                            			</div>
+														 			</td>
+														 			<td style="width: 500px; height: 0px">
+														 				<div class="form-group col-sm-12">                   	
+											                               	<a href="" onclick="imprimirDeuda();"><i><img src="../../assets/images/print.png" alt=""></i> Imprimir</a>
+								                            			</div>
+														 			</td>														 			
+														 		</tr>
+														 	</table>													                       
+														</div>
+														<div>
+															<label for="socio" class="col-md-12 control-label" style='text-align: left; font-size: 12px;'><strong>La deuda mostrada es la generada hasta la fecha: <?php echo date('d-m-Y'); ?></strong></label>
+														</div>
+														<div>
+															<table id="tablaEstadoDeuda" class="table table-striped table-bordered">
+																<thead>																										
+														            <tr>
+														                <td style="text-align: center; font-size: 10px; width: 3%; color: #000; height: 5px" bgcolor="#bde8f9">Periodo</td>
+														                <td style="text-align: center; font-size: 10px; width: 3%; color: #000; height: 5px" bgcolor="#bde8f9">Mes</td>
+														                <td style="text-align: center; font-size: 10px; width: 20%; color: #000; height: 5px" bgcolor="#bde8f9">Tributo</td>
+														                <td style="text-align: center; font-size: 10px; width: 10%; color: #000; height: 5px" bgcolor="#bde8f9">Tipo Tributo</td>
+														                <td style="text-align: center; font-size: 10px; width: 8%; color: #000; height: 5px" bgcolor="#bde8f9">Fecha Vencimiento</td>	
+														                <td style="text-align: center; font-size: 10px; width: 5%; color: #000; height: 5px" bgcolor="#bde8f9">Estado</td>
+														                <td style="text-align: center; font-size: 10px; width: 5%; color: #000; height: 5px" bgcolor="#bde8f9">Pendiente</td>         
+														                <td style="text-align: center; font-size: 10px; width: 5%; color: #000; height: 5px" bgcolor="#bde8f9">Total</td>	
+
+														            </tr>							         
+																</thead>
+																<tbody id="cuerpoEstadoDeuda">	
+																															            
+														            																
+																</tbody>
+															</table>															
+														</div> 	                       																			
 													</div><!-- /.widget-main -->
 												</div><!-- /.widget-body -->
 											</div><!-- /.widget-box -->									
@@ -321,8 +462,95 @@
 
 											<div class="widget-body">
 												<div class="widget-main">
+													<div class="row">														
+														<div>
+															<table id="tablaFraccionamiento" class="table table-striped table-bordered">
+																<thead>															
+														            <tr>
+														                <td style="text-align: center; font-size: 9px; width: 3%; color: #000;" bgcolor="#bde8f9">#</td>
+														                <td style="text-align: center; font-size: 9px; width: 5%; color: #000;" bgcolor="#bde8f9">Código</td>
+														                <td style="text-align: center; font-size: 9px; width: 12%; color: #000;" bgcolor="#bde8f9">Base Legal</td>
+														                <td style="text-align: center; font-size: 9px; width: 14%; color: #000;" bgcolor="#bde8f9">Fecha Acogida</td>
+														                <td style="text-align: center; font-size: 9px; width: 14%; color: #000;" bgcolor="#bde8f9">Periodos</td>	
+														                <td style="text-align: center; font-size: 9px; width: 8%; color: #000;" bgcolor="#bde8f9">Deuda Total</td>
+														                <td style="text-align: center; font-size: 9px; width: 5%; color: #000;" bgcolor="#bde8f9">Inicial</td>		
+														                <td style="text-align: center; font-size: 9px; width: 7%; color: #000;" bgcolor="#bde8f9">Saldo</td>	
+														                <td style="text-align: center; font-size: 9px; width: 7%; color: #000;" bgcolor="#bde8f9">Cuota</td>
+														                <td style="text-align: center; font-size: 9px; width: 8%; color: #000;" bgcolor="#bde8f9">Nro Coutas</td>
+														                <td style="text-align: center; font-size: 9px; width: 7%; color: #000;" bgcolor="#bde8f9">Estado</td>	
+														                <td style="text-align: center; font-size: 9px; width: 30%; color: #000;" bgcolor="#bde8f9">Opciones</td>	
+														            </tr>							         
+																</thead>
+																<tbody id="cuerpoFraccionamiento">	
+																															            
+														            																
+																</tbody>
+															</table>															
+														</div>                         																			
+													</div><!-- /.widget-main -->
+												</div><!-- /.widget-body -->
+											</div><!-- /.widget-box -->									
+										</div>
+									</div>										
+								</div><!-- ./row -->	
+
+								<div class="row" id='fraccionamientoDetalle'>	
+									<div class="col-sm-12">											
+										<div class="widget-box">
+											<div class="widget-header widget-header-flat widget-header-small">
+												<h5 class="widget-title" style="font-weight: bold;">
+													<center>FRACCIONAMIENTOS</center>	
+												</h5>									
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main">
 													<div class="row">
-														                       																			
+														<div class="col-md-12">
+															<label style="font-weight: bold; font-size: 11px">DATOS DEL FRACCIONAMIENTO</label>
+															<div id="tablaDatos">
+																
+															</div><br>															
+														</div>													
+														<div class="col-md-6">
+															<label style="font-weight: bold; font-size: 11px">TRIBUTOS AFECTADOS</label>
+															<table id="tablaTributosAfectados" class="table table-striped table-bordered">
+																<thead>															
+														            <tr>														              
+														                <td style="text-align: center; font-size: 9px; width: 5%; color: #000;" bgcolor="#bde8f9">Código</td>
+														                <td style="text-align: center; font-size: 9px; width: 12%; color: #000;" bgcolor="#bde8f9">Descripción</td>	
+														            </tr>							         
+																</thead>
+																<tbody id="cuerpoTributosAfectados">	
+																															            
+														            																
+																</tbody>
+															</table>															
+														</div>                         															
+														<div class="col-md-12">
+															<label style="font-weight: bold; font-size: 11px">CRONOGRAMA PAGOS</label>
+															<table id="tablaCronograma" class="table table-striped table-bordered">
+																<thead>															
+														            <tr>														              
+														                <td style="text-align: center; font-size: 9px; width: 10%; color: #000;" bgcolor="#bde8f9">Nro Couta</td>
+														                <td style="text-align: center; font-size: 9px; width: 10%; color: #000;" bgcolor="#bde8f9">Saldo</td>
+														                <td style="text-align: center; font-size: 9px; width: 10%; color: #000;" bgcolor="#bde8f9">Amortización</td>
+														                <td style="text-align: center; font-size: 9px; width: 10%; color: #000;" bgcolor="#bde8f9">Interés</td>
+														                <td style="text-align: center; font-size: 9px; width: 10%; color: #000;" bgcolor="#bde8f9">Importe Couta</td>
+														                <td style="text-align: center; font-size: 9px; width: 10%; color: #000;" bgcolor="#bde8f9">F. Vence</td>
+														                <td style="text-align: center; font-size: 9px; width: 10%; color: #000;" bgcolor="#bde8f9">F. Pago</td>
+														                <td style="text-align: center; font-size: 9px; width: 10%; color: #000;" bgcolor="#bde8f9">Estado</td>			              
+														            </tr>							         
+																</thead>
+																<tbody id="cuerpoCronograma">	
+																															            
+														            																
+																</tbody>
+															</table>															
+														</div>
+														<div class="form-group col-sm-12">							                            
+							                               	<center><a href="" id="volverFraccionamiento"><i><img src="../../assets/images/volver.png" alt=""></i> Volver</a></center>																
+							                            </div>
 													</div><!-- /.widget-main -->
 												</div><!-- /.widget-body -->
 											</div><!-- /.widget-box -->									
@@ -342,7 +570,123 @@
 											<div class="widget-body">
 												<div class="widget-main">
 													<div class="row">
-														                       																			
+														<div class="form-horizontal">
+														 	<table>
+														 		<tr>
+														 			<td style="width: 800px; height: 0px">
+														 				<div class="form-group col-sm-12">                    
+											                               	<label for="socio" class="col-md-12 control-label" style='text-align: center; font-size: 11.5px;'><strong>Filtrar por:</strong></label>	
+								                            			</div>
+								                            		</td>
+														 			<td style="width: 1100px; height: 0px">
+														 				<div class="form-group col-sm-12">
+											                               	<label for="socio" class="col-md-6 control-label" style='text-align: center; font-size: 11.5px;'><strong>Año:</strong></label>
+											                               	<div class="col-md-6" id="periodoLiquidacion">
+											                            		                  		               
+											                               	</div>	                               
+								                            			</div>
+														 			</td>
+														 			<td style="width: 1100px; height: 0px">
+														 				<div class="form-group col-sm-12">                   	
+											                               	<label for="socio" class="col-md-4 control-label" style='text-align: center; font-size: 11.5px;'><strong>Mes:</strong></label>
+											                               	<div class="col-md-6">
+											                            		<select class="form-control" id="param_mes_liquidacion" name="param_mes_liquidacion" onchange="mostrarLiquiPeriodo();">
+											                            			<option value='0'>TODOS</option>
+											                            			<option value="1">Enero</option>
+											                            			<option value="2">Febrero</option>
+											                            			<option value="3">Marzo</option>
+											                            			<option value="4">Abril</option>
+											                            			<option value="5">Mayo</option>
+											                            			<option value="6">Junio</option>
+											                            			<option value="7">Julio</option>
+											                            			<option value="8">Agosto</option>
+											                            			<option value="9">Septiembre</option>
+											                            			<option value="10">Octubre</option>
+											                            			<option value="11">Noviembre</option>
+											                            			<option value="12">Diciembre</option>
+											                            		</select>                        		                
+											                               	</div>
+								                            			</div>
+														 			</td>														 			
+														 		</tr>
+														 	</table>													                       
+														</div>
+														<div>
+															<table id="tablaLiquidacion" class="table table-striped table-bordered">
+																<thead>																										
+														            <tr>
+														                <td style="text-align: center; font-size: 9px; width: 3%; color: #000;" bgcolor="#bde8f9">#</td>
+														                <td style="text-align: center; font-size: 9px; width: 5%; color: #000;" bgcolor="#bde8f9">Código</td>
+														                <td style="text-align: center; font-size: 9px; width: 13%; color: #000;" bgcolor="#bde8f9">Fecha Liquidacion</td>
+														                <td style="text-align: center; font-size: 9px; width: 5%; color: #000;" bgcolor="#bde8f9">Importe</td>
+														                <td style="text-align: center; font-size: 9px; width: 5%; color: #000;" bgcolor="#bde8f9">Intereses</td>	
+														                <td style="text-align: center; font-size: 9px; width: 10%; color: #000;" bgcolor="#bde8f9">Importe Total</td>
+														                <td style="text-align: center; font-size: 9px; width: 8%; color: #000;" bgcolor="#bde8f9">Estado</td>						               
+														                <td style="text-align: center; font-size: 9px; width: 20%; color: #000;" bgcolor="#bde8f9">Opciones</td>	
+
+														            </tr>							         
+																</thead>
+																<tbody id="cuerpoLiquidacion">	
+																															            
+														            																
+																</tbody>
+															</table>
+															<table id="tablaLiquidacionTotal" class="table table-striped table-bordered">																
+																<tbody id="cuerpoLiquidacionTotal">		           
+														            																
+																</tbody>
+															</table>
+														</div>                        																			
+													</div><!-- /.widget-main -->
+												</div><!-- /.widget-body -->
+											</div><!-- /.widget-box -->									
+										</div>
+									</div>									
+								</div><!-- ./row -->	
+
+								<div class="row" id="detalle_liquidacion">
+									<div class="col-sm-12">												
+										<div class="widget-box">
+											<div class="widget-header widget-header-flat widget-header-small">
+												<h5 class="widget-title" style="font-weight: bold;">
+													<center id="mensajeLiquidacion" style="text-align: center; font-weight:bold;"></center>	
+												</h5>									
+											</div>
+											
+											<div class="widget-body">
+												<div class="widget-main">
+													<div class="row">
+																											
+														<div>
+															<table id="tablaLiquidacionDetalle" class="table table-striped table-bordered">
+																<thead>																										
+														            <tr>														                
+														                <td style="text-align: center; font-size: 9px; width: 25%; color: #000;" bgcolor="#bde8f9">Tributo</td>
+														                <td style="text-align: center; font-size: 9px; width: 8%; color: #000;" bgcolor="#bde8f9">Año</td>
+														                <td style="text-align: center; font-size: 9px; width: 5%; color: #000;" bgcolor="#bde8f9">Ene</td>
+														                <td style="text-align: center; font-size: 9px; width: 5%; color: #000;" bgcolor="#bde8f9">Feb</td>	
+														                <td style="text-align: center; font-size: 9px; width: 5%; color: #000;" bgcolor="#bde8f9">Mar</td>
+														                <td style="text-align: center; font-size: 10px; width: 5%; color: #000;" bgcolor="#bde8f9">Abr</td>
+														                <td style="text-align: center; font-size: 10px; width: 5%; color: #000;" bgcolor="#bde8f9">May</td>
+														                <td style="text-align: center; font-size: 10px; width: 5%; color: #000;" bgcolor="#bde8f9">Jun</td>
+														                <td style="text-align: center; font-size: 10px; width: 5%; color: #000;" bgcolor="#bde8f9">Jul</td>						             
+														                <td style="text-align: center; font-size: 10px; width: 5%; color: #000;" bgcolor="#bde8f9">Ago</td>
+														                <td style="text-align: center; font-size: 10px; width: 5%; color: #000;" bgcolor="#bde8f9">Sept</td>
+														                <td style="text-align: center; font-size: 10px; width: 5%; color: #000;" bgcolor="#bde8f9">Oct</td>
+														                <td style="text-align: center; font-size: 10px; width: 5%; color: #000;" bgcolor="#bde8f9">Nov</td>
+														                <td style="text-align: center; font-size: 10px; width: 5%; color: #000;" bgcolor="#bde8f9">Dic</td>
+														                <td style="text-align: center; font-size: 10px; width: 15%; color: #000;" bgcolor="#bde8f9">Total</td>	
+														            </tr>							         
+																</thead>
+																<tbody id="cuerpoLiquidacionDetalle">	
+																															            
+														            																
+																</tbody>
+															</table>															
+														</div> 
+														<div class="form-group col-sm-12">							                            
+							                               	<center><a href="" id="volverLiquidacion"><i><img src="../../assets/images/volver.png" alt=""></i> Volver</a></center>																
+							                            </div>                        																			
 													</div><!-- /.widget-main -->
 												</div><!-- /.widget-body -->
 											</div><!-- /.widget-box -->									
@@ -362,7 +706,87 @@
 											<div class="widget-body">
 												<div class="widget-main">
 													<div class="row">
-														                       																			
+														<div class="form-horizontal">
+														 	<table>
+														 		<tr>														 			
+														 			<td style="width: 1000px; height: 0px" colspan="2">
+														 				<div class="form-group col-sm-12">
+											                               	<label for="socio" class="col-md-5 control-label" style='text-align: right; font-size: 11.5px;'><strong>Año a Procesar:</strong></label>
+											                               	<div class="col-md-3" id="añoProcesar">
+											                            		                  		               
+											                               	</div>	                               
+								                            			</div>
+														 			</td>											 			
+														 		</tr>
+														 		<tr>														 																	 		
+														 			<td style="width: 500px; height: 0px">
+														 				<div class="form-group col-sm-12">                   	
+											                               	<label for="socio" class="col-md-5 control-label" style='text-align: center; font-size: 11.5px;'><strong>Mes Inicial:</strong></label>
+											                               	<div class="col-md-6">
+											                            		<select class="form-control" id="param_mes_inicial" name="param_mes_inicial">			                            
+											                            			<option value="1">Enero</option>
+											                            			<option value="2">Febrero</option>
+											                            			<option value="3">Marzo</option>
+											                            			<option value="4">Abril</option>
+											                            			<option value="5">Mayo</option>
+											                            			<option value="6">Junio</option>
+											                            			<option value="7">Julio</option>
+											                            			<option value="8">Agosto</option>
+											                            			<option value="9">Septiembre</option>
+											                            			<option value="10">Octubre</option>
+											                            			<option value="11">Noviembre</option>
+											                            			<option value="12">Diciembre</option>
+											                            		</select>                      		                
+											                               	</div>
+								                            			</div>
+														 			</td>
+														 			<td style="width: 500px; height: 0px">
+														 				<div class="form-group col-sm-12">                   	
+											                               	<label for="socio" class="col-md-5 control-label" style='text-align: center; font-size: 11.5px;'><strong>Mes Final:</strong></label>
+											                               	<div class="col-md-6">
+											                            		<select class="form-control" id="param_mes_final" name="param_mes_final">
+											                            			<option value="1">Enero</option>
+											                            			<option value="2">Febrero</option>
+											                            			<option value="3">Marzo</option>
+											                            			<option value="4">Abril</option>
+											                            			<option value="5">Mayo</option>
+											                            			<option value="6">Junio</option>
+											                            			<option value="7">Julio</option>
+											                            			<option value="8">Agosto</option>
+											                            			<option value="9">Septiembre</option>
+											                            			<option value="10">Octubre</option>
+											                            			<option value="11">Noviembre</option>
+											                            			<option value="12">Diciembre</option>
+											                            		</select>                      		                
+											                               	</div>
+								                            			</div>
+														 			</td>														 			
+														 		</tr>
+														 	</table>													                       
+														</div>
+														<div class="form-group col-sm-12">							                   
+							                               	<center><a href="" id="listarRecibos"><i><img src="../../assets/images/tables.png" alt=""></i> Listar</a></center>										
+							                            </div> 
+														<div>
+															<table id="tablaRecibos" class="table table-striped table-bordered">
+																<thead>																										
+														            <tr>
+														                <td style="text-align: center; font-size: 10px; width: 3%; color: #000; height: 5px" bgcolor="#bde8f9">#</td>
+														                <td style="text-align: center; font-size: 10px; width: 3%; color: #000; height: 5px" bgcolor="#bde8f9">Código</td>
+														                <td style="text-align: center; font-size: 10px; width: 20%; color: #000; height: 5px" bgcolor="#bde8f9">Año</td>
+														                <td style="text-align: center; font-size: 10px; width: 10%; color: #000; height: 5px" bgcolor="#bde8f9">Mes</td>
+														                <td style="text-align: center; font-size: 10px; width: 8%; color: #000; height: 5px" bgcolor="#bde8f9">Recibos</td>	
+														                <td style="text-align: center; font-size: 10px; width: 5%; color: #000; height: 5px" bgcolor="#bde8f9">Estado</td>
+														                <td style="text-align: center; font-size: 10px; width: 5%; color: #000; height: 5px" bgcolor="#bde8f9">Opciones</td>          
+
+														            </tr>							         
+																</thead>
+																<tbody id="cuerpoRecibos">	
+																															            
+														            																
+																</tbody>
+															</table>															
+														</div> 	                       																			
 													</div><!-- /.widget-main -->
 												</div><!-- /.widget-body -->
 											</div><!-- /.widget-box -->									
@@ -399,7 +823,6 @@
 								                               	<div class="col-md-3" id="tipoPago">
 								                            		                       		                
 								                               	</div>	
-
 								                            </div>
 								                            <div class="form-group col-sm-12">							                            
 								                               	<label for="socio" class="col-md-1 control-label" style='text-align: left; font-size: 11.5px;'><strong>Cajero:</strong></label>
@@ -433,7 +856,7 @@
 														                <td style="text-align: center; font-size: 10px; width: 10%; color: #000;" bgcolor="#bde8f9">Operación</td>
 														                <td style="text-align: center; font-size: 10px; width: 10%; color: #000;" bgcolor="#bde8f9">Monto (S/)</td><td style="text-align: center; font-size: 10px; width: 10%; color: #000;" bgcolor="#bde8f9">Recibo Usado</td>														                
 														                <td style="text-align: center; font-size: 10px; width: 5%; color: #000;" bgcolor="#bde8f9">Copias</td>	
-														                <td style="text-align: center; font-size: 10px; width: 20%; color: #000;" bgcolor="#bde8f9">Detalles</td>	
+														                <td style="text-align: center; font-size: 10px; width: 20%; color: #000;" bgcolor="#bde8f9">Opciones</td>	
 
 														            </tr>							         
 																</thead>
@@ -649,6 +1072,8 @@
 		<script src="../default/assets/js/jquery.flot.min.js"></script>
 		<script src="../default/assets/js/jquery.flot.pie.min.js"></script>
 		<script src="../default/assets/js/jquery.flot.resize.min.js"></script>
+		<script src="../default/assets/js/jquery.dataTables.min.js"></script>
+	    <script src="../default/assets/js/jquery.dataTables.bootstrap.min.js"></script>
 
 		<!-- ace scripts -->
 		<script src="../default/assets/js/ace-elements.min.js"></script>
