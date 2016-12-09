@@ -63,10 +63,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Program Files\Microsoft Visual Studio 14.0\ReportViewer\Microsoft.ReportViewer.WebForms.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Program Files\Microsoft Visual Studio 14.0\ReportViewer\Microsoft.ReportViewer.WinForms.dll</HintPath>
-    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -1235,6 +1232,12 @@
     <Compile Include="Layout\5-Reportes-Gestion\Rep_FacturadoCobrado\Frm_FacturadoCobrado.Designer.cs">
       <DependentUpon>Frm_FacturadoCobrado.cs</DependentUpon>
     </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_Gerencial\Frm_RepGerencial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_Gerencial\Frm_RepGerencial.Designer.cs">
+      <DependentUpon>Frm_RepGerencial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Layout\5-Reportes-Gestion\Rep_GrandesBaseImponible\Frm_GrandeBaseImponible.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1963,6 +1966,10 @@
       <DependentUpon>Frm_FacturadoCobrado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_FacturadoCobrado\Reporte_FacturadoCobrado.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_Gerencial\rpt_Emision.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_Gerencial\rpt_Fraccionamiento.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_Gerencial\rpt_IngresosMes.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_Gerencial\rpt_TipoPago.rdlc" />
     <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_GrandesBaseImponible\Frm_GrandeBaseImponible.resx">
       <DependentUpon>Frm_GrandeBaseImponible.cs</DependentUpon>
     </EmbeddedResource>

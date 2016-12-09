@@ -90,7 +90,7 @@ namespace SGR.WinApp.Sistema.Entorno.Usuario
             segu_Usuario.areas_codarea = (string)dgUsuario.SelectedRows[0].Cells["xUsuario_codArea"].Value.ToString().TrimEnd();
             segu_Usuario.Seguc_fFechaCreacion = (DateTime)dgUsuario.SelectedRows[0].Cells["xUsuario_fechaCreacion"].Value;
             segu_Usuario.Seguc_vLogin = (string)dgUsuario.SelectedRows[0].Cells["xUsuario_login"].Value.ToString().TrimEnd();
-            segu_Usuario.Seguc_password = (string)dgUsuario.SelectedRows[0].Cells["xUsuario_password"].Value.ToString().TrimEnd();
+            segu_Usuario.Seguc_password = "*****";//(string)dgUsuario.SelectedRows[0].Cells["xUsuario_password"].Value.ToString().TrimEnd();
             //segu_Usuario.Seguc_vLast = (string)dgUsuario.SelectedRows[0].Cells["xUsuario_last"].Value.ToString().TrimEnd();
             //segu_Usuario.Seguc_vSession = (string)dgUsuario.SelectedRows[0].Cells["xUsuario_Session"].Value.ToString().TrimEnd();
             segu_Usuario.Seguc_fFechaCese = (DateTime)dgUsuario.SelectedRows[0].Cells["xUsuario_fechaCese"].Value;

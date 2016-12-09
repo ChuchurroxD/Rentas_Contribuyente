@@ -97,6 +97,7 @@
     <Compile Include="Model\Repo_DetallePagos.cs" />
     <Compile Include="Model\Repo_estadistico2.cs" />
     <Compile Include="Model\Repo_FacturadoCobrado.cs" />
+    <Compile Include="Model\Repo_Gerencial.cs" />
     <Compile Include="Model\Repo_GrandesBasesImponibles.cs" />
     <Compile Include="Model\Repo_HojaResumen.cs" />
     <Compile Include="Model\Mant_Mes.cs" />

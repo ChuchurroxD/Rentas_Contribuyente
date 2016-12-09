@@ -143,6 +143,7 @@
     <Compile Include="Repository\Repo_CompensacionFaltanteRepository.cs" />
     <Compile Include="Repository\Repo_DetallePagosRepository.cs" />
     <Compile Include="Repository\Repo_FacturadoCobradoRepository.cs" />
+    <Compile Include="Repository\Repo_GerencialRepository.cs" />
     <Compile Include="Repository\Repo_GrandesBasesImponiblesRepository.cs" />
     <Compile Include="Repository\Repo_HojaResumenRepository.cs" />
     <Compile Include="Repository\Repo_PlanillaIngresosRepository.cs" />
@@ -238,6 +239,7 @@
     <Compile Include="Service\Repo_CompensacionFaltanteDataService.cs" />
     <Compile Include="Service\Repo_DetallePagosDataService.cs" />
     <Compile Include="Service\Repo_FacturadoCobradoDataService.cs" />
+    <Compile Include="Service\Repo_GerencialDataService.cs" />
     <Compile Include="Service\Repo_GrandesBasesImponiblesDataService.cs" />
     <Compile Include="Service\Repo_HojaResumenService.cs" />
     <Compile Include="Service\Repo_PlanillaIngresosDataService.cs" />

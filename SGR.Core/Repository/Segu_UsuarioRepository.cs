@@ -10,7 +10,7 @@ using System.Data.Common;
 public class Segu_UsuarioRepository
 {
     private const String nombreprocedimiento = "_Segu_Usuario";
-    private const String nombreprocedimiento2 = "_seguUsuario";
+    private const String nombreprocedimiento2 = "_SeguUsuario";
     private const String NombreTabla = "Segu_Usuario";
     private Database db = DatabaseFactory.CreateDatabase();
 
@@ -43,23 +43,25 @@ public class Segu_UsuarioRepository
         }
     }
 
-    public Segu_Usuario validarUsuario(Segu_Usuario x)
+    public Segu_Usuario validarUsuario( Segu_Usuario x)
     {
         try
         {
 
-            Segu_Usuario usuario = null;
-            DbCommand SQL = db.GetSqlStringCommand("select per_codigo,(nombre+' '+apellido)as nombre from [dbo].[usuario] where per_login =@per_login and per_pass=@per_pass");
-            db.AddInParameter(SQL, "per_login", DbType.String, x.Seguc_vLogin);
-            db.AddInParameter(SQL, "per_pass", DbType.String, x.Seguc_password);
+            Segu_Usuario usuario=null;
+            //DbCommand SQL = db.GetSqlStringCommand ("select per_codigo,(nombre+' '+apellido)as nombre from [dbo].[usuario] where per_login =@per_login and per_pass=@per_pass");
+            DbCommand SQL = db.GetStoredProcCommand(nombreprocedimiento2);
+            db.AddInParameter(SQL, "per_login", DbType.String , x.Seguc_vLogin );
+            db.AddInParameter(SQL, "per_pass", DbType.String , x .Seguc_password);
+            db.AddInParameter(SQL, "tipoConsulta", DbType.Byte, 15);
             using (var lector = db.ExecuteReader(SQL))
             {
                 while (lector.Read())
                 {
-                    usuario = new Segu_Usuario
+                    usuario=  new Segu_Usuario
                     {
-                        per_codigo = lector.GetString(0),
-                        Seguc_vNombre = lector.GetString(1)
+                        per_codigo  = lector.GetString (0) ,
+                        Seguc_vNombre= lector.GetString(1)
                     };
                 }
             }

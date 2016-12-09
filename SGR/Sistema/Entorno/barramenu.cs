@@ -13,6 +13,7 @@ using SGR.Core.Service;
 using System.Reflection;
 using SGR.WinApp.Layout._1_Tablas_Maestras.Usuarios;
 using SGR.Entity;
+using SGR.WinApp.Layout._5_Reportes_Gestion.Rep_Gerencial;
 
 namespace SGR.WinApp.Sistema.Entorno
 {
@@ -91,9 +92,7 @@ namespace SGR.WinApp.Sistema.Entorno
 
             Conf_GrupoDataService Conf_GrupoDataService = new Conf_GrupoDataService();
             List<Conf_Grupo> Modulos = Conf_GrupoDataService.listarxrol  (GlobalesV1 .Global_int_idrol );
-
-
-                     
+                                
          
 
             foreach (Conf_Grupo item in  Modulos)
@@ -122,15 +121,28 @@ namespace SGR.WinApp.Sistema.Entorno
             if (DesignMode == false)
             {
                 LoadModulos(this.valor);
-            }
-        
+            }       
         
         }
 
         private void outlookPanelBar_ButtonClicked(object sender, EventArgs e)
         {
-            lblPanelTitle.Text = outlookPanelBar.SelectedButton.Text;
-            LoadOperacionesByModulo(Int16.Parse(outlookPanelBar.SelectedButton.Code));
+            if (Int16.Parse(outlookPanelBar.SelectedButton.Code) == 12)
+            {
+                if (Cursor.Current == Cursors.WaitCursor)
+                    return;
+                Cursor.Current = Cursors.WaitCursor;
+                Frm_RepGerencial frm_RepGerencial = new Frm_RepGerencial();
+                frm_RepGerencial.StartPosition = FormStartPosition.CenterScreen;
+                frm_RepGerencial.ShowDialog();
+                //Frm_Liqui.StartPosition = FormStartPosition.CenterParent;
+                //Frm_Liqui.ShowDialog();
+            }
+            else
+            {
+                lblPanelTitle.Text = outlookPanelBar.SelectedButton.Text;
+                LoadOperacionesByModulo(Int16.Parse(outlookPanelBar.SelectedButton.Code));
+            }            
         }
 
         private void LoadOperacionesByModulo(Int32 code)
