@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B9DEE4B9-5D1E-43FA-A689-8E5EB5029539}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SGR.Entity</RootNamespace>
+    <AssemblyName>SGR.Entity</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Model\Coa_coactivo_cta.cs" />
+    <Compile Include="Model\Coa_expediente_coactivo.cs" />
+    <Compile Include="Model\Conf_RolOficina.cs" />
+    <Compile Include="Model\Conf_RolTarea.cs" />
+    <Compile Include="Model\Conf_Tarea.cs" />
+    <Compile Include="Model\Emi_Masivo.cs" />
+    <Compile Include="Model\For_Masivo.cs" />
+    <Compile Include="Model\Frac_Cronogramas.cs" />
+    <Compile Include="Model\Frac_CuentaFraccionada.cs" />
+    <Compile Include="Model\Frac_DeudaFraccionada.cs" />
+    <Compile Include="Model\Frac_DeudaFraccionadaDetallada.cs" />
+    <Compile Include="Model\Frac_Fraccionamientos.cs" />
+    <Compile Include="Model\Liqu_Compensacion.cs" />
+    <Compile Include="Model\Liqu_CompensacionDetalle.cs" />
+    <Compile Include="Model\Liqu_LiquidacionTributos.cs" />
+    <Compile Include="Model\Mant_Cont.cs" />
+    <Compile Include="Model\Mant_GrupoImpresion.cs" />
+    <Compile Include="Model\Mant_Historial.cs" />
+    <Compile Include="Model\Mant_Inafectacion.cs" />
+    <Compile Include="Model\Mant_RecaudacionPorOficina.cs" />
+    <Compile Include="Model\Mant_Relacion_Contribuyente.cs" />
+    <Compile Include="Model\Mant_Segmentacion.cs" />
+    <Compile Include="Model\Mant_TablaArancel.cs" />
+    <Compile Include="Model\Mant_ValoresArbitrios.cs" />
+    <Compile Include="Model\Mult_Multas.cs" />
+    <Compile Include="Model\Pago_CuentaCorriente.cs" />
+    <Compile Include="Model\Pago_OtrosPagos.cs" />
+    <Compile Include="Model\Pago_Pago.cs" />
+    <Compile Include="Model\Pago_PagoDetallado.cs" />
+    <Compile Include="Model\Pago_PagoDetalleTributo.cs" />
+    <Compile Include="Model\Pago_PagoXDeuda.cs" />
+    <Compile Include="Model\Pago_ReciboPago.cs" />
+    <Compile Include="Model\Pred_Anulacion.cs" />
+    <Compile Include="Model\Pred_Certificado_Alcabala.cs" />
+    <Compile Include="Model\Pred_Fiscalizacion.cs" />
+    <Compile Include="Model\Pred_Predios.cs" />
+    <Compile Include="Model\Pred_PrredioArbitrio.cs" />
+    <Compile Include="Model\Pred_ResumenDeuda.cs" />
+    <Compile Include="Model\Pred_SegmentacionRango.cs" />
+    <Compile Include="Model\Pred_Segmentacion_Contribuyente.cs" />
+    <Compile Include="Model\Pred_UsoGeneral.cs" />
+    <Compile Include="Model\Pred_ValidacionPredioArbitrio.cs" />
+    <Compile Include="Model\Proc_CuentaCorritente.cs" />
+    <Compile Include="Model\Reci_Recibo.cs" />
+    <Compile Include="Model\Reci_ReciboDetalle.cs" />
+    <Compile Include="Model\Reci_ReciboDetalleReporte.cs" />
+    <Compile Include="Model\RepoGrandesDeudores.cs" />
+    <Compile Include="Model\RepoValoresCobranza.cs" />
+    <Compile Include="Model\Repo_CajaResumen.cs" />
+    <Compile Include="Model\Repo_CompensacionFaltante.cs" />
+    <Compile Include="Model\Repo_DetallePagos.cs" />
+    <Compile Include="Model\Repo_estadistico2.cs" />
+    <Compile Include="Model\Repo_FacturadoCobrado.cs" />
+    <Compile Include="Model\Repo_GrandesBasesImponibles.cs" />
+    <Compile Include="Model\Repo_HojaResumen.cs" />
+    <Compile Include="Model\Mant_Mes.cs" />
+    <Compile Include="Model\Frac_Cronograma.cs" />
+    <Compile Include="Model\Frac_CronogramaDetalle.cs" />
+    <Compile Include="Model\Frac_Fraccionamiento.cs" />
+    <Compile Include="Model\Frac_FraccionamientoDetalle.cs" />
+    <Compile Include="Model\Frac_FraccionamientoListado.cs" />
+    <Compile Include="Model\Frac_FraccionamientoListado2.cs" />
+    <Compile Include="Model\Frac_FraccionamientoParametros.cs" />
+    <Compile Include="Model\Mant_Banco.cs" />
+    <Compile Include="Model\Mant_ParametroMes.cs" />
+    <Compile Include="Model\Mant_ArancelRustico.cs" />
+    <Compile Include="Model\Mant_Depreciacion.cs" />
+    <Compile Include="Model\Mant_Parametros.cs" />
+    <Compile Include="Model\Mant_TasaCambio.cs" />
+    <Compile Include="Model\Pago_CajeroCaja.cs" />
+    <Compile Include="Model\Combos\Mes.cs" />
+    <Compile Include="Model\Combos\Pago_Persona.cs" />
+    <Compile Include="Model\Liqu_DeudaDetalleMonto.cs" />
+    <Compile Include="Model\Liqu_DeudaDetalleTributo.cs" />
+    <Compile Include="Model\Liqu_Liquidacion.cs" />
+    <Compile Include="Model\Liqu_LiquidacionDetalle.cs" />
+    <Compile Include="Model\Liqu_TributosAfectos.cs" />
+    <Compile Include="Model\Liqu_Deuda.cs" />
+    <Compile Include="Model\Pago_Cajero.cs" />
+    <Compile Include="Model\Pago_Oficina.cs" />
+    <Compile Include="Model\Pago_Caja.cs" />
+    <Compile Include="Model\Mant_Arancel.cs" />
+    <Compile Include="Model\Mant_Contribuyente.cs" />
+    <Compile Include="Model\Mant_CuadroValores.cs" />
+    <Compile Include="Model\Mant_Junta_Via.cs" />
+    <Compile Include="Model\Mant_Periodo.cs" />
+    <Compile Include="Model\Mant_Per_Cont.cs" />
+    <Compile Include="Model\Orga_Area.cs" />
+    <Compile Include="Model\Pago_Pagos.cs" />
+    <Compile Include="Model\Pago_PagosDetalle.cs" />
+    <Compile Include="Model\Pago_PagosDetalleTributo.cs" />
+    <Compile Include="Model\Pago_Parametros.cs" />
+    <Compile Include="Model\Pred_Descuentos_Exoneracion.cs" />
+    <Compile Include="Model\Pred_DetalleExoneracion.cs" />
+    <Compile Include="Model\Pred_OtrasInstalaciones.cs" />
+    <Compile Include="Model\Pred_Pisos.cs" />
+    <Compile Include="Model\Pred_Predio.cs" />
+    <Compile Include="Model\Pred_PredioContribuyente.cs" />
+    <Compile Include="Model\Pred_Sector.cs" />
+    <Compile Include="Model\Pred_TipoSector.cs" />
+    <Compile Include="Model\Pred_TipoVia.cs" />
+    <Compile Include="Model\Pred_Vias.cs" />
+    <Compile Include="Model\Repo_PlanillaIngresos.cs" />
+    <Compile Include="Model\Repo_PorcentajePredios.cs" />
+    <Compile Include="Model\Repo_PredioRustico.cs" />
+    <Compile Include="Model\Repo_PredioUrbano.cs" />
+    <Compile Include="Model\Rep_Estadistico1.cs" />
+    <Compile Include="Model\Segu_Permiso.cs" />
+    <Compile Include="Model\Segu_RolUsuario.cs" />
+    <Compile Include="Model\Conf_Rol.cs" />
+    <Compile Include="Model\Conf_Ubicacion.cs" />
+    <Compile Include="Model\Mant_Persona.cs" />
+    <Compile Include="Model\Conf_UnidadNegocio.cs" />
+    <Compile Include="Model\Conf_Grupo.cs" />
+    <Compile Include="Model\Conf_Multitabla.cs" />
+    <Compile Include="Model\Segu_MenuOperaciones.cs" />
+    <Compile Include="Model\Segu_Modulo.cs" />
+    <Compile Include="Model\Segu_Usuario.cs" />
+    <Compile Include="Model\Pred_Tributo.cs" />
+    <Compile Include="Model\Trib_ClasificadorIngresos.cs" />
+    <Compile Include="Model\Trib_FormatoCampos.cs" />
+    <Compile Include="Model\Trib_TipoFormato.cs" />
+    <Compile Include="Model\Trib_TipoFraccionamiento.cs" />
+    <Compile Include="Model\Trib_TributoFraccionamiento.cs" />
+    <Compile Include="Model\Trib_FormatoValor.cs" />
+    <Compile Include="Model\Valo_ListadoDeudores.cs" />
+    <Compile Include="Model\Valo_OrdenPago.cs" />
+    <Compile Include="Model\Valo_ResolucionDeterminacionArbitrios.cs" />
+    <Compile Include="Model\Valo_ResolucionDeterminacionPredial.cs" />
+    <Compile Include="Model\Valo_ValoresCobranza.cs" />
+    <Compile Include="Model\Valo_ValoresCobranzaDetalleContribuyente.cs" />
+    <Compile Include="Model\Valo_ValoresCobranzaDetalleDeuda.cs" />
+    <Compile Include="Model\Valo_ValoresCobranzaDetalleJunta.cs" />
+    <Compile Include="Model\Valo_ValoresCobranzaReporte.cs" />
+    <Compile Include="Model\Valo_ValoresCobranzas.cs" />
+    <Compile Include="Model\Pred_ConstanciaNoDebe.cs" />
+    <Compile Include="Model\Valo_ValorTipoValor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repo_DetallePagos.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

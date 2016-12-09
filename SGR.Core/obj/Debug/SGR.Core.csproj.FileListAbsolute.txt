@@ -1,0 +1,149 @@
+D:\sgr_11_05_2016\SGR\SGR.Core\bin\Debug\SGR.Core.dll
+D:\sgr_11_05_2016\SGR\SGR.Core\bin\Debug\SGR.Core.pdb
+D:\sgr_11_05_2016\SGR\SGR.Core\bin\Debug\SGR.Entity.dll
+D:\sgr_11_05_2016\SGR\SGR.Core\bin\Debug\SGR.Entity.pdb
+D:\sgr_11_05_2016\SGR\SGR.Core\obj\Debug\SGR.Core.csprojResolveAssemblyReference.cache
+D:\sgr_11_05_2016\SGR\SGR.Core\obj\Debug\SGR.Core.dll
+D:\sgr_11_05_2016\SGR\SGR.Core\obj\Debug\SGR.Core.pdb
+D:\proyecto-sgr\Proyecto Ultimo\2\SGR_ALL\CodigoFuente\SGR\SGR.Core\bin\Debug\SGR.Core.dll
+D:\proyecto-sgr\Proyecto Ultimo\2\SGR_ALL\CodigoFuente\SGR\SGR.Core\bin\Debug\SGR.Core.pdb
+D:\proyecto-sgr\Proyecto Ultimo\2\SGR_ALL\CodigoFuente\SGR\SGR.Core\bin\Debug\SGR.Entity.dll
+D:\proyecto-sgr\Proyecto Ultimo\2\SGR_ALL\CodigoFuente\SGR\SGR.Core\bin\Debug\SGR.Entity.pdb
+D:\proyecto-sgr\Proyecto Ultimo\2\SGR_ALL\CodigoFuente\SGR\SGR.Core\obj\Debug\SGR.Core.csprojResolveAssemblyReference.cache
+D:\proyecto-sgr\Proyecto Ultimo\2\SGR_ALL\CodigoFuente\SGR\SGR.Core\obj\Debug\SGR.Core.dll
+D:\proyecto-sgr\Proyecto Ultimo\2\SGR_ALL\CodigoFuente\SGR\SGR.Core\obj\Debug\SGR.Core.pdb
+D:\municipalidad moche version 3\SGR_ALL\CodigoFuente\SGR\SGR.Core\bin\Debug\SGR.Core.dll
+D:\municipalidad moche version 3\SGR_ALL\CodigoFuente\SGR\SGR.Core\bin\Debug\SGR.Core.pdb
+D:\municipalidad moche version 3\SGR_ALL\CodigoFuente\SGR\SGR.Core\bin\Debug\SGR.Entity.dll
+D:\municipalidad moche version 3\SGR_ALL\CodigoFuente\SGR\SGR.Core\bin\Debug\SGR.Entity.pdb
+D:\municipalidad moche version 3\SGR_ALL\CodigoFuente\SGR\SGR.Core\obj\Debug\SGR.Core.csprojResolveAssemblyReference.cache
+D:\municipalidad moche version 3\SGR_ALL\CodigoFuente\SGR\SGR.Core\obj\Debug\SGR.Core.dll
+D:\municipalidad moche version 3\SGR_ALL\CodigoFuente\SGR\SGR.Core\obj\Debug\SGR.Core.pdb
+D:\proyecto-sgr\Proyecto Ultimo\3\SGR_ALL\CodigoFuente\SGR\SGR.Core\bin\Debug\SGR.Core.dll
+D:\proyecto-sgr\Proyecto Ultimo\3\SGR_ALL\CodigoFuente\SGR\SGR.Core\bin\Debug\SGR.Core.pdb
+D:\proyecto-sgr\Proyecto Ultimo\3\SGR_ALL\CodigoFuente\SGR\SGR.Core\bin\Debug\SGR.Entity.dll
+D:\proyecto-sgr\Proyecto Ultimo\3\SGR_ALL\CodigoFuente\SGR\SGR.Core\bin\Debug\SGR.Entity.pdb
+D:\proyecto-sgr\Proyecto Ultimo\3\SGR_ALL\CodigoFuente\SGR\SGR.Core\obj\Debug\SGR.Core.csprojResolveAssemblyReference.cache
+D:\proyecto-sgr\Proyecto Ultimo\3\SGR_ALL\CodigoFuente\SGR\SGR.Core\obj\Debug\SGR.Core.dll
+D:\proyecto-sgr\Proyecto Ultimo\3\SGR_ALL\CodigoFuente\SGR\SGR.Core\obj\Debug\SGR.Core.pdb
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SISTEMA GR v04\SGR_ALL\CodigoFuente\SGR\SGR.Core\bin\Debug\SGR.Core.dll
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SISTEMA GR v04\SGR_ALL\CodigoFuente\SGR\SGR.Core\bin\Debug\SGR.Core.pdb
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SISTEMA GR v04\SGR_ALL\CodigoFuente\SGR\SGR.Core\bin\Debug\SGR.Entity.dll
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SISTEMA GR v04\SGR_ALL\CodigoFuente\SGR\SGR.Core\bin\Debug\SGR.Entity.pdb
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SISTEMA GR v04\SGR_ALL\CodigoFuente\SGR\SGR.Core\obj\Debug\SGR.Core.csprojResolveAssemblyReference.cache
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SISTEMA GR v04\SGR_ALL\CodigoFuente\SGR\SGR.Core\obj\Debug\SGR.Core.dll
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SISTEMA GR v04\SGR_ALL\CodigoFuente\SGR\SGR.Core\obj\Debug\SGR.Core.pdb
+D:\proyecto-sgr\sgr2016\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Core.dll
+D:\proyecto-sgr\sgr2016\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Core.pdb
+D:\proyecto-sgr\sgr2016\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Entity.dll
+D:\proyecto-sgr\sgr2016\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Entity.pdb
+D:\proyecto-sgr\sgr2016\SGR2016\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.csprojResolveAssemblyReference.cache
+D:\proyecto-sgr\sgr2016\SGR2016\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.dll
+D:\proyecto-sgr\sgr2016\SGR2016\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.pdb
+D:\municipalidad moche version 4\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Core.dll
+D:\municipalidad moche version 4\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Core.pdb
+D:\municipalidad moche version 4\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Entity.dll
+D:\municipalidad moche version 4\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Entity.pdb
+D:\municipalidad moche version 4\SGR2016\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.csprojResolveAssemblyReference.cache
+D:\municipalidad moche version 4\SGR2016\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.dll
+D:\municipalidad moche version 4\SGR2016\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.pdb
+C:\municipalidad de moche 4\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Core.dll
+C:\municipalidad de moche 4\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Core.pdb
+C:\municipalidad de moche 4\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Entity.dll
+C:\municipalidad de moche 4\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Entity.pdb
+C:\municipalidad de moche 4\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.csprojResolveAssemblyReference.cache
+C:\municipalidad de moche 4\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.dll
+C:\municipalidad de moche 4\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.pdb
+D:\municipalidad moche version 5.1\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Core.dll
+D:\municipalidad moche version 5.1\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Core.pdb
+D:\municipalidad moche version 5.1\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Entity.dll
+D:\municipalidad moche version 5.1\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Entity.pdb
+D:\municipalidad moche version 5.1\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.csprojResolveAssemblyReference.cache
+D:\municipalidad moche version 5.1\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.dll
+D:\municipalidad moche version 5.1\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.pdb
+D:\municipalidad moche version 4\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Core.dll
+D:\municipalidad moche version 4\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Core.pdb
+D:\municipalidad moche version 4\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Entity.dll
+D:\municipalidad moche version 4\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Entity.pdb
+D:\municipalidad moche version 4\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.csprojResolveAssemblyReference.cache
+D:\municipalidad moche version 4\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.dll
+D:\municipalidad moche version 4\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.pdb
+D:\Dropbox\SGR\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Core.dll
+D:\Dropbox\SGR\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Core.pdb
+D:\Dropbox\SGR\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Entity.dll
+D:\Dropbox\SGR\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Dropbox\SGR\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\WindowsControls.VB.dll
+D:\Dropbox\SGR\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Entity.pdb
+D:\Dropbox\SGR\SGR2016\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.csprojResolveAssemblyReference.cache
+D:\Dropbox\SGR\SGR2016\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.dll
+D:\Dropbox\SGR\SGR2016\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.pdb
+D:\06_06_16\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Core.dll
+D:\06_06_16\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Core.pdb
+D:\06_06_16\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Entity.dll
+D:\06_06_16\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Entity.pdb
+D:\06_06_16\SGR2016\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.csprojResolveAssemblyReference.cache
+D:\06_06_16\SGR2016\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.dll
+D:\06_06_16\SGR2016\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.pdb
+D:\SGR 2\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Core.dll
+D:\SGR 2\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Core.pdb
+D:\SGR 2\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Entity.dll
+D:\SGR 2\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Entity.pdb
+D:\SGR 2\SGR2016\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.csprojResolveAssemblyReference.cache
+D:\SGR 2\SGR2016\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.dll
+D:\SGR 2\SGR2016\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.pdb
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SISTEMA GR v05\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Core.dll
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SISTEMA GR v05\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Core.pdb
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SISTEMA GR v05\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SISTEMA GR v05\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SISTEMA GR v05\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SISTEMA GR v05\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SISTEMA GR v05\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SISTEMA GR v05\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Entity.dll
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SISTEMA GR v05\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SISTEMA GR v05\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Entity.pdb
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SISTEMA GR v05\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SISTEMA GR v05\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SISTEMA GR v05\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.pdb
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SISTEMA GR v05\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SISTEMA GR v05\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SISTEMA GR v05\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\Microsoft.Practices.Unity.pdb
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SISTEMA GR v05\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\Microsoft.Practices.Unity.Interception.pdb
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SISTEMA GR v05\SGR2016\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.csprojResolveAssemblyReference.cache
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SISTEMA GR v05\SGR2016\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.dll
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SISTEMA GR v05\SGR2016\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.pdb
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SGR ULTIMO\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Core.dll
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SGR ULTIMO\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Core.pdb
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SGR ULTIMO\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\DgvFilterPopup.dll
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SGR ULTIMO\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Entity.dll
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SGR ULTIMO\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SGR ULTIMO\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\WindowsControls.VB.dll
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SGR ULTIMO\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Entity.pdb
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SGR ULTIMO\SGR2016\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.csprojResolveAssemblyReference.cache
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SGR ULTIMO\SGR2016\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.dll
+C:\Practicas\MUNICIPALIDAD - MOCHE\SOFTWARE VISUAL STUDIO\SGR ULTIMO\SGR2016\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.pdb
+E:\_sgr_\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Core.dll
+E:\_sgr_\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Core.pdb
+E:\_sgr_\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\_sgr_\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\_sgr_\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\_sgr_\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\Microsoft.Practices.Unity.dll
+E:\_sgr_\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+E:\_sgr_\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Entity.dll
+E:\_sgr_\SGR2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Entity.pdb
+E:\_sgr_\SGR2016\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.csprojResolveAssemblyReference.cache
+E:\_sgr_\SGR2016\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.dll
+E:\_sgr_\SGR2016\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.pdb
+C:\sgr_23_08_2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Core.dll
+C:\sgr_23_08_2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Core.pdb
+C:\sgr_23_08_2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Entity.dll
+C:\sgr_23_08_2016\Codigo2016\SGR\SGR.Core\bin\Debug\SGR.Entity.pdb
+C:\sgr_23_08_2016\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.csprojResolveAssemblyReference.cache
+C:\sgr_23_08_2016\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.dll
+C:\sgr_23_08_2016\Codigo2016\SGR\SGR.Core\obj\Debug\SGR.Core.pdb
+D:\PROYECTO_MOCHE\SGR\SGR.Core\bin\Debug\SGR.Core.dll
+D:\PROYECTO_MOCHE\SGR\SGR.Core\bin\Debug\SGR.Core.pdb
+D:\PROYECTO_MOCHE\SGR\SGR.Core\bin\Debug\SGR.Entity.dll
+D:\PROYECTO_MOCHE\SGR\SGR.Core\bin\Debug\SGR.Entity.pdb
+D:\PROYECTO_MOCHE\SGR\SGR.Core\obj\Debug\SGR.Core.csprojResolveAssemblyReference.cache
+D:\PROYECTO_MOCHE\SGR\SGR.Core\obj\Debug\SGR.Core.dll
+D:\PROYECTO_MOCHE\SGR\SGR.Core\obj\Debug\SGR.Core.pdb

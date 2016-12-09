@@ -1,0 +1,2236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{73D24514-55F7-4EE0-93D7-313C25F93DCC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SGR.WinApp</RootNamespace>
+    <AssemblyName>SGR.WinApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DgvFilterPopup">
+      <HintPath>..\..\..\..\..\DgvFilterPopup.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\librerias\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\librerias\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\librerias\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\librerias\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\librerias\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\Microsoft Visual Studio 14.0\ReportViewer\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\Microsoft Visual Studio 14.0\ReportViewer\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>..\..\..\..\..\SISTEMA TRABAJADO - V01\SGR\SGR.Librerias\entorno\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsControls.VB">
+      <HintPath>..\..\..\..\..\WindowsControls.VB.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalesV1.cs" />
+    <Compile Include="Layout\1-Tablas-Maestras\ArancelRustico\Frm_Arancel_Rustico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\ArancelRustico\Frm_Arancel_Rustico.Designer.cs">
+      <DependentUpon>Frm_Arancel_Rustico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\ArancelRustico\Frm_AranceRustico_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\ArancelRustico\Frm_AranceRustico_Detalle.Designer.cs">
+      <DependentUpon>Frm_AranceRustico_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Arancel\Frm_Arancel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Arancel\Frm_Arancel.Designer.cs">
+      <DependentUpon>Frm_Arancel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Arancel\Frm_Arancel_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Arancel\Frm_Arancel_Detalle.Designer.cs">
+      <DependentUpon>Frm_Arancel_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Areas\Frm_Area.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Areas\Frm_Area.Designer.cs">
+      <DependentUpon>Frm_Area.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Areas\Frm_AreaDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Areas\Frm_AreaDetalle.Designer.cs">
+      <DependentUpon>Frm_AreaDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Bancos\Frm_Banco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Bancos\Frm_Banco.Designer.cs">
+      <DependentUpon>Frm_Banco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Bancos\Frm_BancoDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Bancos\Frm_BancoDetalle.Designer.cs">
+      <DependentUpon>Frm_BancoDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Cajas\Frm_Caja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Cajas\Frm_Caja.Designer.cs">
+      <DependentUpon>Frm_Caja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Cajas\Frm_Caja_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Cajas\Frm_Caja_Detalle.Designer.cs">
+      <DependentUpon>Frm_Caja_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\CajeroCajas\Frm_CajeroCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\CajeroCajas\Frm_CajeroCaja.Designer.cs">
+      <DependentUpon>Frm_CajeroCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\CajeroCajas\Frm_CajeroCajaDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\CajeroCajas\Frm_CajeroCajaDetalle.Designer.cs">
+      <DependentUpon>Frm_CajeroCajaDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Cajero\Frm_Cajero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Cajero\Frm_Cajero.Designer.cs">
+      <DependentUpon>Frm_Cajero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Cajero\Frm_CajeroDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Cajero\Frm_CajeroDetalle.Designer.cs">
+      <DependentUpon>Frm_CajeroDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\ClasificadorIngresos\Frm_ClasificadorIngresoDetallado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\ClasificadorIngresos\Frm_ClasificadorIngresoDetallado.Designer.cs">
+      <DependentUpon>Frm_ClasificadorIngresoDetallado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\ClasificadorIngresos\Frm_ClasificadorIngresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\ClasificadorIngresos\Frm_ClasificadorIngresos.Designer.cs">
+      <DependentUpon>Frm_ClasificadorIngresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Contribuyente\Frm_Contribuyent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Contribuyente\Frm_Contribuyent.Designer.cs">
+      <DependentUpon>Frm_Contribuyent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Contribuyente\Frm_Contribuyente_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Contribuyente\Frm_Contribuyente_Detalle.Designer.cs">
+      <DependentUpon>Frm_Contribuyente_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\CuadroValores\Frm_CuadroValores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\CuadroValores\Frm_CuadroValores.Designer.cs">
+      <DependentUpon>Frm_CuadroValores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\CuadroValores\Frm_CuadroValoresDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\CuadroValores\Frm_CuadroValoresDetalle.Designer.cs">
+      <DependentUpon>Frm_CuadroValoresDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Depreciaciones\Frm_Depreciacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Depreciaciones\Frm_Depreciacion.Designer.cs">
+      <DependentUpon>Frm_Depreciacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Depreciaciones\Frm_DepreciacionDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Depreciaciones\Frm_DepreciacionDetalle.Designer.cs">
+      <DependentUpon>Frm_DepreciacionDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\FormatoCampos\Frm_FormatoCampos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\FormatoCampos\Frm_FormatoCampos.Designer.cs">
+      <DependentUpon>Frm_FormatoCampos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\FormatoCampos\Frm_FormatoCamposDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\FormatoCampos\Frm_FormatoCamposDetalle.Designer.cs">
+      <DependentUpon>Frm_FormatoCamposDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\FormatoValor\Frm_TribFormatoValor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\FormatoValor\Frm_TribFormatoValor.Designer.cs">
+      <DependentUpon>Frm_TribFormatoValor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\FormatoValor\Trib_FormatoValorDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\FormatoValor\Trib_FormatoValorDetalle.Designer.cs">
+      <DependentUpon>Trib_FormatoValorDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\GrupoImpresion\Frm_GrupoImpresion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\GrupoImpresion\Frm_GrupoImpresion.Designer.cs">
+      <DependentUpon>Frm_GrupoImpresion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\GrupoImpresion\Frm_GrupoImpresionDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\GrupoImpresion\Frm_GrupoImpresionDetalle.Designer.cs">
+      <DependentUpon>Frm_GrupoImpresionDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Grupo\Frm_grupos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Grupo\Frm_grupos.Designer.cs">
+      <DependentUpon>Frm_grupos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Grupo\Frm_grupos_detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Grupo\Frm_grupos_detalle.Designer.cs">
+      <DependentUpon>Frm_grupos_detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Inafectacion\Frm_Inafectacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Inafectacion\Frm_Inafectacion.Designer.cs">
+      <DependentUpon>Frm_Inafectacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Inafectacion\Frm_Inafectacion_detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Inafectacion\Frm_Inafectacion_detalle.Designer.cs">
+      <DependentUpon>Frm_Inafectacion_detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Junta Via\Frm_Junta_Via.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Junta Via\Frm_Junta_Via.Designer.cs">
+      <DependentUpon>Frm_Junta_Via.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Junta Via\Frm_Junta_ViaDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Junta Via\Frm_Junta_ViaDetalle.Designer.cs">
+      <DependentUpon>Frm_Junta_ViaDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Oficina\Frm_Oficina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Oficina\Frm_Oficina.Designer.cs">
+      <DependentUpon>Frm_Oficina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Oficina\Frm_Oficina_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Oficina\Frm_Oficina_Detalle.Designer.cs">
+      <DependentUpon>Frm_Oficina_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\ParametroMes\Frm_ParametroMes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\ParametroMes\Frm_ParametroMes.Designer.cs">
+      <DependentUpon>Frm_ParametroMes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\ParametroMes\Frm_ParametroMes_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\ParametroMes\Frm_ParametroMes_Detalle.Designer.cs">
+      <DependentUpon>Frm_ParametroMes_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Parametros\Frm_ParametroDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Parametros\Frm_ParametroDetalle.designer.cs">
+      <DependentUpon>Frm_ParametroDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Parametros\Frm_Parametros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Parametros\Frm_Parametros.designer.cs">
+      <DependentUpon>Frm_Parametros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Periodo\Frm_Periodo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Periodo\Frm_Periodo.Designer.cs">
+      <DependentUpon>Frm_Periodo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Periodo\Frm_Periodo_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Periodo\Frm_Periodo_Detalle.Designer.cs">
+      <DependentUpon>Frm_Periodo_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Persona\Frm_Persona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Persona\Frm_Persona.Designer.cs">
+      <DependentUpon>Frm_Persona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Persona\Frm_Persona_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Persona\Frm_Persona_Detalle.Designer.cs">
+      <DependentUpon>Frm_Persona_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Relacion_Contribuyente\Frm_Relacion_Contribuyente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Relacion_Contribuyente\Frm_Relacion_Contribuyente.Designer.cs">
+      <DependentUpon>Frm_Relacion_Contribuyente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Relacion_Contribuyente\Frm_Relacion_Contribuyente_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Relacion_Contribuyente\Frm_Relacion_Contribuyente_Detalle.Designer.cs">
+      <DependentUpon>Frm_Relacion_Contribuyente_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\RolOficina\Frm_rolOficina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\RolOficina\Frm_rolOficina.Designer.cs">
+      <DependentUpon>Frm_rolOficina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\RolOficina\Frm_rolOficina_detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\RolOficina\Frm_rolOficina_detalle.Designer.cs">
+      <DependentUpon>Frm_rolOficina_detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\RolTarea\Frm_rolTarea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\RolTarea\Frm_rolTarea.Designer.cs">
+      <DependentUpon>Frm_rolTarea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\RolTarea\Frm_rolTarea_detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\RolTarea\Frm_rolTarea_detalle.Designer.cs">
+      <DependentUpon>Frm_rolTarea_detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Sectores\Frm_sectores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Sectores\Frm_sectores.designer.cs">
+      <DependentUpon>Frm_sectores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Sectores\Frm_sectores_detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Sectores\Frm_sectores_detalle.designer.cs">
+      <DependentUpon>Frm_sectores_detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Segmentacion\Frm_Segmentacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Segmentacion\Frm_Segmentacion.Designer.cs">
+      <DependentUpon>Frm_Segmentacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Segmentacion\Frm_SegmentacionDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Segmentacion\Frm_SegmentacionDetalle.Designer.cs">
+      <DependentUpon>Frm_SegmentacionDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\TablaArancel\Frm_TablaArancel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\TablaArancel\Frm_TablaArancel.Designer.cs">
+      <DependentUpon>Frm_TablaArancel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\TablaArancel\Frm_TablaArancel_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\TablaArancel\Frm_TablaArancel_Detalle.Designer.cs">
+      <DependentUpon>Frm_TablaArancel_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Tarea\Frm_tareas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Tarea\Frm_tareas.Designer.cs">
+      <DependentUpon>Frm_tareas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Tarea\Frm_tareas_detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Tarea\Frm_tareas_detalle.Designer.cs">
+      <DependentUpon>Frm_tareas_detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\TasaCambio\Frm_TasaCambio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\TasaCambio\Frm_TasaCambio.Designer.cs">
+      <DependentUpon>Frm_TasaCambio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\TasaCambio\Frm_TasaCambio_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\TasaCambio\Frm_TasaCambio_Detalle.Designer.cs">
+      <DependentUpon>Frm_TasaCambio_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Tributos\Frm_tributos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Tributos\Frm_tributos.Designer.cs">
+      <DependentUpon>Frm_tributos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Tributos\Frm_tributos_detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Tributos\Frm_tributos_detalle.Designer.cs">
+      <DependentUpon>Frm_tributos_detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\ValoresArbitrios\Frm_ValoresArbitrios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\ValoresArbitrios\Frm_ValoresArbitrios.Designer.cs">
+      <DependentUpon>Frm_ValoresArbitrios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\ValoresArbitrios\Frm_ValoresArbitrios_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\ValoresArbitrios\Frm_ValoresArbitrios_Detalle.Designer.cs">
+      <DependentUpon>Frm_ValoresArbitrios_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Vias\Frm_Vias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Vias\Frm_Vias.Designer.cs">
+      <DependentUpon>Frm_Vias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Vias\Frm_Vias_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Vias\Frm_Vias_Detalle.Designer.cs">
+      <DependentUpon>Frm_Vias_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Compensación\Frm_Compensacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Compensación\Frm_Compensacion.Designer.cs">
+      <DependentUpon>Frm_Compensacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Compensación\Frm_Compensacion_Contribuyente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Compensación\Frm_Compensacion_Contribuyente.Designer.cs">
+      <DependentUpon>Frm_Compensacion_Contribuyente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Compensación\Frm_Compensacion_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Compensación\Frm_Compensacion_Detalle.Designer.cs">
+      <DependentUpon>Frm_Compensacion_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Compensación\Frm_ReporteCompensacionDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Compensación\Frm_ReporteCompensacionDetalle.Designer.cs">
+      <DependentUpon>Frm_ReporteCompensacionDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Emision\Coactivo\Frm_Coactivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Emision\Coactivo\Frm_Coactivo.Designer.cs">
+      <DependentUpon>Frm_Coactivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Emision\Coactivo\Frm_ExpedienteCoactivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Emision\Coactivo\Frm_ExpedienteCoactivo.Designer.cs">
+      <DependentUpon>Frm_ExpedienteCoactivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Emision\Coactivo\Frm_Notificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Emision\Coactivo\Frm_Notificacion.Designer.cs">
+      <DependentUpon>Frm_Notificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\DetallePagos\Frm_DetallePagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\DetallePagos\Frm_DetallePagos.Designer.cs">
+      <DependentUpon>Frm_DetallePagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Emision\Emi_EmisionMasiva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Emision\Emi_EmisionMasiva.Designer.cs">
+      <DependentUpon>Emi_EmisionMasiva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\EstadoCuenta\Frm_EstadoCuentaContribuyente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\EstadoCuenta\Frm_EstadoCuentaContribuyente.Designer.cs">
+      <DependentUpon>Frm_EstadoCuentaContribuyente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\EstadoCuenta\Frm_EstadoCuentaDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\EstadoCuenta\Frm_EstadoCuentaDetalle.Designer.cs">
+      <DependentUpon>Frm_EstadoCuentaDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Fraccionamiento\Fraccionamiento\Frm_CalculoFraccionamiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Fraccionamiento\Fraccionamiento\Frm_CalculoFraccionamiento.Designer.cs">
+      <DependentUpon>Frm_CalculoFraccionamiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Fraccionamiento\Fraccionamiento\Frm_ContribuyenteFraccionamiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Fraccionamiento\Fraccionamiento\Frm_ContribuyenteFraccionamiento.Designer.cs">
+      <DependentUpon>Frm_ContribuyenteFraccionamiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Fraccionamiento\Fraccionamiento\Frm_Fraccionamiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Fraccionamiento\Fraccionamiento\Frm_Fraccionamiento.Designer.cs">
+      <DependentUpon>Frm_Fraccionamiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Fraccionamiento\Fraccionamiento\Frm_FraccionamientoDetalleBusqueda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Fraccionamiento\Fraccionamiento\Frm_FraccionamientoDetalleBusqueda.Designer.cs">
+      <DependentUpon>Frm_FraccionamientoDetalleBusqueda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Fraccionamiento\Fraccionamiento\Frm_FraccionamientoDetalleCronograma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Fraccionamiento\Fraccionamiento\Frm_FraccionamientoDetalleCronograma.Designer.cs">
+      <DependentUpon>Frm_FraccionamientoDetalleCronograma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Fraccionamiento\Fraccionamiento\Frm_FraccionamientoDetalles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Fraccionamiento\Fraccionamiento\Frm_FraccionamientoDetalles.Designer.cs">
+      <DependentUpon>Frm_FraccionamientoDetalles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Fraccionamiento\Fraccionamiento\Frm_FraccionamientoDetalleTributos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Fraccionamiento\Fraccionamiento\Frm_FraccionamientoDetalleTributos.Designer.cs">
+      <DependentUpon>Frm_FraccionamientoDetalleTributos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Fraccionamiento\Fraccionamiento\Frm_FraccionamientoListado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Fraccionamiento\Fraccionamiento\Frm_FraccionamientoListado.Designer.cs">
+      <DependentUpon>Frm_FraccionamientoListado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Fraccionamiento\Seguimiento Fraccionamiento\Frm_FraccionamientoReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Fraccionamiento\Seguimiento Fraccionamiento\Frm_FraccionamientoReporte.Designer.cs">
+      <DependentUpon>Frm_FraccionamientoReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Fraccionamiento\Seguimiento Fraccionamiento\Frm_FraccionamientoSeguimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Fraccionamiento\Seguimiento Fraccionamiento\Frm_FraccionamientoSeguimiento.Designer.cs">
+      <DependentUpon>Frm_FraccionamientoSeguimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Liquidacion\FrmListadoLiquidacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Liquidacion\FrmListadoLiquidacion.Designer.cs">
+      <DependentUpon>FrmListadoLiquidacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Liquidacion\Frm_BusquedaAvanzada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Liquidacion\Frm_BusquedaAvanzada.Designer.cs">
+      <DependentUpon>Frm_BusquedaAvanzada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Liquidacion\Frm_ContribuyenteLiquidacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Liquidacion\Frm_ContribuyenteLiquidacion.Designer.cs">
+      <DependentUpon>Frm_ContribuyenteLiquidacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Liquidacion\Frm_Liquidacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Liquidacion\Frm_Liquidacion.Designer.cs">
+      <DependentUpon>Frm_Liquidacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Liquidacion\Frm_LiquidacionDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Liquidacion\Frm_LiquidacionDetalle.Designer.cs">
+      <DependentUpon>Frm_LiquidacionDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Liquidacion\Frm_LiquidacionTotalDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Liquidacion\Frm_LiquidacionTotalDetalle.Designer.cs">
+      <DependentUpon>Frm_LiquidacionTotalDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Multa\Frm_MultasAdministrativas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Multa\Frm_MultasAdministrativas.Designer.cs">
+      <DependentUpon>Frm_MultasAdministrativas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Multa\Frm_MultasAdministrativasListado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Multa\Frm_MultasAdministrativasListado.Designer.cs">
+      <DependentUpon>Frm_MultasAdministrativasListado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Pagos\Frm_CalculaPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Pagos\Frm_CalculaPago.Designer.cs">
+      <DependentUpon>Frm_CalculaPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Pagos\Frm_ContribuyentePagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Pagos\Frm_ContribuyentePagos.Designer.cs">
+      <DependentUpon>Frm_ContribuyentePagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Pagos\Frm_PagoCuotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Pagos\Frm_PagoCuotas.Designer.cs">
+      <DependentUpon>Frm_PagoCuotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Pagos\Frm_Pagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Pagos\Frm_Pagos.Designer.cs">
+      <DependentUpon>Frm_Pagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Usuarios\Frm_usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Usuarios\Frm_usuarios.Designer.cs">
+      <DependentUpon>Frm_usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Usuarios\Frm_usuarios_detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\1-Tablas-Maestras\Usuarios\Frm_usuarios_detalle.Designer.cs">
+      <DependentUpon>Frm_usuarios_detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\2-Configuraciones\Grupo\Frm_grupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\2-Configuraciones\Grupo\Frm_grupo.Designer.cs">
+      <DependentUpon>Frm_grupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\2-Configuraciones\Grupo\Frm_grupo_detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\2-Configuraciones\Grupo\Frm_grupo_detalle.Designer.cs">
+      <DependentUpon>Frm_grupo_detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\2-Configuraciones\Multitabla\Frm_tablas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\2-Configuraciones\Multitabla\Frm_tablas.Designer.cs">
+      <DependentUpon>Frm_tablas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\2-Configuraciones\Multitabla\Frm_tablas_detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\2-Configuraciones\Multitabla\Frm_tablas_detalle.Designer.cs">
+      <DependentUpon>Frm_tablas_detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\2-Configuraciones\Rol\Frm_rol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\2-Configuraciones\Rol\Frm_rol.Designer.cs">
+      <DependentUpon>Frm_rol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\2-Configuraciones\Rol\Frm_rol_detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\2-Configuraciones\Rol\Frm_rol_detalle.Designer.cs">
+      <DependentUpon>Frm_rol_detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\2-Configuraciones\UnidadNegoci\Frm_unidadNegocio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\2-Configuraciones\UnidadNegoci\Frm_unidadNegocio.Designer.cs">
+      <DependentUpon>Frm_unidadNegocio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\2-Configuraciones\UnidadNegoci\Frm_unidadNegocio_detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\2-Configuraciones\UnidadNegoci\Frm_unidadNegocio_detalle.Designer.cs">
+      <DependentUpon>Frm_unidadNegocio_detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Fraccionamiento\TipoFraccionamiento\FrmTipoFraccionamiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Fraccionamiento\TipoFraccionamiento\FrmTipoFraccionamiento.Designer.cs">
+      <DependentUpon>FrmTipoFraccionamiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Fraccionamiento\TipoFraccionamiento\FrmTributoTipoFraccionamiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Fraccionamiento\TipoFraccionamiento\FrmTributoTipoFraccionamiento.Designer.cs">
+      <DependentUpon>FrmTributoTipoFraccionamiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Fraccionamiento\TipoFraccionamiento\Frm_TipoFraccionamientoDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Fraccionamiento\TipoFraccionamiento\Frm_TipoFraccionamientoDetalle.Designer.cs">
+      <DependentUpon>Frm_TipoFraccionamientoDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Pagos\ImpresionRecibos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Pagos\ImpresionRecibos.Designer.cs">
+      <DependentUpon>ImpresionRecibos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Pagos\Reportes\Frm_ConsultarPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Pagos\Reportes\Frm_ConsultarPagos.Designer.cs">
+      <DependentUpon>Frm_ConsultarPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_Coactivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_Coactivo.Designer.cs">
+      <DependentUpon>Frm_Coactivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_ConsultarPlataforma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_ConsultarPlataforma.Designer.cs">
+      <DependentUpon>Frm_ConsultarPlataforma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_ConsultarPlataformaDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_ConsultarPlataformaDetalle.Designer.cs">
+      <DependentUpon>Frm_ConsultarPlataformaDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_CuentaCorriente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_CuentaCorriente.Designer.cs">
+      <DependentUpon>Frm_CuentaCorriente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_EstadoDeudas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_EstadoDeudas.Designer.cs">
+      <DependentUpon>Frm_EstadoDeudas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_Fraccionamiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_Fraccionamiento.Designer.cs">
+      <DependentUpon>Frm_Fraccionamiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_FraccionamientoDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_FraccionamientoDetalle.Designer.cs">
+      <DependentUpon>Frm_FraccionamientoDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_Liquidaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_Liquidaciones.Designer.cs">
+      <DependentUpon>Frm_Liquidaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_LiquidacionesDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_LiquidacionesDetalle.Designer.cs">
+      <DependentUpon>Frm_LiquidacionesDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_Pagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_Pagos.Designer.cs">
+      <DependentUpon>Frm_Pagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_PagosDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_PagosDetalle.Designer.cs">
+      <DependentUpon>Frm_PagosDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_PredioDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_PredioDetalle.Designer.cs">
+      <DependentUpon>Frm_PredioDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_Predios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_Predios.Designer.cs">
+      <DependentUpon>Frm_Predios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_Recibos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_Recibos.Designer.cs">
+      <DependentUpon>Frm_Recibos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_Relaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_Relaciones.Designer.cs">
+      <DependentUpon>Frm_Relaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_Valores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_Valores.Designer.cs">
+      <DependentUpon>Frm_Valores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Adeudo\Frm_Adeudo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Adeudo\Frm_Adeudo.Designer.cs">
+      <DependentUpon>Frm_Adeudo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Adeudo\Frm_Alcabala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Adeudo\Frm_Alcabala.Designer.cs">
+      <DependentUpon>Frm_Alcabala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Adeudo\Frm_Alcabala_Listado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Adeudo\Frm_Alcabala_Listado.Designer.cs">
+      <DependentUpon>Frm_Alcabala_Listado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Adeudo\Frm_ConstanciaAdeudo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Adeudo\Frm_ConstanciaAdeudo.Designer.cs">
+      <DependentUpon>Frm_ConstanciaAdeudo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Adeudo\Frm_ConstanciaAdeudoDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Adeudo\Frm_ConstanciaAdeudoDetalle.Designer.cs">
+      <DependentUpon>Frm_ConstanciaAdeudoDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Anulacion\Frm_Anulacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Anulacion\Frm_Anulacion.Designer.cs">
+      <DependentUpon>Frm_Anulacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Anulacion\Frm_AnulacionDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Anulacion\Frm_AnulacionDetalle.Designer.cs">
+      <DependentUpon>Frm_AnulacionDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Arbitrio\Frm_ValidacionPredioArbitrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Arbitrio\Frm_ValidacionPredioArbitrio.Designer.cs">
+      <DependentUpon>Frm_ValidacionPredioArbitrio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\ConsultarPredios\Frm_ConsultarPredio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\ConsultarPredios\Frm_ConsultarPredio.Designer.cs">
+      <DependentUpon>Frm_ConsultarPredio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\ConsultarPredios\Frm_ConsultarPrediosDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\ConsultarPredios\Frm_ConsultarPrediosDetalle.Designer.cs">
+      <DependentUpon>Frm_ConsultarPrediosDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Exoneracion\Frm_Exoneracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Exoneracion\Frm_Exoneracion.Designer.cs">
+      <DependentUpon>Frm_Exoneracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Exoneracion\Frm_Exoneracion_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Exoneracion\Frm_Exoneracion_Detalle.Designer.cs">
+      <DependentUpon>Frm_Exoneracion_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Exoneracion\Frm_Inafectacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Exoneracion\Frm_Inafectacion.Designer.cs">
+      <DependentUpon>Frm_Inafectacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Exoneracion\Frm_Inafectacion_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Exoneracion\Frm_Inafectacion_Detalle.Designer.cs">
+      <DependentUpon>Frm_Inafectacion_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Exoneracion\Frm_ListadoExoneracionGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Exoneracion\Frm_ListadoExoneracionGeneral.Designer.cs">
+      <DependentUpon>Frm_ListadoExoneracionGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Exoneracion\Frm_Resolucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Exoneracion\Frm_Resolucion.Designer.cs">
+      <DependentUpon>Frm_Resolucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Fiscalizacion\Frm_Fiscalizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Fiscalizacion\Frm_Fiscalizacion.Designer.cs">
+      <DependentUpon>Frm_Fiscalizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Fiscalizacion\Frm_Fiscalizacion_Alcabala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Fiscalizacion\Frm_Fiscalizacion_Alcabala.Designer.cs">
+      <DependentUpon>Frm_Fiscalizacion_Alcabala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Fiscalizacion\Frm_Fiscalizacion_Descarga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Fiscalizacion\Frm_Fiscalizacion_Descarga.Designer.cs">
+      <DependentUpon>Frm_Fiscalizacion_Descarga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Fiscalizacion\Frm_Fiscalizacion_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Fiscalizacion\Frm_Fiscalizacion_Detalle.Designer.cs">
+      <DependentUpon>Frm_Fiscalizacion_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Fiscalizacion\Frm_Fiscalizacion_Nuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Fiscalizacion\Frm_Fiscalizacion_Nuevo.Designer.cs">
+      <DependentUpon>Frm_Fiscalizacion_Nuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Frm.Designer.cs">
+      <DependentUpon>Frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Frm_Errores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Frm_Errores.Designer.cs">
+      <DependentUpon>Frm_Errores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Frm_Historial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Frm_Historial.Designer.cs">
+      <DependentUpon>Frm_Historial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Frm_Predio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Frm_Predio.Designer.cs">
+      <DependentUpon>Frm_Predio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Frm_Predio_Deta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Frm_Predio_Deta.Designer.cs">
+      <DependentUpon>Frm_Predio_Deta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Frm_Validacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Frm_Validacion.Designer.cs">
+      <DependentUpon>Frm_Validacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Historial\Frm_HistorialPC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Historial\Frm_HistorialPC.Designer.cs">
+      <DependentUpon>Frm_HistorialPC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Historial\Frm_HistorialPC_detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Historial\Frm_HistorialPC_detalle.Designer.cs">
+      <DependentUpon>Frm_HistorialPC_detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\OtrasInstalaciones\Frm_OtrasIntalaciones_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\OtrasInstalaciones\Frm_OtrasIntalaciones_Detalle.Designer.cs">
+      <DependentUpon>Frm_OtrasIntalaciones_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Otros\Frm_CertificadoContribuyente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Otros\Frm_CertificadoContribuyente.Designer.cs">
+      <DependentUpon>Frm_CertificadoContribuyente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Otros\Frm_DuplicadoDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Otros\Frm_DuplicadoDocumento.Designer.cs">
+      <DependentUpon>Frm_DuplicadoDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Otros\Frm_Historial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Otros\Frm_Historial.Designer.cs">
+      <DependentUpon>Frm_Historial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Pisos\Frm_Pisos_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Pisos\Frm_Pisos_Detalle.Designer.cs">
+      <DependentUpon>Frm_Pisos_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\PredioContribuyente\Frm_PredioContribuyente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\PredioContribuyente\Frm_PredioContribuyente.Designer.cs">
+      <DependentUpon>Frm_PredioContribuyente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\PredioContribuyente\Frm_PredioContribuyenteAnterior_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\PredioContribuyente\Frm_PredioContribuyenteAnterior_Detalle.Designer.cs">
+      <DependentUpon>Frm_PredioContribuyenteAnterior_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\PredioContribuyente\Frm_PredioContribuyente_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\PredioContribuyente\Frm_PredioContribuyente_Detalle.Designer.cs">
+      <DependentUpon>Frm_PredioContribuyente_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\PredioMasivo\Frm_CalculoIndividulPredio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\PredioMasivo\Frm_CalculoIndividulPredio.Designer.cs">
+      <DependentUpon>Frm_CalculoIndividulPredio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\PredioMasivo\Frm_CalculoPorPersonaAnios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\PredioMasivo\Frm_CalculoPorPersonaAnios.Designer.cs">
+      <DependentUpon>Frm_CalculoPorPersonaAnios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\PredioMasivo\Frm_Predio_Masivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\PredioMasivo\Frm_Predio_Masivo.Designer.cs">
+      <DependentUpon>Frm_Predio_Masivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\PredioMasivo\Frm_Predio_MasivoActivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\PredioMasivo\Frm_Predio_MasivoActivo.Designer.cs">
+      <DependentUpon>Frm_Predio_MasivoActivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Reajuste\Frm_ReAjusteMasivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Reajuste\Frm_ReAjusteMasivo.Designer.cs">
+      <DependentUpon>Frm_ReAjusteMasivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Segmentacion\Frm_ResumenDeuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Segmentacion\Frm_ResumenDeuda.Designer.cs">
+      <DependentUpon>Frm_ResumenDeuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Segmentacion\Frm_Segmentacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Segmentacion\Frm_Segmentacion.Designer.cs">
+      <DependentUpon>Frm_Segmentacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Segmentacion\Frm_Segmentacion_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\Segmentacion\Frm_Segmentacion_Detalle.Designer.cs">
+      <DependentUpon>Frm_Segmentacion_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\SubDivision\Frm_Subdivision_.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Predio\SubDivision\Frm_Subdivision_.Designer.cs">
+      <DependentUpon>Frm_Subdivision_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\RecaudacionPorOficina\Frm_RecaudacionPorOficina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\RecaudacionPorOficina\Frm_RecaudacionPorOficina.Designer.cs">
+      <DependentUpon>Frm_RecaudacionPorOficina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Recibo\Frm_Recibo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Recibo\Frm_Recibo.Designer.cs">
+      <DependentUpon>Frm_Recibo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Recibo\Frm_ReciboDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Recibo\Frm_ReciboDetalle.Designer.cs">
+      <DependentUpon>Frm_ReciboDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Valores Cobranza\Frm_ValoresCobranza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Valores Cobranza\Frm_ValoresCobranza.Designer.cs">
+      <DependentUpon>Frm_ValoresCobranza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Valores Cobranza\Frm_ValoresCobranzaDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\4-Procesos\Valores Cobranza\Frm_ValoresCobranzaDetalle.Designer.cs">
+      <DependentUpon>Frm_ValoresCobranzaDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Frm_Visor_Global.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Frm_Visor_Global.Designer.cs">
+      <DependentUpon>Frm_Visor_Global.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_Alcabala\Frm_AlcabalaCobCanc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_Alcabala\Frm_AlcabalaCobCanc.Designer.cs">
+      <DependentUpon>Frm_AlcabalaCobCanc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_CajaResumen\Frm_CajaResumen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_CajaResumen\Frm_CajaResumen.Designer.cs">
+      <DependentUpon>Frm_CajaResumen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_CompensacionFaltante\Frm_CompensacionFaltanteDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_CompensacionFaltante\Frm_CompensacionFaltanteDetalle.Designer.cs">
+      <DependentUpon>Frm_CompensacionFaltanteDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_estadisticos\Frm_estadistico_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_estadisticos\Frm_estadistico_1.Designer.cs">
+      <DependentUpon>Frm_estadistico_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_estadisticos\Frm_estadistico_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_estadisticos\Frm_estadistico_2.Designer.cs">
+      <DependentUpon>Frm_estadistico_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_estadisticos\Frm_estadistico_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_estadisticos\Frm_estadistico_3.Designer.cs">
+      <DependentUpon>Frm_estadistico_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_FacturadoCobrado\Frm_FacturadoCobrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_FacturadoCobrado\Frm_FacturadoCobrado.Designer.cs">
+      <DependentUpon>Frm_FacturadoCobrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_GrandesBaseImponible\Frm_GrandeBaseImponible.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_GrandesBaseImponible\Frm_GrandeBaseImponible.Designer.cs">
+      <DependentUpon>Frm_GrandeBaseImponible.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_GrandesDeudores\Frm_GrandesDeudores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_GrandesDeudores\Frm_GrandesDeudores.Designer.cs">
+      <DependentUpon>Frm_GrandesDeudores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_HRPUPR\Frm_PUPR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_HRPUPR\Frm_PUPR.Designer.cs">
+      <DependentUpon>Frm_PUPR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_HRPUPR\Frm_ReporteHRPUPR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_HRPUPR\Frm_ReporteHRPUPR.designer.cs">
+      <DependentUpon>Frm_ReporteHRPUPR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_Ingresos\Frm_PlanillaIngresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_Ingresos\Frm_PlanillaIngresos.Designer.cs">
+      <DependentUpon>Frm_PlanillaIngresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_Ingresos\Frm_PlanillaIngresosResumen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_Ingresos\Frm_PlanillaIngresosResumen.Designer.cs">
+      <DependentUpon>Frm_PlanillaIngresosResumen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_PorcentajePredio\Frm_PorcentajePredios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Layout\5-Reportes-Gestion\Rep_PorcentajePredio\Frm_PorcentajePredios.Designer.cs">
+      <DependentUpon>Frm_PorcentajePredios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Entorno\barrabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Entorno\barrabase.Designer.cs">
+      <DependentUpon>barrabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Entorno\barramenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Entorno\barramenu.Designer.cs">
+      <DependentUpon>barramenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Entorno\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Entorno\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Entorno\MainPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Entorno\MainPrincipal.Designer.cs">
+      <DependentUpon>MainPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Entorno\Usuario\Frm_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Entorno\Usuario\Frm_Usuario.Designer.cs">
+      <DependentUpon>Frm_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Entorno\Usuario\Frm_UsuarioDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Entorno\Usuario\Frm_UsuarioDetalle.Designer.cs">
+      <DependentUpon>Frm_UsuarioDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Entorno\Usuario\Frm_UsuarioDetalleDatosPersonales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\Entorno\Usuario\Frm_UsuarioDetalleDatosPersonales.Designer.cs">
+      <DependentUpon>Frm_UsuarioDetalleDatosPersonales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\Globales\Globales.cs" />
+    <Compile Include="Sistema\Globales\Validaciones.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\ArancelRustico\Frm_Arancel_Rustico.resx">
+      <DependentUpon>Frm_Arancel_Rustico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\ArancelRustico\Frm_AranceRustico_Detalle.resx">
+      <DependentUpon>Frm_AranceRustico_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\ArancelRustico\Reporte_ArancelRustico.rdlc" />
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Arancel\Frm_Arancel.resx">
+      <DependentUpon>Frm_Arancel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Arancel\Frm_Arancel_Detalle.resx">
+      <DependentUpon>Frm_Arancel_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Arancel\rptArancel.rdlc" />
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Areas\Frm_Area.resx">
+      <DependentUpon>Frm_Area.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Areas\Frm_AreaDetalle.resx">
+      <DependentUpon>Frm_AreaDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Areas\rptAreas.rdlc" />
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Bancos\Frm_Banco.resx">
+      <DependentUpon>Frm_Banco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Bancos\Frm_BancoDetalle.resx">
+      <DependentUpon>Frm_BancoDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Bancos\rptBanco.rdlc" />
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Cajas\Frm_Caja.resx">
+      <DependentUpon>Frm_Caja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Cajas\Frm_Caja_Detalle.resx">
+      <DependentUpon>Frm_Caja_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Cajas\rptCaja.rdlc" />
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\CajeroCajas\Frm_CajeroCaja.resx">
+      <DependentUpon>Frm_CajeroCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\CajeroCajas\Frm_CajeroCajaDetalle.resx">
+      <DependentUpon>Frm_CajeroCajaDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\CajeroCajas\rptCajeroCaja.rdlc" />
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Cajero\Frm_Cajero.resx">
+      <DependentUpon>Frm_Cajero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Cajero\Frm_CajeroDetalle.resx">
+      <DependentUpon>Frm_CajeroDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Cajero\rptCajero.rdlc" />
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\ClasificadorIngresos\Frm_ClasificadorIngresoDetallado.resx">
+      <DependentUpon>Frm_ClasificadorIngresoDetallado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\ClasificadorIngresos\Frm_ClasificadorIngresos.resx">
+      <DependentUpon>Frm_ClasificadorIngresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\ClasificadorIngresos\rptClasificadorIngresos.rdlc" />
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Contribuyente\Frm_Contribuyent.resx">
+      <DependentUpon>Frm_Contribuyent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Contribuyente\Frm_Contribuyente_Detalle.resx">
+      <DependentUpon>Frm_Contribuyente_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Contribuyente\Reporte_Contribuyente.rdlc" />
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Contribuyente\Reporte_Contribuyente_SinFormato.rdlc" />
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\CuadroValores\Frm_CuadroValores.resx">
+      <DependentUpon>Frm_CuadroValores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\CuadroValores\Frm_CuadroValoresDetalle.resx">
+      <DependentUpon>Frm_CuadroValoresDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\CuadroValores\rptCuadroValores.rdlc" />
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Depreciaciones\Frm_Depreciacion.resx">
+      <DependentUpon>Frm_Depreciacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Depreciaciones\Frm_DepreciacionDetalle.resx">
+      <DependentUpon>Frm_DepreciacionDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Depreciaciones\rptDepreciaciones.rdlc" />
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\FormatoCampos\Frm_FormatoCampos.resx">
+      <DependentUpon>Frm_FormatoCampos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\FormatoCampos\Frm_FormatoCamposDetalle.resx">
+      <DependentUpon>Frm_FormatoCamposDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\FormatoValor\Frm_TribFormatoValor.resx">
+      <DependentUpon>Frm_TribFormatoValor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\FormatoValor\rptFormatoValores.rdlc" />
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\FormatoValor\Trib_FormatoValorDetalle.resx">
+      <DependentUpon>Trib_FormatoValorDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\GrupoImpresion\Frm_GrupoImpresion.resx">
+      <DependentUpon>Frm_GrupoImpresion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\GrupoImpresion\Frm_GrupoImpresionDetalle.resx">
+      <DependentUpon>Frm_GrupoImpresionDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\GrupoImpresion\rptGrupoImpresion.rdlc" />
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Grupo\Frm_grupos.resx">
+      <DependentUpon>Frm_grupos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Grupo\Frm_grupos_detalle.resx">
+      <DependentUpon>Frm_grupos_detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Junta Via\Frm_Junta_Via.resx">
+      <DependentUpon>Frm_Junta_Via.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Junta Via\Frm_Junta_ViaDetalle.resx">
+      <DependentUpon>Frm_Junta_ViaDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Junta Via\rptJuntaVia.rdlc" />
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Oficina\Frm_Oficina.resx">
+      <DependentUpon>Frm_Oficina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Oficina\Frm_Oficina_Detalle.resx">
+      <DependentUpon>Frm_Oficina_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Oficina\Reporte_Oficina.rdlc" />
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\ParametroMes\Frm_ParametroMes.resx">
+      <DependentUpon>Frm_ParametroMes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\ParametroMes\Frm_ParametroMes_Detalle.resx">
+      <DependentUpon>Frm_ParametroMes_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\ParametroMes\Reporte_ParametroMes.rdlc" />
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Parametros\Frm_ParametroDetalle.resx">
+      <DependentUpon>Frm_ParametroDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Parametros\Frm_Parametros.resx">
+      <DependentUpon>Frm_Parametros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Parametros\rptParametros.rdlc" />
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Periodo\Frm_Periodo.resx">
+      <DependentUpon>Frm_Periodo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Periodo\Frm_Periodo_Detalle.resx">
+      <DependentUpon>Frm_Periodo_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Periodo\Reporte_Periodo.rdlc" />
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Persona\Frm_Persona.resx">
+      <DependentUpon>Frm_Persona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Persona\Frm_Persona_Detalle.resx">
+      <DependentUpon>Frm_Persona_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Persona\ReporteDetalle_Persona.rdlc" />
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Persona\Reporte_Persona.rdlc" />
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Relacion_Contribuyente\Frm_Relacion_Contribuyente.resx">
+      <DependentUpon>Frm_Relacion_Contribuyente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Relacion_Contribuyente\Frm_Relacion_Contribuyente_Detalle.resx">
+      <DependentUpon>Frm_Relacion_Contribuyente_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\RolTarea\Frm_RolTarea.resx">
+      <DependentUpon>Frm_rolTarea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\RolTarea\Frm_rolTarea_detalle.resx">
+      <DependentUpon>Frm_rolTarea_detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\RolTarea\rptRolTarea.rdlc" />
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Sectores\Frm_sectores.resx">
+      <DependentUpon>Frm_sectores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Sectores\Frm_sectores_detalle.resx">
+      <DependentUpon>Frm_sectores_detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Sectores\rptSector.rdlc" />
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Segmentacion\Frm_Segmentacion.resx">
+      <DependentUpon>Frm_Segmentacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Segmentacion\Frm_SegmentacionDetalle.resx">
+      <DependentUpon>Frm_SegmentacionDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\TablaArancel\Frm_TablaArancel.resx">
+      <DependentUpon>Frm_TablaArancel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\TablaArancel\Frm_TablaArancel_Detalle.resx">
+      <DependentUpon>Frm_TablaArancel_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\TablaArancel\Reporte_TablaArancel.rdlc" />
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Tarea\Frm_tareas.resx">
+      <DependentUpon>Frm_tareas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Tarea\Frm_tareas_detalle.resx">
+      <DependentUpon>Frm_tareas_detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\TasaCambio\Frm_TasaCambio.resx">
+      <DependentUpon>Frm_TasaCambio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\TasaCambio\Frm_TasaCambio_Detalle.resx">
+      <DependentUpon>Frm_TasaCambio_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\TasaCambio\Reporte_TasaCambio.rdlc" />
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Tributos\Frm_tributos.resx">
+      <DependentUpon>Frm_tributos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Tributos\Frm_tributos_detalle.resx">
+      <DependentUpon>Frm_tributos_detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Tributos\rptTributo.rdlc" />
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\ValoresArbitrios\Frm_ValoresArbitrios.resx">
+      <DependentUpon>Frm_ValoresArbitrios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\ValoresArbitrios\Frm_ValoresArbitrios_Detalle.resx">
+      <DependentUpon>Frm_ValoresArbitrios_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\ValoresArbitrios\Reporte_ValoresArbitrios.rdlc" />
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Vias\Frm_Vias.resx">
+      <DependentUpon>Frm_Vias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Vias\Frm_Vias_Detalle.resx">
+      <DependentUpon>Frm_Vias_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Vias\ReporteVia.rdlc" />
+    <EmbeddedResource Include="Layout\2-Configuraciones\Multitabla\Reporte_Multitabla.rdlc" />
+    <EmbeddedResource Include="Layout\2-Configuraciones\Rol\Reporte_Rol.rdlc" />
+    <EmbeddedResource Include="Layout\2-Configuraciones\UnidadNegoci\Reporte_UnidadNegocio.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Compensación\Frm_Compensacion.resx">
+      <DependentUpon>Frm_Compensacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Compensación\Frm_Compensacion_Contribuyente.resx">
+      <DependentUpon>Frm_Compensacion_Contribuyente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Compensación\Frm_Compensacion_Detalle.resx">
+      <DependentUpon>Frm_Compensacion_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Compensación\Frm_ReporteCompensacionDetalle.resx">
+      <DependentUpon>Frm_ReporteCompensacionDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Compensación\rptCompensaciones.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Compensación\rptCompensacionesDetalle.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Emision\Coactivo\Frm_Coactivo.resx">
+      <DependentUpon>Frm_Coactivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\DetallePagos\Frm_DetallePagos.resx">
+      <DependentUpon>Frm_DetallePagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\DetallePagos\Reporte_DetallePagos.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Emision\Emi_EmisionMasiva.resx">
+      <DependentUpon>Emi_EmisionMasiva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\EstadoCuenta\Frm_EstadoCuentaContribuyente.resx">
+      <DependentUpon>Frm_EstadoCuentaContribuyente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\EstadoCuenta\Frm_EstadoCuentaDetalle.resx">
+      <DependentUpon>Frm_EstadoCuentaDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\EstadoCuenta\rptEstadoDeuda.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Fraccionamiento\Fraccionamiento\Frm_CalculoFraccionamiento.resx">
+      <DependentUpon>Frm_CalculoFraccionamiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Fraccionamiento\Fraccionamiento\Frm_ContribuyenteFraccionamiento.resx">
+      <DependentUpon>Frm_ContribuyenteFraccionamiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Fraccionamiento\Fraccionamiento\Frm_Fraccionamiento.resx">
+      <DependentUpon>Frm_Fraccionamiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Fraccionamiento\Fraccionamiento\Frm_FraccionamientoDetalleBusqueda.resx">
+      <DependentUpon>Frm_FraccionamientoDetalleBusqueda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Fraccionamiento\Fraccionamiento\Frm_FraccionamientoDetalleCronograma.resx">
+      <DependentUpon>Frm_FraccionamientoDetalleCronograma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Fraccionamiento\Fraccionamiento\Frm_FraccionamientoDetalles.resx">
+      <DependentUpon>Frm_FraccionamientoDetalles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Fraccionamiento\Fraccionamiento\Frm_FraccionamientoDetalleTributos.resx">
+      <DependentUpon>Frm_FraccionamientoDetalleTributos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Fraccionamiento\Fraccionamiento\rptFraccionamiento.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Fraccionamiento\Fraccionamiento\rptFraccionamientoOtro.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Fraccionamiento\Fraccionamiento\Frm_FraccionamientoListado.resx">
+      <DependentUpon>Frm_FraccionamientoListado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Fraccionamiento\Seguimiento Fraccionamiento\Frm_FraccionamientoReporte.resx">
+      <DependentUpon>Frm_FraccionamientoReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Fraccionamiento\Seguimiento Fraccionamiento\Frm_FraccionamientoSeguimiento.resx">
+      <DependentUpon>Frm_FraccionamientoSeguimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Fraccionamiento\Seguimiento Fraccionamiento\rptCronogramaCuotasPendientes.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Fraccionamiento\Seguimiento Fraccionamiento\rptCronogramaFraccionamiento.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Fraccionamiento\Seguimiento Fraccionamiento\rptListadoFraccionamientos.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Fraccionamiento\TipoFraccionamiento\rptTipoFraccionamiento.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Liquidacion\FrmListadoLiquidacion.resx">
+      <DependentUpon>FrmListadoLiquidacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Liquidacion\Frm_BusquedaAvanzada.resx">
+      <DependentUpon>Frm_BusquedaAvanzada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Liquidacion\Frm_ContribuyenteLiquidacion.resx">
+      <DependentUpon>Frm_ContribuyenteLiquidacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Liquidacion\Frm_Liquidacion.resx">
+      <DependentUpon>Frm_Liquidacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Liquidacion\Frm_LiquidacionDetalle.resx">
+      <DependentUpon>Frm_LiquidacionDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Liquidacion\Frm_LiquidacionTotalDetalle.resx">
+      <DependentUpon>Frm_LiquidacionTotalDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Liquidacion\rptLiquidacionDetalle.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Liquidacion\rptLiquidacionVerificacion.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Multa\Frm_MultasAdministrativas.resx">
+      <DependentUpon>Frm_MultasAdministrativas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Multa\Frm_MultasAdministrativasListado.resx">
+      <DependentUpon>Frm_MultasAdministrativasListado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Multa\Rep_multas.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Pagos\Frm_CalculaPago.resx">
+      <DependentUpon>Frm_CalculaPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Pagos\Frm_ContribuyentePagos.resx">
+      <DependentUpon>Frm_ContribuyentePagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Pagos\Frm_PagoCuotas.resx">
+      <DependentUpon>Frm_PagoCuotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Pagos\Frm_Pagos.resx">
+      <DependentUpon>Frm_Pagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Usuarios\Frm_usuarios.resx">
+      <DependentUpon>Frm_usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Usuarios\Frm_usuarios_detalle.resx">
+      <DependentUpon>Frm_usuarios_detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\2-Configuraciones\Grupo\Frm_grupo.resx">
+      <DependentUpon>Frm_grupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\2-Configuraciones\Grupo\Frm_grupo_detalle.resx">
+      <DependentUpon>Frm_grupo_detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\2-Configuraciones\Multitabla\Frm_tablas.resx">
+      <DependentUpon>Frm_tablas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\2-Configuraciones\Multitabla\Frm_tablas_detalle.resx">
+      <DependentUpon>Frm_tablas_detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\2-Configuraciones\Rol\Frm_rol.resx">
+      <DependentUpon>Frm_rol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\2-Configuraciones\Rol\Frm_rol_detalle.resx">
+      <DependentUpon>Frm_rol_detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\2-Configuraciones\UnidadNegoci\Frm_unidadNegocio.resx">
+      <DependentUpon>Frm_unidadNegocio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\2-Configuraciones\UnidadNegoci\Frm_unidadNegocio_detalle.resx">
+      <DependentUpon>Frm_unidadNegocio_detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Fraccionamiento\TipoFraccionamiento\FrmTipoFraccionamiento.resx">
+      <DependentUpon>FrmTipoFraccionamiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Fraccionamiento\TipoFraccionamiento\FrmTributoTipoFraccionamiento.resx">
+      <DependentUpon>FrmTributoTipoFraccionamiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Fraccionamiento\TipoFraccionamiento\Frm_TipoFraccionamientoDetalle.resx">
+      <DependentUpon>Frm_TipoFraccionamientoDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Pagos\ImpresionRecibos.resx">
+      <DependentUpon>ImpresionRecibos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Pagos\Reportes\Frm_ConsultarPagos.resx">
+      <DependentUpon>Frm_ConsultarPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Pagos\Reportes\rptPagoFechaDeuda.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Pagos\Reportes\rptPagoFechaPago.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Pagos\rptPagos.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_Coactivo.resx">
+      <DependentUpon>Frm_Coactivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_ConsultarPlataforma.resx">
+      <DependentUpon>Frm_ConsultarPlataforma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_ConsultarPlataformaDetalle.resx">
+      <DependentUpon>Frm_ConsultarPlataformaDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_CuentaCorriente.resx">
+      <DependentUpon>Frm_CuentaCorriente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_EstadoDeudas.resx">
+      <DependentUpon>Frm_EstadoDeudas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_Fraccionamiento.resx">
+      <DependentUpon>Frm_Fraccionamiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_FraccionamientoDetalle.resx">
+      <DependentUpon>Frm_FraccionamientoDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_Liquidaciones.resx">
+      <DependentUpon>Frm_Liquidaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_LiquidacionesDetalle.resx">
+      <DependentUpon>Frm_LiquidacionesDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_Pagos.resx">
+      <DependentUpon>Frm_Pagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_PagosDetalle.resx">
+      <DependentUpon>Frm_PagosDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_PredioDetalle.resx">
+      <DependentUpon>Frm_PredioDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_Predios.resx">
+      <DependentUpon>Frm_Predios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_Recibos.resx">
+      <DependentUpon>Frm_Recibos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_Relaciones.resx">
+      <DependentUpon>Frm_Relaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Frm_Valores.resx">
+      <DependentUpon>Frm_Valores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Rep_EstadoCuenta.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Rep_CuentaCorriente.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Rep_detallePago.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Plataforma\ConsultarPlataforma\Rep_pagos.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Adeudo\Frm_Adeudo.resx">
+      <DependentUpon>Frm_Adeudo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Adeudo\Frm_Alcabala.resx">
+      <DependentUpon>Frm_Alcabala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Adeudo\Frm_Alcabala_Listado.resx">
+      <DependentUpon>Frm_Alcabala_Listado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Adeudo\Frm_ConstanciaAdeudo.resx">
+      <DependentUpon>Frm_ConstanciaAdeudo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Adeudo\Frm_ConstanciaAdeudoDetalle.resx">
+      <DependentUpon>Frm_ConstanciaAdeudoDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Anulacion\Frm_Anulacion.resx">
+      <DependentUpon>Frm_Anulacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Anulacion\Frm_AnulacionDetalle.resx">
+      <DependentUpon>Frm_AnulacionDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Arbitrio\Frm_ValidacionPredioArbitrio.resx">
+      <DependentUpon>Frm_ValidacionPredioArbitrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Arbitrio\Reporte_ValidacionPredioArbitrio.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\ConsultarPredios\Frm_ConsultarPredio.resx">
+      <DependentUpon>Frm_ConsultarPredio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\ConsultarPredios\Frm_ConsultarPrediosDetalle.resx">
+      <DependentUpon>Frm_ConsultarPrediosDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Exoneracion\Frm_Exoneracion.resx">
+      <DependentUpon>Frm_Exoneracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Exoneracion\Frm_Exoneracion_Detalle.resx">
+      <DependentUpon>Frm_Exoneracion_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Exoneracion\Frm_Inafectacion.resx">
+      <DependentUpon>Frm_Inafectacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Exoneracion\Frm_Inafectacion_Detalle.resx">
+      <DependentUpon>Frm_Inafectacion_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Exoneracion\Frm_ListadoExoneracionGeneral.resx">
+      <DependentUpon>Frm_ListadoExoneracionGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Exoneracion\Frm_Resolucion.resx">
+      <DependentUpon>Frm_Resolucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Fiscalizacion\Frm_Fiscalizacion.resx">
+      <DependentUpon>Frm_Fiscalizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Fiscalizacion\Frm_Fiscalizacion_Alcabala.resx">
+      <DependentUpon>Frm_Fiscalizacion_Alcabala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Fiscalizacion\Frm_Fiscalizacion_Descarga.resx">
+      <DependentUpon>Frm_Fiscalizacion_Descarga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Fiscalizacion\Frm_Fiscalizacion_Detalle.resx">
+      <DependentUpon>Frm_Fiscalizacion_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Fiscalizacion\Frm_Fiscalizacion_Nuevo.resx">
+      <DependentUpon>Frm_Fiscalizacion_Nuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Fiscalizacion\Rep_Fiscalizacion_Predio.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Frm.resx">
+      <DependentUpon>Frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Frm_Errores.resx">
+      <DependentUpon>Frm_Errores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Frm_Historial.resx">
+      <DependentUpon>Frm_Historial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Frm_Predio.resx">
+      <DependentUpon>Frm_Predio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Frm_Predio_Deta.resx">
+      <DependentUpon>Frm_Predio_Deta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Frm_Validacion.resx">
+      <DependentUpon>Frm_Validacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Historial\Frm_HistorialPC.resx">
+      <DependentUpon>Frm_HistorialPC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Historial\Frm_HistorialPC_detalle.resx">
+      <DependentUpon>Frm_HistorialPC_detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\OtrasInstalaciones\Frm_OtrasIntalaciones_Detalle.resx">
+      <DependentUpon>Frm_OtrasIntalaciones_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Otros\Frm_CertificadoContribuyente.resx">
+      <DependentUpon>Frm_CertificadoContribuyente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Otros\Frm_DuplicadoDocumento.resx">
+      <DependentUpon>Frm_DuplicadoDocumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Otros\Frm_Historial.resx">
+      <DependentUpon>Frm_Historial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Pisos\Frm_Pisos_Detalle.resx">
+      <DependentUpon>Frm_Pisos_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\PredioContribuyente\Frm_PredioContribuyente.resx">
+      <DependentUpon>Frm_PredioContribuyente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\PredioContribuyente\Frm_PredioContribuyenteAnterior_Detalle.resx">
+      <DependentUpon>Frm_PredioContribuyenteAnterior_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\PredioContribuyente\Frm_PredioContribuyente_Detalle.resx">
+      <DependentUpon>Frm_PredioContribuyente_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\PredioMasivo\Frm_CalculoIndividulPredio.resx">
+      <DependentUpon>Frm_CalculoIndividulPredio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\PredioMasivo\Frm_CalculoPorPersonaAnios.resx">
+      <DependentUpon>Frm_CalculoPorPersonaAnios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\PredioMasivo\Frm_Predio_Masivo.resx">
+      <DependentUpon>Frm_Predio_Masivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\PredioMasivo\Frm_Predio_MasivoActivo.resx">
+      <DependentUpon>Frm_Predio_MasivoActivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Reajuste\Frm_ReAjusteMasivo.resx">
+      <DependentUpon>Frm_ReAjusteMasivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Segmentacion\Frm_ResumenDeuda.resx">
+      <DependentUpon>Frm_ResumenDeuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Segmentacion\Frm_Segmentacion.resx">
+      <DependentUpon>Frm_Segmentacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Segmentacion\Frm_Segmentacion_Detalle.resx">
+      <DependentUpon>Frm_Segmentacion_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\Segmentacion\rptResumenDeuda.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Predio\SubDivision\Frm_Subdivision_.resx">
+      <DependentUpon>Frm_Subdivision_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\RecaudacionPorOficina\Frm_RecaudacionPorOficina.resx">
+      <DependentUpon>Frm_RecaudacionPorOficina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\RecaudacionPorOficina\Reporte_RecaudacionPorOficina.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Recibo\Frm_Recibo.resx">
+      <DependentUpon>Frm_Recibo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Recibo\Frm_ReciboDetalle.resx">
+      <DependentUpon>Frm_ReciboDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Recibo\rptEmisionRecibo.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Valores Cobranza\Frm_ValoresCobranza.resx">
+      <DependentUpon>Frm_ValoresCobranza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Valores Cobranza\Frm_ValoresCobranzaDetalle.resx">
+      <DependentUpon>Frm_ValoresCobranzaDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\4-Procesos\Valores Cobranza\ListadoDeuda.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Valores Cobranza\ListadoMorosos.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Valores Cobranza\rptDeterminacion1.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Valores Cobranza\rptDeterminacion2.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Valores Cobranza\rptDeterminacion3.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Valores Cobranza\rptResolucionDeterminacionArbitrios.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Valores Cobranza\rptResolucionDeterminacionPredial.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Valores Cobranza\rptCoactivo.rdlc" />
+    <EmbeddedResource Include="Layout\4-Procesos\Valores Cobranza\rptValoresCobranza.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Frm_Visor_Global.resx">
+      <DependentUpon>Frm_Visor_Global.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_Alcabala\Alcabala.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_Alcabala\AlcabalaCobCanc.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_Alcabala\Frm_AlcabalaCobCanc.resx">
+      <DependentUpon>Frm_AlcabalaCobCanc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_Alcabala\Predial.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_Alcabala\Reporte_Alcabala.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_CajaResumen\Frm_CajaResumen.resx">
+      <DependentUpon>Frm_CajaResumen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_CajaResumen\Reporte_CajaResumen.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_CompensacionFaltante\Frm_CompensacionFaltanteDetalle.resx">
+      <DependentUpon>Frm_CompensacionFaltanteDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_CompensacionFaltante\rptCompensacionFaltante.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_Contribuyente\Certificado_COntribuyente.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_estadisticos\Frm_estadistico_1.resx">
+      <DependentUpon>Frm_estadistico_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_estadisticos\Frm_estadistico_2.resx">
+      <DependentUpon>Frm_estadistico_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_estadisticos\Frm_estadistico_3.resx">
+      <DependentUpon>Frm_estadistico_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_estadisticos\Reporte_de _Pagos_Comparativo.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_estadisticos\Reporte_de _Saldos.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_estadisticos\Reporte_monto_cobrado.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_estadisticos\Rep_estadistico1.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_estadisticos\Rep_estadistico2.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_Exoneracion\Reporte_ExonIndiv.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_Exoneracion\RptExoneadosPreescritos.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_FacturadoCobrado\Frm_FacturadoCobrado.resx">
+      <DependentUpon>Frm_FacturadoCobrado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_FacturadoCobrado\Reporte_FacturadoCobrado.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_GrandesBaseImponible\Frm_GrandeBaseImponible.resx">
+      <DependentUpon>Frm_GrandeBaseImponible.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_GrandesBaseImponible\rptGrandesBasesImponibles.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_GrandesDeudores\Frm_GrandesDeudores.resx">
+      <DependentUpon>Frm_GrandesDeudores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_GrandesDeudores\rptGrandeDeudores.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_HRPUPR\Frm_PUPR.resx">
+      <DependentUpon>Frm_PUPR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_HRPUPR\Frm_ReporteHRPUPR.resx">
+      <DependentUpon>Frm_ReporteHRPUPR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_Ingresos\Frm_PlanillaIngresos.resx">
+      <DependentUpon>Frm_PlanillaIngresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_Ingresos\Frm_PlanillaIngresosResumen.resx">
+      <DependentUpon>Frm_PlanillaIngresosResumen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_Ingresos\Reporte_PlanillaIngresos.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_Ingresos\Reporte_PlanillaIngresosResumen.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_PorcentajePredio\Frm_PorcentajePredios.resx">
+      <DependentUpon>Frm_PorcentajePredios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_PorcentajePredio\rptPorcentajeClasificacion.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_PorcentajePredio\rptPorcentajePredios.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_Predio\Reporte_PR.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_Predio\Reporte_PredioRustico.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_Predio\Reporte_PredioUrbano.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_Predio\Reporte_PU.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_Segmentacion\Mant_segmentacion.rdlc" />
+    <EmbeddedResource Include="Layout\5-Reportes-Gestion\Rep_Segmentacion\Segmentacion_Proceso.rdlc" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Entorno\barrabase.resx">
+      <DependentUpon>barrabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Entorno\barramenu.resx">
+      <DependentUpon>barramenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Entorno\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Entorno\MainPrincipal.resx">
+      <DependentUpon>MainPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\Entorno\Usuario\Frm_UsuarioDetalleDatosPersonales.resx">
+      <DependentUpon>Frm_UsuarioDetalleDatosPersonales.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\DataSources\SGR.Entity.Mant_Contribuyente1.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Mant_CuadroValores.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Mant_Junta_Via.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Coa_coactivo_cta.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Coa_expediente_coactivo.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Conf_Multitabla.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Conf_RolTarea.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Frac_Cronograma.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Frac_CronogramaDetalle.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Frac_Cronogramas.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Frac_CuentaFraccionada.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Frac_DeudaFraccionada.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Frac_DeudaFraccionadaDetallada.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Frac_FraccionamientoDetalle.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Frac_FraccionamientoListado.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Frac_FraccionamientoListado21.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Frac_FraccionamientoParametros.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Frac_Fraccionamientos.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Liqu_Compensacion.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Liqu_CompensacionDetalle.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Liqu_Deuda1.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Liqu_DeudaDetalleMonto.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Liqu_DeudaDetalleTributo.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Liqu_LiquidacionTributos.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Mant_Arancel.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Mant_ArancelRustico1.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Mant_Banco.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Mant_Cont.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Mant_Depreciacion.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Mant_GrupoImpresion.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Mant_Historial.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Mant_Inafectacion.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Mant_Mes.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Mant_Parametros.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Mant_Periodo.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Mant_RecaudacionPorOficina.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Mant_Relacion_Contribuyente.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Mant_Segmentacion.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Mant_TablaArancel.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Mant_TasaCambio.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Mant_ValoresArbitrios.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Mult_Multas.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Orga_Area.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pago_Caja.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pago_CajeroCaja.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pago_CuentaCorriente.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pago_OtrosPagos.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pago_Pago.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pago_PagoDetallado.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pago_PagoDetalleTributo.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pago_Pagos.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pago_PagoXDeuda.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pago_Parametros.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pago_ReciboPago.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pred_Anulacion.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pred_Certificado_Alcabala.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pred_ConstanciaNoDebe.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pred_Descuentos_Exoneracion.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pred_DetalleExoneracion.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pred_Fiscalizacion.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pred_Pisos.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pred_PredioContribuyente2.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pred_Predios.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pred_PrredioArbitrio.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pred_ResumenDeuda.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pred_Sector.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pred_SegmentacionRango.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pred_Segmentacion_Contribuyente.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pred_TipoSector.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pred_TipoVia.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pred_Tributo.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pred_UsoGeneral.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pred_ValidacionPredioArbitrio.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Pred_Vias.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Proc_CuentaCorritente.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Reci_Recibo.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Reci_ReciboDetalle.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Reci_ReciboDetalleReporte1.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.RepoGrandesDeudores.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.RepoValoresCobranza.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Repo_CajaResumen.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Repo_DetallePagos.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Repo_estadistico2.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Repo_HojaResumen.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Repo_PlanillaIngresos1.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Repo_PredioRustico.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Repo_PredioUrbano1.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Rep_Estadistico1.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Segu_MenuOperaciones.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Segu_Modulo.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Trib_ClasificadorIngresos.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Trib_FormatoCampos.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Trib_TipoFormato.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Trib_TipoFraccionamiento.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Trib_TributoFraccionamiento.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Valo_ListadoDeudores.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Valo_OrdenPago.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Valo_ResolucionDeterminacionArbitrios.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Valo_ResolucionDeterminacionPredial.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Valo_ValoresCobranza.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Valo_ValoresCobranzaDetalleContribuyente.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Valo_ValoresCobranzaDetalleJunta.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Valo_ValoresCobranzaReporte.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Valo_ValoresCobranzas.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Model.Valo_ValorTipoValor.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Pago_Cajero.datasource" />
+    <None Include="Properties\DataSources\SGR.Entity.Trib_FormatoValor.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Sistema\Entorno\DockPanel.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Layout\1-Tablas-Maestras\DatosPersonales\" />
+    <Folder Include="Layout\3-Movimientos\" />
+    <Folder Include="Layout\4-Procesos\Plataforma\ConsultarPredios\" />
+    <Folder Include="Layout\5-Reportes-Gestion\Rep_Coactivo\" />
+    <Folder Include="Layout\Seguridad\Permiso\" />
+    <Folder Include="Resources\casamapa\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SGR.Core\SGR.Core.csproj">
+      <Project>{c35582df-547d-41ad-857f-cf989a699887}</Project>
+      <Name>SGR.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SGR.Entity\SGR.Entity.csproj">
+      <Project>{b9dee4b9-5d1e-43fa-a689-8e5eb5029539}</Project>
+      <Name>SGR.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-new-document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logomuni.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-file %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\winrar_view.png" />
+    <None Include="Recursos\verificar.png" />
+    <None Include="Recursos\detalles.png" />
+    <Content Include="Resources\anular.png" />
+    <None Include="Resources\detalles.png" />
+    <Content Include="Resources\application_view_tile.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\bookmark.png" />
+    <None Include="Resources\coins.png" />
+    <None Include="Resources\clear.png" />
+    <None Include="Resources\delete2.png" />
+    <None Include="Resources\drop-no.gif" />
+    <None Include="Resources\education.png" />
+    <None Include="Resources\group_link.png" />
+    <None Include="Resources\check.png" />
+    <None Include="Resources\ireport.png" />
+    <None Include="Resources\goback.jpg" />
+    <None Include="Resources\gonext.jpg" />
+    <Content Include="Resources\clipboard-with-a-list.png" />
+    <None Include="Resources\FONDO DE PANTALLA PARA RENTAS.jpg" />
+    <Content Include="Resources\moneyy.png" />
+    <None Include="Resources\money_delete.png" />
+    <Content Include="Resources\monto.png" />
+    <None Include="Resources\page_white_copy.png" />
+    <Content Include="Resources\parcial.png" />
+    <None Include="Resources\progress-report.png" />
+    <None Include="Resources\posterior.gif" />
+    <None Include="Resources\plugin.png" />
+    <Content Include="Resources\predios.png" />
+    <Content Include="Resources\print.png" />
+    <Content Include="Resources\print_b.gif" />
+    <Content Include="Resources\recibo.png" />
+    <None Include="Resources\save.gif" />
+    <None Include="Resources\sub_dividir.png" />
+    <None Include="Resources\tables.png" />
+    <None Include="Resources\savesave.gif" />
+    <None Include="Resources\toolbox.png" />
+    <Content Include="Resources\tributos.png" />
+    <None Include="Recursos\Inactivo.png" />
+    <None Include="Recursos\Activo.png" />
+    <Content Include="Recursos\search.gif" />
+    <Content Include="Resources\Activo.png" />
+    <Content Include="Resources\Inactivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

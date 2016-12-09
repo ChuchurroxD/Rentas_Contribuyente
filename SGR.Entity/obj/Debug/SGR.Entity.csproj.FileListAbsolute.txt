@@ -1,0 +1,9 @@
+C:\sgr_23_08_2016\Codigo2016\SGR\SGR.Entity\bin\Debug\SGR.Entity.dll
+C:\sgr_23_08_2016\Codigo2016\SGR\SGR.Entity\bin\Debug\SGR.Entity.pdb
+C:\sgr_23_08_2016\Codigo2016\SGR\SGR.Entity\obj\Debug\SGR.Entity.dll
+C:\sgr_23_08_2016\Codigo2016\SGR\SGR.Entity\obj\Debug\SGR.Entity.pdb
+D:\PROYECTO_MOCHE\SGR\SGR.Entity\bin\Debug\SGR.Entity.dll
+D:\PROYECTO_MOCHE\SGR\SGR.Entity\bin\Debug\SGR.Entity.pdb
+D:\PROYECTO_MOCHE\SGR\SGR.Entity\obj\Debug\SGR.Entity.csprojResolveAssemblyReference.cache
+D:\PROYECTO_MOCHE\SGR\SGR.Entity\obj\Debug\SGR.Entity.dll
+D:\PROYECTO_MOCHE\SGR\SGR.Entity\obj\Debug\SGR.Entity.pdb
