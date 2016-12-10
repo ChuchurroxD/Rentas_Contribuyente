@@ -10,18 +10,24 @@ ALTER TABLE usuario ADD per_codContributente CHAR(09) NULL;
 -------- INSERTAR DOS GRUPOS PARA PLATAFORMA -----------
 insert into grupo (gru_nombre, gru_descripcion, gru_activo, gru_icono, gru_orden) values ('Acceso y Seguridad','Acceso y Seguridad a la plataforma web','1','lock_go','1')
 insert into grupo (gru_nombre, gru_descripcion, gru_activo, gru_icono, gru_orden) values ('Información General','Información General del contribuyente','1','','2')
+insert into grupo (gru_nombre, gru_descripcion, gru_activo, gru_icono, gru_orden) values ('REPORTE GERENCIAL','REPORTE GERENCIAL',1,'','')
 
 
 ---- INSERTAR TAREAS ----
 insert into tarea (grupo_id, tar_nombre, tar_descripcion, tar_url, tar_activo, tar_padre, tar_icono, tar_orden) values (12,'Cambiar Password','Cambiar contraseña','',1,0,'user_edit','1')
 insert into tarea (grupo_id, tar_nombre, tar_descripcion, tar_url, tar_activo, tar_padre, tar_icono, tar_orden) values (13,'Contribuyentes','Datos del contributente en la plataforma','_user',1,0,'','1')
 insert into tarea (grupo_id, tar_nombre, tar_descripcion, tar_url, tar_activo, tar_padre, tar_icono, tar_orden) values (13,'Simula Fraccionamiento','Simulacion del fraccionamiento','',1,0,'application_split','2')
+insert into tarea (grupo_id, tar_nombre, tar_descripcion, tar_url, tar_activo, tar_padre, tar_icono, tar_orden) values (14,'REPORTE GERENCIAL','REPORTE GERENCIAL','Layout._5_Reportes_Gestion.Rep_estadisticos.Frm_RepGerencial',1,0,'','')
 
 
 ---- INSERTAR ROLES_TAREAS ----
 INSERT INTO Rol_Tarea (rol_id, tarea_id, estado) values (14,'40713',1)
 INSERT INTO Rol_Tarea (rol_id, tarea_id, estado) values (14,'40714',1)
 INSERT INTO Rol_Tarea (rol_id, tarea_id, estado) values (14,'40715',1)
+INSERT INTO Rol_Tarea (rol_id, tarea_id, estado) values (1,'40716',1)
+
+
+
 
 
 

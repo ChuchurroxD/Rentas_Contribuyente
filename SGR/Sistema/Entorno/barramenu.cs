@@ -127,7 +127,7 @@ namespace SGR.WinApp.Sistema.Entorno
 
         private void outlookPanelBar_ButtonClicked(object sender, EventArgs e)
         {
-            if (Int16.Parse(outlookPanelBar.SelectedButton.Code) == 12)
+            if (Int16.Parse(outlookPanelBar.SelectedButton.Code) == 14)
             {
                 if (Cursor.Current == Cursors.WaitCursor)
                     return;
