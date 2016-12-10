@@ -632,6 +632,7 @@ namespace SGR.WinApp.Layout._4_Procesos.Emision
             String cod_persona = (String)dgvContribuyentes.SelectedRows[0].Cells["codigo"].Value;
             if (MessageBox.Show("¿Desea imprimir desde "+persona+" hacia adelante?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
+                Cursor.Current = Cursors.WaitCursor;
                 coleccion2 = emiMasivo.listarNuevaImpresion(persona, (Convert.ToInt32(cboSector.SelectedValue)));
                 DateTime fechaHoy = DateTime.Now;
                 

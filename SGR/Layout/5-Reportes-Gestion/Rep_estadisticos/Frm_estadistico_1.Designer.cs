@@ -38,53 +38,6 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvComparativo = new System.Windows.Forms.DataGridView();
-            this.cboPeriodo = new System.Windows.Forms.ComboBox();
-            this.btnComparativo = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rbtnAbono = new System.Windows.Forms.RadioButton();
-            this.rbtnSaldo = new System.Windows.Forms.RadioButton();
-            this.dgvSaldos = new System.Windows.Forms.DataGridView();
-            this.cboPeriodo2 = new System.Windows.Forms.ComboBox();
-            this.btnSaldos = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.dgvReporte1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn40 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn49 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn50 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
-            this.cboMesFinal = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cboMesInicio = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.cboPeriodo3 = new System.Windows.Forms.ComboBox();
-            this.btnGenerarReporte = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
             this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -115,6 +68,14 @@
             this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cboPeriodo = new System.Windows.Forms.ComboBox();
+            this.btnComparativo = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rbtnAbono = new System.Windows.Forms.RadioButton();
+            this.rbtnSaldo = new System.Windows.Forms.RadioButton();
+            this.dgvSaldos = new System.Windows.Forms.DataGridView();
             this.Periodo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -145,6 +106,50 @@
             this.ArbitriosMunicipales = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ImpuestoAlcabala = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Multas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cboPeriodo2 = new System.Windows.Forms.ComboBox();
+            this.btnSaldos = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.dgvReporte1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.cboMesFinal = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cboMesInicio = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cboPeriodo3 = new System.Windows.Forms.ComboBox();
+            this.btnGenerarReporte = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dataGridViewTextBoxColumn46 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.xTotalMes = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.xAlcabala = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.xArbitrios = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.xPredialAnterior = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.xPredial = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn42 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn43 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn44 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn40 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn41 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn34 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn35 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn36 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn47 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn48 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn49 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn50 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -261,567 +266,6 @@
             this.dgvComparativo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvComparativo.Size = new System.Drawing.Size(794, 303);
             this.dgvComparativo.TabIndex = 35;
-            // 
-            // cboPeriodo
-            // 
-            this.cboPeriodo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboPeriodo.FormattingEnabled = true;
-            this.cboPeriodo.Location = new System.Drawing.Point(324, 43);
-            this.cboPeriodo.Name = "cboPeriodo";
-            this.cboPeriodo.Size = new System.Drawing.Size(121, 21);
-            this.cboPeriodo.TabIndex = 33;
-            this.cboPeriodo.SelectedIndexChanged += new System.EventHandler(this.cboPeriodo_SelectedIndexChanged_1);
-            // 
-            // btnComparativo
-            // 
-            this.btnComparativo.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnComparativo.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btnComparativo.Image = global::SGR.WinApp.Properties.Resources.progress_report;
-            this.btnComparativo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnComparativo.Location = new System.Drawing.Point(607, 37);
-            this.btnComparativo.Name = "btnComparativo";
-            this.btnComparativo.Size = new System.Drawing.Size(159, 31);
-            this.btnComparativo.TabIndex = 11;
-            this.btnComparativo.Text = "Generar Reporte";
-            this.btnComparativo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnComparativo.UseVisualStyleBackColor = true;
-            this.btnComparativo.Click += new System.EventHandler(this.btnGenerarReporte_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(277, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Año";
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.groupBox2);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(829, 413);
-            this.tabPage4.TabIndex = 1;
-            this.tabPage4.Text = "REPORTE DE SALDOS Y MONTO COBRADO  COMPARATIVO POR AÑOS";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.BackColor = System.Drawing.Color.Lavender;
-            this.groupBox2.Controls.Add(this.rbtnAbono);
-            this.groupBox2.Controls.Add(this.rbtnSaldo);
-            this.groupBox2.Controls.Add(this.dgvSaldos);
-            this.groupBox2.Controls.Add(this.cboPeriodo2);
-            this.groupBox2.Controls.Add(this.btnSaldos);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Location = new System.Drawing.Point(5, 6);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(818, 401);
-            this.groupBox2.TabIndex = 4;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Opciones de Búsqueda";
-            // 
-            // rbtnAbono
-            // 
-            this.rbtnAbono.AutoSize = true;
-            this.rbtnAbono.Location = new System.Drawing.Point(541, 37);
-            this.rbtnAbono.Name = "rbtnAbono";
-            this.rbtnAbono.Size = new System.Drawing.Size(136, 17);
-            this.rbtnAbono.TabIndex = 36;
-            this.rbtnAbono.TabStop = true;
-            this.rbtnAbono.Text = "Ver Por Monto Cobrado";
-            this.rbtnAbono.UseVisualStyleBackColor = true;
-            this.rbtnAbono.CheckedChanged += new System.EventHandler(this.rbtnAbono_CheckedChanged);
-            // 
-            // rbtnSaldo
-            // 
-            this.rbtnSaldo.AutoSize = true;
-            this.rbtnSaldo.Location = new System.Drawing.Point(422, 37);
-            this.rbtnSaldo.Name = "rbtnSaldo";
-            this.rbtnSaldo.Size = new System.Drawing.Size(90, 17);
-            this.rbtnSaldo.TabIndex = 35;
-            this.rbtnSaldo.TabStop = true;
-            this.rbtnSaldo.Text = "Ver Por Saldo";
-            this.rbtnSaldo.UseVisualStyleBackColor = true;
-            this.rbtnSaldo.CheckedChanged += new System.EventHandler(this.rbtnSaldo_CheckedChanged);
-            // 
-            // dgvSaldos
-            // 
-            this.dgvSaldos.AllowUserToAddRows = false;
-            this.dgvSaldos.AllowUserToDeleteRows = false;
-            this.dgvSaldos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvSaldos.BackgroundColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSaldos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvSaldos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSaldos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Periodo,
-            this.Column2,
-            this.Column3,
-            this.Column1,
-            this.anterior,
-            this.total,
-            this.CargoArbitrio,
-            this.AbonoArbitrio,
-            this.SaldoArbitrio,
-            this.CargoOtros,
-            this.AbonoOtros,
-            this.SaldoOtros,
-            this.TotalCargo,
-            this.TotalAbono,
-            this.TotalSaldo,
-            this.Cobrado,
-            this.Morosidad,
-            this.CobradoPredio,
-            this.MorosidadPredio,
-            this.CobradoArbitrio,
-            this.MorosidadArbitrio,
-            this.CargoPredio,
-            this.AbonoPredio,
-            this.SaldoPredio,
-            this.nro,
-            this.mes,
-            this.ImpuestoPredial,
-            this.ArbitriosMunicipales,
-            this.ImpuestoAlcabala,
-            this.Multas});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvSaldos.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvSaldos.EnableHeadersVisualStyles = false;
-            this.dgvSaldos.Location = new System.Drawing.Point(43, 126);
-            this.dgvSaldos.Name = "dgvSaldos";
-            this.dgvSaldos.ReadOnly = true;
-            this.dgvSaldos.RowHeadersVisible = false;
-            this.dgvSaldos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSaldos.Size = new System.Drawing.Size(725, 263);
-            this.dgvSaldos.TabIndex = 34;
-            // 
-            // cboPeriodo2
-            // 
-            this.cboPeriodo2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboPeriodo2.FormattingEnabled = true;
-            this.cboPeriodo2.Location = new System.Drawing.Point(249, 36);
-            this.cboPeriodo2.Name = "cboPeriodo2";
-            this.cboPeriodo2.Size = new System.Drawing.Size(121, 21);
-            this.cboPeriodo2.TabIndex = 33;
-            this.cboPeriodo2.SelectedIndexChanged += new System.EventHandler(this.cboPeriodo2_SelectedIndexChanged);
-            // 
-            // btnSaldos
-            // 
-            this.btnSaldos.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaldos.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btnSaldos.Image = global::SGR.WinApp.Properties.Resources.progress_report;
-            this.btnSaldos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSaldos.Location = new System.Drawing.Point(348, 79);
-            this.btnSaldos.Name = "btnSaldos";
-            this.btnSaldos.Size = new System.Drawing.Size(159, 31);
-            this.btnSaldos.TabIndex = 11;
-            this.btnSaldos.Text = "Generar Reporte";
-            this.btnSaldos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSaldos.UseVisualStyleBackColor = true;
-            this.btnSaldos.Click += new System.EventHandler(this.btnSaldos_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(147, 37);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 15);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Desde el año:";
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.groupBox3);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(829, 413);
-            this.tabPage1.TabIndex = 2;
-            this.tabPage1.Text = "COMPARATIVO COBRADO POR PERIODO DE TIEMPO (MESES)";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox3.BackColor = System.Drawing.Color.Lavender;
-            this.groupBox3.Controls.Add(this.dgvReporte1);
-            this.groupBox3.Controls.Add(this.button1);
-            this.groupBox3.Controls.Add(this.cboMesFinal);
-            this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.cboMesInicio);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.cboPeriodo3);
-            this.groupBox3.Controls.Add(this.btnGenerarReporte);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Location = new System.Drawing.Point(3, 3);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(818, 357);
-            this.groupBox3.TabIndex = 5;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Opciones de Búsqueda";
-            // 
-            // dgvReporte1
-            // 
-            this.dgvReporte1.AllowUserToAddRows = false;
-            this.dgvReporte1.AllowUserToDeleteRows = false;
-            this.dgvReporte1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvReporte1.BackgroundColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvReporte1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvReporte1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvReporte1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn46,
-            this.dataGridViewTextBoxColumn42,
-            this.dataGridViewTextBoxColumn43,
-            this.dataGridViewTextBoxColumn44,
-            this.dataGridViewTextBoxColumn38,
-            this.dataGridViewTextBoxColumn39,
-            this.dataGridViewTextBoxColumn27,
-            this.dataGridViewTextBoxColumn28,
-            this.dataGridViewTextBoxColumn29,
-            this.dataGridViewTextBoxColumn40,
-            this.dataGridViewTextBoxColumn41,
-            this.dataGridViewTextBoxColumn30,
-            this.dataGridViewTextBoxColumn31,
-            this.dataGridViewTextBoxColumn32,
-            this.dataGridViewTextBoxColumn33,
-            this.dataGridViewTextBoxColumn34,
-            this.dataGridViewTextBoxColumn35,
-            this.dataGridViewTextBoxColumn36,
-            this.dataGridViewTextBoxColumn37,
-            this.dataGridViewTextBoxColumn45,
-            this.dataGridViewTextBoxColumn47,
-            this.dataGridViewTextBoxColumn48,
-            this.dataGridViewTextBoxColumn49,
-            this.dataGridViewTextBoxColumn50,
-            this.dataGridViewTextBoxColumn26});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvReporte1.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dgvReporte1.EnableHeadersVisualStyles = false;
-            this.dgvReporte1.Location = new System.Drawing.Point(6, 105);
-            this.dgvReporte1.Name = "dgvReporte1";
-            this.dgvReporte1.ReadOnly = true;
-            this.dgvReporte1.RowHeadersVisible = false;
-            this.dgvReporte1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvReporte1.Size = new System.Drawing.Size(806, 246);
-            this.dgvReporte1.TabIndex = 47;
-            // 
-            // dataGridViewTextBoxColumn46
-            // 
-            this.dataGridViewTextBoxColumn46.DataPropertyName = "mes";
-            this.dataGridViewTextBoxColumn46.HeaderText = "mes";
-            this.dataGridViewTextBoxColumn46.Name = "dataGridViewTextBoxColumn46";
-            this.dataGridViewTextBoxColumn46.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn42
-            // 
-            this.dataGridViewTextBoxColumn42.DataPropertyName = "CargoPredio";
-            this.dataGridViewTextBoxColumn42.HeaderText = "CargoPredio";
-            this.dataGridViewTextBoxColumn42.Name = "dataGridViewTextBoxColumn42";
-            this.dataGridViewTextBoxColumn42.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn43
-            // 
-            this.dataGridViewTextBoxColumn43.DataPropertyName = "AbonoPredio";
-            this.dataGridViewTextBoxColumn43.HeaderText = "AbonoPredio ";
-            this.dataGridViewTextBoxColumn43.Name = "dataGridViewTextBoxColumn43";
-            this.dataGridViewTextBoxColumn43.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn44
-            // 
-            this.dataGridViewTextBoxColumn44.DataPropertyName = "SaldoPredio";
-            this.dataGridViewTextBoxColumn44.HeaderText = "SaldoPredio ";
-            this.dataGridViewTextBoxColumn44.Name = "dataGridViewTextBoxColumn44";
-            this.dataGridViewTextBoxColumn44.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn38
-            // 
-            this.dataGridViewTextBoxColumn38.DataPropertyName = "CobradoPredio";
-            this.dataGridViewTextBoxColumn38.HeaderText = "CobradoPredio";
-            this.dataGridViewTextBoxColumn38.Name = "dataGridViewTextBoxColumn38";
-            this.dataGridViewTextBoxColumn38.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn39
-            // 
-            this.dataGridViewTextBoxColumn39.DataPropertyName = "MorosidadPredio";
-            this.dataGridViewTextBoxColumn39.HeaderText = "MorosidadPredio ";
-            this.dataGridViewTextBoxColumn39.Name = "dataGridViewTextBoxColumn39";
-            this.dataGridViewTextBoxColumn39.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn27
-            // 
-            this.dataGridViewTextBoxColumn27.DataPropertyName = "CargoArbitrio";
-            this.dataGridViewTextBoxColumn27.HeaderText = "CargoArbitrio ";
-            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
-            this.dataGridViewTextBoxColumn27.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn28
-            // 
-            this.dataGridViewTextBoxColumn28.DataPropertyName = "AbonoArbitrio";
-            this.dataGridViewTextBoxColumn28.HeaderText = "AbonoArbitrio ";
-            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
-            this.dataGridViewTextBoxColumn28.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn29
-            // 
-            this.dataGridViewTextBoxColumn29.DataPropertyName = "SaldoArbitrio";
-            this.dataGridViewTextBoxColumn29.HeaderText = "SaldoArbitrio ";
-            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
-            this.dataGridViewTextBoxColumn29.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn40
-            // 
-            this.dataGridViewTextBoxColumn40.DataPropertyName = "CobradoArbitrio";
-            this.dataGridViewTextBoxColumn40.HeaderText = "CobradoArbitrio ";
-            this.dataGridViewTextBoxColumn40.Name = "dataGridViewTextBoxColumn40";
-            this.dataGridViewTextBoxColumn40.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn41
-            // 
-            this.dataGridViewTextBoxColumn41.DataPropertyName = "MorosidadArbitrio";
-            this.dataGridViewTextBoxColumn41.HeaderText = "MorosidadArbitrio ";
-            this.dataGridViewTextBoxColumn41.Name = "dataGridViewTextBoxColumn41";
-            this.dataGridViewTextBoxColumn41.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn30
-            // 
-            this.dataGridViewTextBoxColumn30.DataPropertyName = "CargoOtros";
-            this.dataGridViewTextBoxColumn30.HeaderText = "CargoOtros ";
-            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
-            this.dataGridViewTextBoxColumn30.ReadOnly = true;
-            this.dataGridViewTextBoxColumn30.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn31
-            // 
-            this.dataGridViewTextBoxColumn31.DataPropertyName = "AbonoOtros";
-            this.dataGridViewTextBoxColumn31.HeaderText = "AbonoOtros ";
-            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
-            this.dataGridViewTextBoxColumn31.ReadOnly = true;
-            this.dataGridViewTextBoxColumn31.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn32
-            // 
-            this.dataGridViewTextBoxColumn32.DataPropertyName = "SaldoOtros";
-            this.dataGridViewTextBoxColumn32.HeaderText = "SaldoOtros ";
-            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
-            this.dataGridViewTextBoxColumn32.ReadOnly = true;
-            this.dataGridViewTextBoxColumn32.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn33
-            // 
-            this.dataGridViewTextBoxColumn33.DataPropertyName = "TotalCargo";
-            this.dataGridViewTextBoxColumn33.HeaderText = "TotalCargo ";
-            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
-            this.dataGridViewTextBoxColumn33.ReadOnly = true;
-            this.dataGridViewTextBoxColumn33.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn34
-            // 
-            this.dataGridViewTextBoxColumn34.DataPropertyName = "TotalAbono";
-            this.dataGridViewTextBoxColumn34.HeaderText = "TotalAbono ";
-            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
-            this.dataGridViewTextBoxColumn34.ReadOnly = true;
-            this.dataGridViewTextBoxColumn34.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn35
-            // 
-            this.dataGridViewTextBoxColumn35.DataPropertyName = "TotalSaldo";
-            this.dataGridViewTextBoxColumn35.HeaderText = "TotalSaldo ";
-            this.dataGridViewTextBoxColumn35.Name = "dataGridViewTextBoxColumn35";
-            this.dataGridViewTextBoxColumn35.ReadOnly = true;
-            this.dataGridViewTextBoxColumn35.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn36
-            // 
-            this.dataGridViewTextBoxColumn36.DataPropertyName = "Cobrado";
-            this.dataGridViewTextBoxColumn36.HeaderText = "Cobrado ";
-            this.dataGridViewTextBoxColumn36.Name = "dataGridViewTextBoxColumn36";
-            this.dataGridViewTextBoxColumn36.ReadOnly = true;
-            this.dataGridViewTextBoxColumn36.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn37
-            // 
-            this.dataGridViewTextBoxColumn37.DataPropertyName = "Morosidad";
-            this.dataGridViewTextBoxColumn37.HeaderText = "Morosidad ";
-            this.dataGridViewTextBoxColumn37.Name = "dataGridViewTextBoxColumn37";
-            this.dataGridViewTextBoxColumn37.ReadOnly = true;
-            this.dataGridViewTextBoxColumn37.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn45
-            // 
-            this.dataGridViewTextBoxColumn45.DataPropertyName = "nro";
-            this.dataGridViewTextBoxColumn45.HeaderText = "nro";
-            this.dataGridViewTextBoxColumn45.Name = "dataGridViewTextBoxColumn45";
-            this.dataGridViewTextBoxColumn45.ReadOnly = true;
-            this.dataGridViewTextBoxColumn45.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn47
-            // 
-            this.dataGridViewTextBoxColumn47.DataPropertyName = "ImpuestoPredial";
-            this.dataGridViewTextBoxColumn47.HeaderText = "Impuesto Predial";
-            this.dataGridViewTextBoxColumn47.Name = "dataGridViewTextBoxColumn47";
-            this.dataGridViewTextBoxColumn47.ReadOnly = true;
-            this.dataGridViewTextBoxColumn47.Visible = false;
-            this.dataGridViewTextBoxColumn47.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn48
-            // 
-            this.dataGridViewTextBoxColumn48.DataPropertyName = "ArbitriosMunicipales";
-            this.dataGridViewTextBoxColumn48.HeaderText = "Arbitrios Municipales";
-            this.dataGridViewTextBoxColumn48.Name = "dataGridViewTextBoxColumn48";
-            this.dataGridViewTextBoxColumn48.ReadOnly = true;
-            this.dataGridViewTextBoxColumn48.Visible = false;
-            this.dataGridViewTextBoxColumn48.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn49
-            // 
-            this.dataGridViewTextBoxColumn49.DataPropertyName = "ImpuestoAlcabala";
-            this.dataGridViewTextBoxColumn49.HeaderText = "Impuesto Alcabala";
-            this.dataGridViewTextBoxColumn49.Name = "dataGridViewTextBoxColumn49";
-            this.dataGridViewTextBoxColumn49.ReadOnly = true;
-            this.dataGridViewTextBoxColumn49.Visible = false;
-            this.dataGridViewTextBoxColumn49.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn50
-            // 
-            this.dataGridViewTextBoxColumn50.DataPropertyName = "Multas";
-            this.dataGridViewTextBoxColumn50.HeaderText = "Multas";
-            this.dataGridViewTextBoxColumn50.Name = "dataGridViewTextBoxColumn50";
-            this.dataGridViewTextBoxColumn50.ReadOnly = true;
-            this.dataGridViewTextBoxColumn50.Visible = false;
-            this.dataGridViewTextBoxColumn50.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn26
-            // 
-            this.dataGridViewTextBoxColumn26.DataPropertyName = "Periodo";
-            this.dataGridViewTextBoxColumn26.HeaderText = "Año";
-            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
-            this.dataGridViewTextBoxColumn26.ReadOnly = true;
-            this.dataGridViewTextBoxColumn26.Visible = false;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.SteelBlue;
-            this.button1.Image = global::SGR.WinApp.Properties.Resources.search;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(261, 70);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 31);
-            this.button1.TabIndex = 46;
-            this.button1.Text = "Buscar";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // cboMesFinal
-            // 
-            this.cboMesFinal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboMesFinal.FormattingEnabled = true;
-            this.cboMesFinal.Location = new System.Drawing.Point(566, 33);
-            this.cboMesFinal.Name = "cboMesFinal";
-            this.cboMesFinal.Size = new System.Drawing.Size(121, 21);
-            this.cboMesFinal.TabIndex = 45;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(526, 33);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 15);
-            this.label3.TabIndex = 44;
-            this.label3.Text = "- - - ";
-            // 
-            // cboMesInicio
-            // 
-            this.cboMesInicio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboMesInicio.FormattingEnabled = true;
-            this.cboMesInicio.Location = new System.Drawing.Point(399, 31);
-            this.cboMesInicio.Name = "cboMesInicio";
-            this.cboMesInicio.Size = new System.Drawing.Size(121, 21);
-            this.cboMesInicio.TabIndex = 43;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(332, 32);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 15);
-            this.label4.TabIndex = 42;
-            this.label4.Text = "Periodo:";
-            // 
-            // cboPeriodo3
-            // 
-            this.cboPeriodo3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboPeriodo3.FormattingEnabled = true;
-            this.cboPeriodo3.Location = new System.Drawing.Point(151, 31);
-            this.cboPeriodo3.Name = "cboPeriodo3";
-            this.cboPeriodo3.Size = new System.Drawing.Size(121, 21);
-            this.cboPeriodo3.TabIndex = 41;
-            // 
-            // btnGenerarReporte
-            // 
-            this.btnGenerarReporte.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGenerarReporte.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btnGenerarReporte.Image = global::SGR.WinApp.Properties.Resources.progress_report;
-            this.btnGenerarReporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGenerarReporte.Location = new System.Drawing.Point(373, 70);
-            this.btnGenerarReporte.Name = "btnGenerarReporte";
-            this.btnGenerarReporte.Size = new System.Drawing.Size(159, 31);
-            this.btnGenerarReporte.TabIndex = 40;
-            this.btnGenerarReporte.Text = "Generar Reporte";
-            this.btnGenerarReporte.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGenerarReporte.UseVisualStyleBackColor = true;
-            this.btnGenerarReporte.Click += new System.EventHandler(this.btnGenerarReporte_Click_1);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(114, 32);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 15);
-            this.label5.TabIndex = 39;
-            this.label5.Text = "Año";
             // 
             // dataGridViewTextBoxColumn21
             // 
@@ -1062,6 +506,160 @@
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
             this.dataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // cboPeriodo
+            // 
+            this.cboPeriodo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboPeriodo.FormattingEnabled = true;
+            this.cboPeriodo.Location = new System.Drawing.Point(324, 43);
+            this.cboPeriodo.Name = "cboPeriodo";
+            this.cboPeriodo.Size = new System.Drawing.Size(121, 21);
+            this.cboPeriodo.TabIndex = 33;
+            this.cboPeriodo.SelectedIndexChanged += new System.EventHandler(this.cboPeriodo_SelectedIndexChanged_1);
+            // 
+            // btnComparativo
+            // 
+            this.btnComparativo.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnComparativo.ForeColor = System.Drawing.Color.SteelBlue;
+            this.btnComparativo.Image = global::SGR.WinApp.Properties.Resources.progress_report;
+            this.btnComparativo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnComparativo.Location = new System.Drawing.Point(607, 37);
+            this.btnComparativo.Name = "btnComparativo";
+            this.btnComparativo.Size = new System.Drawing.Size(159, 31);
+            this.btnComparativo.TabIndex = 11;
+            this.btnComparativo.Text = "Generar Reporte";
+            this.btnComparativo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnComparativo.UseVisualStyleBackColor = true;
+            this.btnComparativo.Click += new System.EventHandler(this.btnGenerarReporte_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(277, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(31, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Año";
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.groupBox2);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(829, 413);
+            this.tabPage4.TabIndex = 1;
+            this.tabPage4.Text = "REPORTE DE SALDOS Y MONTO COBRADO  COMPARATIVO POR AÑOS";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.BackColor = System.Drawing.Color.Lavender;
+            this.groupBox2.Controls.Add(this.rbtnAbono);
+            this.groupBox2.Controls.Add(this.rbtnSaldo);
+            this.groupBox2.Controls.Add(this.dgvSaldos);
+            this.groupBox2.Controls.Add(this.cboPeriodo2);
+            this.groupBox2.Controls.Add(this.btnSaldos);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Location = new System.Drawing.Point(5, 6);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(818, 401);
+            this.groupBox2.TabIndex = 4;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Opciones de Búsqueda";
+            // 
+            // rbtnAbono
+            // 
+            this.rbtnAbono.AutoSize = true;
+            this.rbtnAbono.Location = new System.Drawing.Point(541, 37);
+            this.rbtnAbono.Name = "rbtnAbono";
+            this.rbtnAbono.Size = new System.Drawing.Size(136, 17);
+            this.rbtnAbono.TabIndex = 36;
+            this.rbtnAbono.TabStop = true;
+            this.rbtnAbono.Text = "Ver Por Monto Cobrado";
+            this.rbtnAbono.UseVisualStyleBackColor = true;
+            this.rbtnAbono.CheckedChanged += new System.EventHandler(this.rbtnAbono_CheckedChanged);
+            // 
+            // rbtnSaldo
+            // 
+            this.rbtnSaldo.AutoSize = true;
+            this.rbtnSaldo.Location = new System.Drawing.Point(422, 37);
+            this.rbtnSaldo.Name = "rbtnSaldo";
+            this.rbtnSaldo.Size = new System.Drawing.Size(90, 17);
+            this.rbtnSaldo.TabIndex = 35;
+            this.rbtnSaldo.TabStop = true;
+            this.rbtnSaldo.Text = "Ver Por Saldo";
+            this.rbtnSaldo.UseVisualStyleBackColor = true;
+            this.rbtnSaldo.CheckedChanged += new System.EventHandler(this.rbtnSaldo_CheckedChanged);
+            // 
+            // dgvSaldos
+            // 
+            this.dgvSaldos.AllowUserToAddRows = false;
+            this.dgvSaldos.AllowUserToDeleteRows = false;
+            this.dgvSaldos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvSaldos.BackgroundColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSaldos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvSaldos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSaldos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Periodo,
+            this.Column2,
+            this.Column3,
+            this.Column1,
+            this.anterior,
+            this.total,
+            this.CargoArbitrio,
+            this.AbonoArbitrio,
+            this.SaldoArbitrio,
+            this.CargoOtros,
+            this.AbonoOtros,
+            this.SaldoOtros,
+            this.TotalCargo,
+            this.TotalAbono,
+            this.TotalSaldo,
+            this.Cobrado,
+            this.Morosidad,
+            this.CobradoPredio,
+            this.MorosidadPredio,
+            this.CobradoArbitrio,
+            this.MorosidadArbitrio,
+            this.CargoPredio,
+            this.AbonoPredio,
+            this.SaldoPredio,
+            this.nro,
+            this.mes,
+            this.ImpuestoPredial,
+            this.ArbitriosMunicipales,
+            this.ImpuestoAlcabala,
+            this.Multas});
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvSaldos.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvSaldos.EnableHeadersVisualStyles = false;
+            this.dgvSaldos.Location = new System.Drawing.Point(43, 126);
+            this.dgvSaldos.Name = "dgvSaldos";
+            this.dgvSaldos.ReadOnly = true;
+            this.dgvSaldos.RowHeadersVisible = false;
+            this.dgvSaldos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvSaldos.Size = new System.Drawing.Size(725, 263);
+            this.dgvSaldos.TabIndex = 34;
             // 
             // Periodo
             // 
@@ -1306,6 +904,457 @@
             this.Multas.Visible = false;
             this.Multas.Width = 150;
             // 
+            // cboPeriodo2
+            // 
+            this.cboPeriodo2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboPeriodo2.FormattingEnabled = true;
+            this.cboPeriodo2.Location = new System.Drawing.Point(249, 36);
+            this.cboPeriodo2.Name = "cboPeriodo2";
+            this.cboPeriodo2.Size = new System.Drawing.Size(121, 21);
+            this.cboPeriodo2.TabIndex = 33;
+            this.cboPeriodo2.SelectedIndexChanged += new System.EventHandler(this.cboPeriodo2_SelectedIndexChanged);
+            // 
+            // btnSaldos
+            // 
+            this.btnSaldos.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaldos.ForeColor = System.Drawing.Color.SteelBlue;
+            this.btnSaldos.Image = global::SGR.WinApp.Properties.Resources.progress_report;
+            this.btnSaldos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSaldos.Location = new System.Drawing.Point(348, 79);
+            this.btnSaldos.Name = "btnSaldos";
+            this.btnSaldos.Size = new System.Drawing.Size(159, 31);
+            this.btnSaldos.TabIndex = 11;
+            this.btnSaldos.Text = "Generar Reporte";
+            this.btnSaldos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSaldos.UseVisualStyleBackColor = true;
+            this.btnSaldos.Click += new System.EventHandler(this.btnSaldos_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(147, 37);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(96, 15);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Desde el año:";
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.groupBox3);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Size = new System.Drawing.Size(829, 413);
+            this.tabPage1.TabIndex = 2;
+            this.tabPage1.Text = "COMPARATIVO COBRADO POR PERIODO DE TIEMPO (MESES)";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox3.BackColor = System.Drawing.Color.Lavender;
+            this.groupBox3.Controls.Add(this.dgvReporte1);
+            this.groupBox3.Controls.Add(this.button1);
+            this.groupBox3.Controls.Add(this.cboMesFinal);
+            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Controls.Add(this.cboMesInicio);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Controls.Add(this.cboPeriodo3);
+            this.groupBox3.Controls.Add(this.btnGenerarReporte);
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Location = new System.Drawing.Point(3, 3);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(818, 357);
+            this.groupBox3.TabIndex = 5;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Opciones de Búsqueda";
+            // 
+            // dgvReporte1
+            // 
+            this.dgvReporte1.AllowUserToAddRows = false;
+            this.dgvReporte1.AllowUserToDeleteRows = false;
+            this.dgvReporte1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvReporte1.BackgroundColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvReporte1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvReporte1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReporte1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn46,
+            this.xTotalMes,
+            this.xAlcabala,
+            this.xArbitrios,
+            this.xPredialAnterior,
+            this.xPredial,
+            this.dataGridViewTextBoxColumn42,
+            this.dataGridViewTextBoxColumn43,
+            this.dataGridViewTextBoxColumn44,
+            this.dataGridViewTextBoxColumn38,
+            this.dataGridViewTextBoxColumn39,
+            this.dataGridViewTextBoxColumn27,
+            this.dataGridViewTextBoxColumn28,
+            this.dataGridViewTextBoxColumn29,
+            this.dataGridViewTextBoxColumn40,
+            this.dataGridViewTextBoxColumn41,
+            this.dataGridViewTextBoxColumn30,
+            this.dataGridViewTextBoxColumn31,
+            this.dataGridViewTextBoxColumn32,
+            this.dataGridViewTextBoxColumn33,
+            this.dataGridViewTextBoxColumn34,
+            this.dataGridViewTextBoxColumn35,
+            this.dataGridViewTextBoxColumn36,
+            this.dataGridViewTextBoxColumn37,
+            this.dataGridViewTextBoxColumn45,
+            this.dataGridViewTextBoxColumn47,
+            this.dataGridViewTextBoxColumn48,
+            this.dataGridViewTextBoxColumn49,
+            this.dataGridViewTextBoxColumn50,
+            this.dataGridViewTextBoxColumn26});
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvReporte1.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dgvReporte1.EnableHeadersVisualStyles = false;
+            this.dgvReporte1.Location = new System.Drawing.Point(6, 105);
+            this.dgvReporte1.Name = "dgvReporte1";
+            this.dgvReporte1.ReadOnly = true;
+            this.dgvReporte1.RowHeadersVisible = false;
+            this.dgvReporte1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvReporte1.Size = new System.Drawing.Size(806, 246);
+            this.dgvReporte1.TabIndex = 47;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.SteelBlue;
+            this.button1.Image = global::SGR.WinApp.Properties.Resources.search;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(261, 70);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(87, 31);
+            this.button1.TabIndex = 46;
+            this.button1.Text = "Buscar";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // cboMesFinal
+            // 
+            this.cboMesFinal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMesFinal.FormattingEnabled = true;
+            this.cboMesFinal.Location = new System.Drawing.Point(566, 33);
+            this.cboMesFinal.Name = "cboMesFinal";
+            this.cboMesFinal.Size = new System.Drawing.Size(121, 21);
+            this.cboMesFinal.TabIndex = 45;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(526, 33);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(34, 15);
+            this.label3.TabIndex = 44;
+            this.label3.Text = "- - - ";
+            // 
+            // cboMesInicio
+            // 
+            this.cboMesInicio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboMesInicio.FormattingEnabled = true;
+            this.cboMesInicio.Location = new System.Drawing.Point(399, 31);
+            this.cboMesInicio.Name = "cboMesInicio";
+            this.cboMesInicio.Size = new System.Drawing.Size(121, 21);
+            this.cboMesInicio.TabIndex = 43;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(332, 32);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(61, 15);
+            this.label4.TabIndex = 42;
+            this.label4.Text = "Periodo:";
+            // 
+            // cboPeriodo3
+            // 
+            this.cboPeriodo3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboPeriodo3.FormattingEnabled = true;
+            this.cboPeriodo3.Location = new System.Drawing.Point(151, 31);
+            this.cboPeriodo3.Name = "cboPeriodo3";
+            this.cboPeriodo3.Size = new System.Drawing.Size(121, 21);
+            this.cboPeriodo3.TabIndex = 41;
+            // 
+            // btnGenerarReporte
+            // 
+            this.btnGenerarReporte.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerarReporte.ForeColor = System.Drawing.Color.SteelBlue;
+            this.btnGenerarReporte.Image = global::SGR.WinApp.Properties.Resources.progress_report;
+            this.btnGenerarReporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenerarReporte.Location = new System.Drawing.Point(373, 70);
+            this.btnGenerarReporte.Name = "btnGenerarReporte";
+            this.btnGenerarReporte.Size = new System.Drawing.Size(159, 31);
+            this.btnGenerarReporte.TabIndex = 40;
+            this.btnGenerarReporte.Text = "Generar Reporte";
+            this.btnGenerarReporte.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGenerarReporte.UseVisualStyleBackColor = true;
+            this.btnGenerarReporte.Click += new System.EventHandler(this.btnGenerarReporte_Click_1);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(114, 32);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(31, 15);
+            this.label5.TabIndex = 39;
+            this.label5.Text = "Año";
+            // 
+            // dataGridViewTextBoxColumn46
+            // 
+            this.dataGridViewTextBoxColumn46.DataPropertyName = "mes";
+            this.dataGridViewTextBoxColumn46.HeaderText = "mes";
+            this.dataGridViewTextBoxColumn46.Name = "dataGridViewTextBoxColumn46";
+            this.dataGridViewTextBoxColumn46.ReadOnly = true;
+            // 
+            // xTotalMes
+            // 
+            this.xTotalMes.DataPropertyName = "TotalMes";
+            this.xTotalMes.HeaderText = "TotalMes";
+            this.xTotalMes.Name = "xTotalMes";
+            this.xTotalMes.ReadOnly = true;
+            this.xTotalMes.Visible = false;
+            // 
+            // xAlcabala
+            // 
+            this.xAlcabala.DataPropertyName = "Alcabala";
+            this.xAlcabala.HeaderText = "Alcabala";
+            this.xAlcabala.Name = "xAlcabala";
+            this.xAlcabala.ReadOnly = true;
+            this.xAlcabala.Visible = false;
+            // 
+            // xArbitrios
+            // 
+            this.xArbitrios.DataPropertyName = "Arbitrios";
+            this.xArbitrios.HeaderText = "Arbitrios";
+            this.xArbitrios.Name = "xArbitrios";
+            this.xArbitrios.ReadOnly = true;
+            // 
+            // xPredialAnterior
+            // 
+            this.xPredialAnterior.DataPropertyName = "PredialAnterior";
+            this.xPredialAnterior.HeaderText = "PredialAnterior";
+            this.xPredialAnterior.Name = "xPredialAnterior";
+            this.xPredialAnterior.ReadOnly = true;
+            this.xPredialAnterior.Visible = false;
+            // 
+            // xPredial
+            // 
+            this.xPredial.DataPropertyName = "Predial";
+            this.xPredial.HeaderText = "Predial";
+            this.xPredial.Name = "xPredial";
+            this.xPredial.ReadOnly = true;
+            this.xPredial.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn42
+            // 
+            this.dataGridViewTextBoxColumn42.DataPropertyName = "CargoPredio";
+            this.dataGridViewTextBoxColumn42.HeaderText = "CargoPredio";
+            this.dataGridViewTextBoxColumn42.Name = "dataGridViewTextBoxColumn42";
+            this.dataGridViewTextBoxColumn42.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn43
+            // 
+            this.dataGridViewTextBoxColumn43.DataPropertyName = "AbonoPredio";
+            this.dataGridViewTextBoxColumn43.HeaderText = "AbonoPredio ";
+            this.dataGridViewTextBoxColumn43.Name = "dataGridViewTextBoxColumn43";
+            this.dataGridViewTextBoxColumn43.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn44
+            // 
+            this.dataGridViewTextBoxColumn44.DataPropertyName = "SaldoPredio";
+            this.dataGridViewTextBoxColumn44.HeaderText = "SaldoPredio ";
+            this.dataGridViewTextBoxColumn44.Name = "dataGridViewTextBoxColumn44";
+            this.dataGridViewTextBoxColumn44.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn38
+            // 
+            this.dataGridViewTextBoxColumn38.DataPropertyName = "CobradoPredio";
+            this.dataGridViewTextBoxColumn38.HeaderText = "CobradoPredio";
+            this.dataGridViewTextBoxColumn38.Name = "dataGridViewTextBoxColumn38";
+            this.dataGridViewTextBoxColumn38.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn39
+            // 
+            this.dataGridViewTextBoxColumn39.DataPropertyName = "MorosidadPredio";
+            this.dataGridViewTextBoxColumn39.HeaderText = "MorosidadPredio ";
+            this.dataGridViewTextBoxColumn39.Name = "dataGridViewTextBoxColumn39";
+            this.dataGridViewTextBoxColumn39.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn27
+            // 
+            this.dataGridViewTextBoxColumn27.DataPropertyName = "CargoArbitrio";
+            this.dataGridViewTextBoxColumn27.HeaderText = "CargoArbitrio ";
+            this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
+            this.dataGridViewTextBoxColumn27.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn28
+            // 
+            this.dataGridViewTextBoxColumn28.DataPropertyName = "AbonoArbitrio";
+            this.dataGridViewTextBoxColumn28.HeaderText = "AbonoArbitrio ";
+            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
+            this.dataGridViewTextBoxColumn28.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn29
+            // 
+            this.dataGridViewTextBoxColumn29.DataPropertyName = "SaldoArbitrio";
+            this.dataGridViewTextBoxColumn29.HeaderText = "SaldoArbitrio ";
+            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
+            this.dataGridViewTextBoxColumn29.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn40
+            // 
+            this.dataGridViewTextBoxColumn40.DataPropertyName = "CobradoArbitrio";
+            this.dataGridViewTextBoxColumn40.HeaderText = "CobradoArbitrio ";
+            this.dataGridViewTextBoxColumn40.Name = "dataGridViewTextBoxColumn40";
+            this.dataGridViewTextBoxColumn40.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn41
+            // 
+            this.dataGridViewTextBoxColumn41.DataPropertyName = "MorosidadArbitrio";
+            this.dataGridViewTextBoxColumn41.HeaderText = "MorosidadArbitrio ";
+            this.dataGridViewTextBoxColumn41.Name = "dataGridViewTextBoxColumn41";
+            this.dataGridViewTextBoxColumn41.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn30
+            // 
+            this.dataGridViewTextBoxColumn30.DataPropertyName = "CargoOtros";
+            this.dataGridViewTextBoxColumn30.HeaderText = "CargoOtros ";
+            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
+            this.dataGridViewTextBoxColumn30.ReadOnly = true;
+            this.dataGridViewTextBoxColumn30.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn31
+            // 
+            this.dataGridViewTextBoxColumn31.DataPropertyName = "AbonoOtros";
+            this.dataGridViewTextBoxColumn31.HeaderText = "AbonoOtros ";
+            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
+            this.dataGridViewTextBoxColumn31.ReadOnly = true;
+            this.dataGridViewTextBoxColumn31.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn32
+            // 
+            this.dataGridViewTextBoxColumn32.DataPropertyName = "SaldoOtros";
+            this.dataGridViewTextBoxColumn32.HeaderText = "SaldoOtros ";
+            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
+            this.dataGridViewTextBoxColumn32.ReadOnly = true;
+            this.dataGridViewTextBoxColumn32.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn33
+            // 
+            this.dataGridViewTextBoxColumn33.DataPropertyName = "TotalCargo";
+            this.dataGridViewTextBoxColumn33.HeaderText = "TotalCargo ";
+            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
+            this.dataGridViewTextBoxColumn33.ReadOnly = true;
+            this.dataGridViewTextBoxColumn33.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn34
+            // 
+            this.dataGridViewTextBoxColumn34.DataPropertyName = "TotalAbono";
+            this.dataGridViewTextBoxColumn34.HeaderText = "TotalAbono ";
+            this.dataGridViewTextBoxColumn34.Name = "dataGridViewTextBoxColumn34";
+            this.dataGridViewTextBoxColumn34.ReadOnly = true;
+            this.dataGridViewTextBoxColumn34.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn35
+            // 
+            this.dataGridViewTextBoxColumn35.DataPropertyName = "TotalSaldo";
+            this.dataGridViewTextBoxColumn35.HeaderText = "TotalSaldo ";
+            this.dataGridViewTextBoxColumn35.Name = "dataGridViewTextBoxColumn35";
+            this.dataGridViewTextBoxColumn35.ReadOnly = true;
+            this.dataGridViewTextBoxColumn35.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn36
+            // 
+            this.dataGridViewTextBoxColumn36.DataPropertyName = "Cobrado";
+            this.dataGridViewTextBoxColumn36.HeaderText = "Cobrado ";
+            this.dataGridViewTextBoxColumn36.Name = "dataGridViewTextBoxColumn36";
+            this.dataGridViewTextBoxColumn36.ReadOnly = true;
+            this.dataGridViewTextBoxColumn36.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn37
+            // 
+            this.dataGridViewTextBoxColumn37.DataPropertyName = "Morosidad";
+            this.dataGridViewTextBoxColumn37.HeaderText = "Morosidad ";
+            this.dataGridViewTextBoxColumn37.Name = "dataGridViewTextBoxColumn37";
+            this.dataGridViewTextBoxColumn37.ReadOnly = true;
+            this.dataGridViewTextBoxColumn37.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn45
+            // 
+            this.dataGridViewTextBoxColumn45.DataPropertyName = "nro";
+            this.dataGridViewTextBoxColumn45.HeaderText = "nro";
+            this.dataGridViewTextBoxColumn45.Name = "dataGridViewTextBoxColumn45";
+            this.dataGridViewTextBoxColumn45.ReadOnly = true;
+            this.dataGridViewTextBoxColumn45.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn47
+            // 
+            this.dataGridViewTextBoxColumn47.DataPropertyName = "ImpuestoPredial";
+            this.dataGridViewTextBoxColumn47.HeaderText = "Impuesto Predial";
+            this.dataGridViewTextBoxColumn47.Name = "dataGridViewTextBoxColumn47";
+            this.dataGridViewTextBoxColumn47.ReadOnly = true;
+            this.dataGridViewTextBoxColumn47.Visible = false;
+            this.dataGridViewTextBoxColumn47.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn48
+            // 
+            this.dataGridViewTextBoxColumn48.DataPropertyName = "ArbitriosMunicipales";
+            this.dataGridViewTextBoxColumn48.HeaderText = "Arbitrios Municipales";
+            this.dataGridViewTextBoxColumn48.Name = "dataGridViewTextBoxColumn48";
+            this.dataGridViewTextBoxColumn48.ReadOnly = true;
+            this.dataGridViewTextBoxColumn48.Visible = false;
+            this.dataGridViewTextBoxColumn48.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn49
+            // 
+            this.dataGridViewTextBoxColumn49.DataPropertyName = "ImpuestoAlcabala";
+            this.dataGridViewTextBoxColumn49.HeaderText = "Impuesto Alcabala";
+            this.dataGridViewTextBoxColumn49.Name = "dataGridViewTextBoxColumn49";
+            this.dataGridViewTextBoxColumn49.ReadOnly = true;
+            this.dataGridViewTextBoxColumn49.Visible = false;
+            this.dataGridViewTextBoxColumn49.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn50
+            // 
+            this.dataGridViewTextBoxColumn50.DataPropertyName = "Multas";
+            this.dataGridViewTextBoxColumn50.HeaderText = "Multas";
+            this.dataGridViewTextBoxColumn50.Name = "dataGridViewTextBoxColumn50";
+            this.dataGridViewTextBoxColumn50.ReadOnly = true;
+            this.dataGridViewTextBoxColumn50.Visible = false;
+            this.dataGridViewTextBoxColumn50.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn26
+            // 
+            this.dataGridViewTextBoxColumn26.DataPropertyName = "Periodo";
+            this.dataGridViewTextBoxColumn26.HeaderText = "Año";
+            this.dataGridViewTextBoxColumn26.Name = "dataGridViewTextBoxColumn26";
+            this.dataGridViewTextBoxColumn26.ReadOnly = true;
+            this.dataGridViewTextBoxColumn26.Visible = false;
+            // 
             // Frm_estadistico_1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1359,31 +1408,6 @@
         private System.Windows.Forms.Button btnGenerarReporte;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dgvReporte1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn46;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn42;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn43;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn44;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn38;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn39;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn27;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn28;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn29;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn40;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn41;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn30;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn31;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn32;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn33;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn34;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn35;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn36;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn37;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn45;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn47;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn48;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn49;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn50;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn26;
         private System.Windows.Forms.RadioButton rbtnAbono;
         private System.Windows.Forms.RadioButton rbtnSaldo;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
@@ -1446,5 +1470,35 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ArbitriosMunicipales;
         private System.Windows.Forms.DataGridViewTextBoxColumn ImpuestoAlcabala;
         private System.Windows.Forms.DataGridViewTextBoxColumn Multas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn46;
+        private System.Windows.Forms.DataGridViewTextBoxColumn xTotalMes;
+        private System.Windows.Forms.DataGridViewTextBoxColumn xAlcabala;
+        private System.Windows.Forms.DataGridViewTextBoxColumn xArbitrios;
+        private System.Windows.Forms.DataGridViewTextBoxColumn xPredialAnterior;
+        private System.Windows.Forms.DataGridViewTextBoxColumn xPredial;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn42;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn43;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn44;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn38;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn39;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn27;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn28;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn29;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn40;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn41;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn30;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn31;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn32;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn33;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn34;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn35;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn36;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn37;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn45;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn47;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn48;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn49;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn50;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn26;
     }
 }
