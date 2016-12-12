@@ -113,7 +113,6 @@ namespace SGR.WinApp.Sistema.Entorno
             trvPanelOpciones.Height=Screen.PrimaryScreen.WorkingArea.Height -outlookPanelBar.Height-cpnlTitulo.Height-85;
             if (outlookPanelBar.Buttons.Count>0)
                 outlookPanelBar.Buttons[0].Selected =true;
-
         }
 
         private void barramenu_Load(object sender, EventArgs e)
