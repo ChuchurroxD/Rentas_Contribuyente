@@ -454,15 +454,7 @@ namespace SGR.WinApp.Layout._4_Procesos.Fraccionamiento.Fraccionamiento
             try {
                 periodo = periodos.GetAllMant_Periodo();
                 dgvTributos.DataSource = trib_TipoFraccionamiento.listarTributosFraccionamiento((Int32)cboTipoFraccionamiento.SelectedValue);
-                int cantidadT = dgvTributos.RowCount;
-                for (int i = 0; i < cantidadT; i++)
-                {
-                    DataGridViewRow row1 = dgvTributos.Rows[i];
-                    DataGridViewCheckBoxCell cellSelecion1 = row1.Cells["Op"] as DataGridViewCheckBoxCell;
-                    //cellSelecion1.Value = true;
-                }
-
-                elemento = trib_TipoFraccionamiento.GetByPrimaryKey((Int32)cboTipoFraccionamiento.SelectedValue);
+                elemento = trib_TipoFraccionamiento.GetByPrimaryKey((Int32)cboTipoFraccionamiento.SelectedValue);        
                 lblModalidad.Text = elemento.TiFr_modalidadDesc;
                 lblAnioIni.Text = "Año Inicial: (" + Convert.ToString(elemento.TiFr_anio_inicio) + ")";
                 lblAnioFin.Text = "Año Final: (" + Convert.ToString(elemento.TiFr_anio_fin) + ")";

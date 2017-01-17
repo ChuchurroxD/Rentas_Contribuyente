@@ -45,15 +45,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvResumenDelDia = new System.Windows.Forms.DataGridView();
-            this.xFuente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.xPagante = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.xclai_codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.xnro_Recibo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.xmonto_pago = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.xclai_descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.xRecurso = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.xMontoTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvResumenPorPartida = new System.Windows.Forms.DataGridView();
             this.Fuente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Pagante = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -77,6 +68,15 @@
             this.dclai_codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dclai_descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dMontoTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.xFuente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.xPagante = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.xclai_codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.xnro_Recibo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.xmonto_pago = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.xclai_descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.xRecurso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.xMontoTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResumenDelDia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResumenPorPartida)).BeginInit();
@@ -246,78 +246,6 @@
             this.dgvResumenDelDia.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvResumenDelDia.Size = new System.Drawing.Size(435, 159);
             this.dgvResumenDelDia.TabIndex = 2;
-            // 
-            // xFuente
-            // 
-            this.xFuente.DataPropertyName = "Fuente";
-            this.xFuente.HeaderText = "FUENTE";
-            this.xFuente.Name = "xFuente";
-            this.xFuente.ReadOnly = true;
-            this.xFuente.Width = 120;
-            // 
-            // xPagante
-            // 
-            this.xPagante.DataPropertyName = "Pagante";
-            this.xPagante.HeaderText = "Pagante";
-            this.xPagante.Name = "xPagante";
-            this.xPagante.ReadOnly = true;
-            this.xPagante.Visible = false;
-            // 
-            // xclai_codigo
-            // 
-            this.xclai_codigo.DataPropertyName = "clai_codigo";
-            this.xclai_codigo.HeaderText = "clai_codigo";
-            this.xclai_codigo.Name = "xclai_codigo";
-            this.xclai_codigo.ReadOnly = true;
-            this.xclai_codigo.Visible = false;
-            // 
-            // xnro_Recibo
-            // 
-            this.xnro_Recibo.DataPropertyName = "nro_Recibo";
-            this.xnro_Recibo.HeaderText = "nro_Recibo";
-            this.xnro_Recibo.Name = "xnro_Recibo";
-            this.xnro_Recibo.ReadOnly = true;
-            this.xnro_Recibo.Visible = false;
-            // 
-            // FechaPago
-            // 
-            this.FechaPago.DataPropertyName = "FechaPago";
-            this.FechaPago.HeaderText = "FechaPago";
-            this.FechaPago.Name = "FechaPago";
-            this.FechaPago.ReadOnly = true;
-            this.FechaPago.Visible = false;
-            // 
-            // xmonto_pago
-            // 
-            this.xmonto_pago.DataPropertyName = "monto_pago";
-            this.xmonto_pago.HeaderText = "monto_pago";
-            this.xmonto_pago.Name = "xmonto_pago";
-            this.xmonto_pago.ReadOnly = true;
-            this.xmonto_pago.Visible = false;
-            // 
-            // xclai_descripcion
-            // 
-            this.xclai_descripcion.DataPropertyName = "clai_descripcion";
-            this.xclai_descripcion.HeaderText = "clai_descripcion";
-            this.xclai_descripcion.Name = "xclai_descripcion";
-            this.xclai_descripcion.ReadOnly = true;
-            this.xclai_descripcion.Visible = false;
-            // 
-            // xRecurso
-            // 
-            this.xRecurso.DataPropertyName = "Recurso";
-            this.xRecurso.HeaderText = "RECURSO";
-            this.xRecurso.Name = "xRecurso";
-            this.xRecurso.ReadOnly = true;
-            this.xRecurso.Width = 120;
-            // 
-            // xMontoTotal
-            // 
-            this.xMontoTotal.DataPropertyName = "MontoTotal";
-            this.xMontoTotal.HeaderText = "MONTO TOTAL";
-            this.xMontoTotal.Name = "xMontoTotal";
-            this.xMontoTotal.ReadOnly = true;
-            this.xMontoTotal.Width = 150;
             // 
             // dgvResumenPorPartida
             // 
@@ -584,6 +512,79 @@
             this.dMontoTotal.Name = "dMontoTotal";
             this.dMontoTotal.ReadOnly = true;
             // 
+            // xFuente
+            // 
+            this.xFuente.DataPropertyName = "Fuente";
+            this.xFuente.HeaderText = "FUENTE";
+            this.xFuente.Name = "xFuente";
+            this.xFuente.ReadOnly = true;
+            this.xFuente.Width = 120;
+            // 
+            // xPagante
+            // 
+            this.xPagante.DataPropertyName = "Pagante";
+            this.xPagante.HeaderText = "Pagante";
+            this.xPagante.Name = "xPagante";
+            this.xPagante.ReadOnly = true;
+            this.xPagante.Visible = false;
+            // 
+            // xclai_codigo
+            // 
+            this.xclai_codigo.DataPropertyName = "clai_codigo";
+            this.xclai_codigo.HeaderText = "clai_codigo";
+            this.xclai_codigo.Name = "xclai_codigo";
+            this.xclai_codigo.ReadOnly = true;
+            this.xclai_codigo.Visible = false;
+            // 
+            // xnro_Recibo
+            // 
+            this.xnro_Recibo.DataPropertyName = "nro_Recibo";
+            this.xnro_Recibo.HeaderText = "nro_Recibo";
+            this.xnro_Recibo.Name = "xnro_Recibo";
+            this.xnro_Recibo.ReadOnly = true;
+            this.xnro_Recibo.Visible = false;
+            // 
+            // FechaPago
+            // 
+            this.FechaPago.DataPropertyName = "FechaPago";
+            this.FechaPago.HeaderText = "FechaPago";
+            this.FechaPago.Name = "FechaPago";
+            this.FechaPago.ReadOnly = true;
+            this.FechaPago.Visible = false;
+            // 
+            // xmonto_pago
+            // 
+            this.xmonto_pago.DataPropertyName = "monto_pago";
+            this.xmonto_pago.HeaderText = "monto_pago";
+            this.xmonto_pago.Name = "xmonto_pago";
+            this.xmonto_pago.ReadOnly = true;
+            this.xmonto_pago.Visible = false;
+            // 
+            // xclai_descripcion
+            // 
+            this.xclai_descripcion.DataPropertyName = "clai_descripcion";
+            this.xclai_descripcion.HeaderText = "clai_descripcion";
+            this.xclai_descripcion.Name = "xclai_descripcion";
+            this.xclai_descripcion.ReadOnly = true;
+            this.xclai_descripcion.Visible = false;
+            // 
+            // xRecurso
+            // 
+            this.xRecurso.DataPropertyName = "Recurso";
+            this.xRecurso.HeaderText = "RECURSO";
+            this.xRecurso.Name = "xRecurso";
+            this.xRecurso.ReadOnly = true;
+            this.xRecurso.Visible = false;
+            this.xRecurso.Width = 120;
+            // 
+            // xMontoTotal
+            // 
+            this.xMontoTotal.DataPropertyName = "MontoTotal";
+            this.xMontoTotal.HeaderText = "MONTO TOTAL";
+            this.xMontoTotal.Name = "xMontoTotal";
+            this.xMontoTotal.ReadOnly = true;
+            this.xMontoTotal.Width = 150;
+            // 
             // Frm_PlanillaIngresosResumen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -624,15 +625,6 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dgvDevolucion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn xFuente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn xPagante;
-        private System.Windows.Forms.DataGridViewTextBoxColumn xclai_codigo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn xnro_Recibo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FechaPago;
-        private System.Windows.Forms.DataGridViewTextBoxColumn xmonto_pago;
-        private System.Windows.Forms.DataGridViewTextBoxColumn xclai_descripcion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn xRecurso;
-        private System.Windows.Forms.DataGridViewTextBoxColumn xMontoTotal;
         private System.Windows.Forms.DataGridViewTextBoxColumn dFuente;
         private System.Windows.Forms.DataGridViewTextBoxColumn dPagante;
         private System.Windows.Forms.DataGridViewTextBoxColumn dRecurso;
@@ -654,5 +646,14 @@
         private System.Windows.Forms.CheckBox chk_filtro;
         private System.Windows.Forms.ComboBox cboConceptoAgrupado;
         private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.DataGridViewTextBoxColumn xFuente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn xPagante;
+        private System.Windows.Forms.DataGridViewTextBoxColumn xclai_codigo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn xnro_Recibo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FechaPago;
+        private System.Windows.Forms.DataGridViewTextBoxColumn xmonto_pago;
+        private System.Windows.Forms.DataGridViewTextBoxColumn xclai_descripcion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn xRecurso;
+        private System.Windows.Forms.DataGridViewTextBoxColumn xMontoTotal;
     }
 }

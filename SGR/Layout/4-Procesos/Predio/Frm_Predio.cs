@@ -1330,6 +1330,13 @@ namespace SGR.WinApp.Layout._1_Tablas_Maestras.Predio
             }
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Frm_ConstanciaAdeudo Frm_ContanciaNoDeudo = new Frm_ConstanciaAdeudo();
+            Frm_ContanciaNoDeudo.StartPosition = FormStartPosition.CenterParent;
+            Frm_ContanciaNoDeudo.ShowDialog();
+        }
+
         private void seleccionarTipoTerreno()
         {
 

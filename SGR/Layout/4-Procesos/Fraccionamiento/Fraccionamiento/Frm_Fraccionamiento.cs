@@ -28,9 +28,7 @@ namespace SGR.WinApp.Layout._4_Procesos.Fraccionamiento.Fraccionamiento
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            String anio = dataGridView1.SelectedRows[0].Cells["xanio"].Value.ToString();
-            
-            
+            String anio = dataGridView1.SelectedRows[0].Cells["xanio"].Value.ToString();                        
             Frm_FraccionamientoDetalles Frm_Liqui = new Frm_FraccionamientoDetalles(nombres, documento, persona, direccCompleta, anio, mayor);
             Frm_Liqui.StartPosition = FormStartPosition.CenterParent;
             Frm_Liqui.ShowDialog();

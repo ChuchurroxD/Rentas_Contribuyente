@@ -137,7 +137,7 @@ namespace SGR.Core.Repository
                             //FechaPago = lector.IsDBNull(lector.GetOrdinal("FechaPago")) ? default(DateTime) : lector.GetDateTime(lector.GetOrdinal("FechaPago")),
                             MontoTotal = lector.IsDBNull(lector.GetOrdinal("MontoTotal")) ? default(Decimal) : lector.GetDecimal(lector.GetOrdinal("MontoTotal")),
                             Fuente = lector.IsDBNull(lector.GetOrdinal("Fuente")) ? default(String) : lector.GetString(lector.GetOrdinal("Fuente")),
-                            Recurso = lector.IsDBNull(lector.GetOrdinal("Recurso")) ? default(String) : lector.GetString(lector.GetOrdinal("Recurso"))
+                            //Recurso = lector.IsDBNull(lector.GetOrdinal("Recurso")) ? default(String) : lector.GetString(lector.GetOrdinal("Recurso"))
                         });
                     }
                 }

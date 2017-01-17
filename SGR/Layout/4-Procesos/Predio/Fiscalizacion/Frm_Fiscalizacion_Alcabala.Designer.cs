@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolnuevo = new System.Windows.Forms.ToolStripButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -48,6 +48,49 @@
             this.txtNomRazon = new System.Windows.Forms.TextBox();
             this.rbtCodContribuyente = new System.Windows.Forms.RadioButton();
             this.dgvContribuyenteBuscados = new System.Windows.Forms.DataGridView();
+            this.paterno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.materno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombres = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipoDocumentoDescripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.persona_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.direccCompleta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipo_documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaNacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipo_persona = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.departamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.provincia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.distrito = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.num_via = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mz = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fono_oficina = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fono_Domicilio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.celular = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_junta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_via = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_num = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_mz = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_interior = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_lote = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.C_edificio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_piso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_dpto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.c_tienda = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Contacto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dniRepresentante = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DireccRepresentante = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sexo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dgvPredio = new System.Windows.Forms.DataGridView();
             this.num_viap = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -139,49 +182,7 @@
             this.terreno_sin_construir = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.valorafecto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.condicionPropietario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.paterno = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.materno = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombres = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipoDocumentoDescripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.persona_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.direccCompleta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipo_documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaNacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipo_persona = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.departamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.provincia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.distrito = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.num_via = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mz = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fono_oficina = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fono_Domicilio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.celular = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_junta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_via = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_num = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_mz = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_interior = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_lote = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.C_edificio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_piso = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_dpto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.c_tienda = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Contacto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dniRepresentante = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DireccRepresentante = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sexo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvContribuyenteBuscados)).BeginInit();
@@ -213,6 +214,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.txtUrbano);
             this.groupBox1.Controls.Add(this.txtRustico);
             this.groupBox1.Controls.Add(this.rbtNombre);
@@ -354,14 +356,14 @@
             // 
             this.dgvContribuyenteBuscados.AllowUserToAddRows = false;
             this.dgvContribuyenteBuscados.BackgroundColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvContribuyenteBuscados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvContribuyenteBuscados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvContribuyenteBuscados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvContribuyenteBuscados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.paterno,
@@ -407,14 +409,14 @@
             this.dniRepresentante,
             this.DireccRepresentante,
             this.Sexo});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvContribuyenteBuscados.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvContribuyenteBuscados.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvContribuyenteBuscados.Dock = System.Windows.Forms.DockStyle.Top;
             this.dgvContribuyenteBuscados.EnableHeadersVisualStyles = false;
             this.dgvContribuyenteBuscados.Location = new System.Drawing.Point(0, 122);
@@ -423,8 +425,348 @@
             this.dgvContribuyenteBuscados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvContribuyenteBuscados.Size = new System.Drawing.Size(957, 186);
             this.dgvContribuyenteBuscados.TabIndex = 139;
-            //this.dgvContribuyenteBuscados.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvContribuyenteBuscados_CellContentDoubleClick);
             this.dgvContribuyenteBuscados.DoubleClick += new System.EventHandler(this.dgvContribuyenteBuscados_DoubleClick);
+            // 
+            // paterno
+            // 
+            this.paterno.DataPropertyName = "paterno";
+            this.paterno.HeaderText = "Ape. Paterno";
+            this.paterno.Name = "paterno";
+            this.paterno.ReadOnly = true;
+            this.paterno.Width = 200;
+            // 
+            // materno
+            // 
+            this.materno.DataPropertyName = "materno";
+            this.materno.HeaderText = "Ape. Materno";
+            this.materno.Name = "materno";
+            this.materno.ReadOnly = true;
+            // 
+            // nombres
+            // 
+            this.nombres.DataPropertyName = "nombres";
+            this.nombres.HeaderText = "Nombres";
+            this.nombres.Name = "nombres";
+            this.nombres.ReadOnly = true;
+            this.nombres.Width = 150;
+            // 
+            // tipoDocumentoDescripcion
+            // 
+            this.tipoDocumentoDescripcion.DataPropertyName = "tipoDocumentoDescripcion";
+            this.tipoDocumentoDescripcion.HeaderText = "tipoDocumentoDescripcion";
+            this.tipoDocumentoDescripcion.Name = "tipoDocumentoDescripcion";
+            this.tipoDocumentoDescripcion.Visible = false;
+            // 
+            // persona_ID
+            // 
+            this.persona_ID.DataPropertyName = "persona_ID";
+            this.persona_ID.HeaderText = "Código";
+            this.persona_ID.Name = "persona_ID";
+            this.persona_ID.ReadOnly = true;
+            this.persona_ID.Width = 80;
+            // 
+            // documento
+            // 
+            this.documento.DataPropertyName = "documento";
+            this.documento.HeaderText = "Documento";
+            this.documento.Name = "documento";
+            this.documento.ReadOnly = true;
+            // 
+            // direccCompleta
+            // 
+            this.direccCompleta.DataPropertyName = "direccCompleta";
+            this.direccCompleta.HeaderText = "Dirección Completa";
+            this.direccCompleta.Name = "direccCompleta";
+            this.direccCompleta.ReadOnly = true;
+            this.direccCompleta.Width = 270;
+            // 
+            // tipo_documento
+            // 
+            this.tipo_documento.DataPropertyName = "tipo_documento";
+            this.tipo_documento.HeaderText = "tipo_documento";
+            this.tipo_documento.Name = "tipo_documento";
+            this.tipo_documento.ReadOnly = true;
+            this.tipo_documento.Visible = false;
+            // 
+            // fechaNacimiento
+            // 
+            this.fechaNacimiento.DataPropertyName = "fechaNacimiento";
+            this.fechaNacimiento.HeaderText = "fechaNacimiento";
+            this.fechaNacimiento.Name = "fechaNacimiento";
+            this.fechaNacimiento.ReadOnly = true;
+            this.fechaNacimiento.Visible = false;
+            // 
+            // tipo_persona
+            // 
+            this.tipo_persona.DataPropertyName = "tipo_persona";
+            this.tipo_persona.HeaderText = "tipo_persona";
+            this.tipo_persona.Name = "tipo_persona";
+            this.tipo_persona.ReadOnly = true;
+            this.tipo_persona.Visible = false;
+            // 
+            // departamento
+            // 
+            this.departamento.DataPropertyName = "departamento";
+            this.departamento.HeaderText = "departamento";
+            this.departamento.Name = "departamento";
+            this.departamento.ReadOnly = true;
+            this.departamento.Visible = false;
+            // 
+            // provincia
+            // 
+            this.provincia.DataPropertyName = "provincia";
+            this.provincia.HeaderText = "provincia";
+            this.provincia.Name = "provincia";
+            this.provincia.ReadOnly = true;
+            this.provincia.Visible = false;
+            // 
+            // distrito
+            // 
+            this.distrito.DataPropertyName = "distrito";
+            this.distrito.HeaderText = "distrito";
+            this.distrito.Name = "distrito";
+            this.distrito.ReadOnly = true;
+            this.distrito.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "junta_ID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "junta_ID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "via_ID";
+            this.dataGridViewTextBoxColumn2.HeaderText = "via_ID";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Visible = false;
+            // 
+            // num_via
+            // 
+            this.num_via.DataPropertyName = "num_via";
+            this.num_via.HeaderText = "num_via";
+            this.num_via.Name = "num_via";
+            this.num_via.ReadOnly = true;
+            this.num_via.Visible = false;
+            // 
+            // mz
+            // 
+            this.mz.DataPropertyName = "mz";
+            this.mz.HeaderText = "mz";
+            this.mz.Name = "mz";
+            this.mz.ReadOnly = true;
+            this.mz.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "interior";
+            this.dataGridViewTextBoxColumn3.HeaderText = "interior";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Lote";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Lote";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "edificio";
+            this.dataGridViewTextBoxColumn5.HeaderText = "edificio";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "piso";
+            this.dataGridViewTextBoxColumn6.HeaderText = "piso";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Dpto";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Dpto";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "tienda";
+            this.dataGridViewTextBoxColumn8.HeaderText = "tienda";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            this.dataGridViewTextBoxColumn8.Visible = false;
+            // 
+            // fono_oficina
+            // 
+            this.fono_oficina.DataPropertyName = "fono_oficina";
+            this.fono_oficina.HeaderText = "fono_oficina";
+            this.fono_oficina.Name = "fono_oficina";
+            this.fono_oficina.ReadOnly = true;
+            this.fono_oficina.Visible = false;
+            // 
+            // Fono_Domicilio
+            // 
+            this.Fono_Domicilio.DataPropertyName = "Fono_Domicilio";
+            this.Fono_Domicilio.HeaderText = "Fono_Domicilio";
+            this.Fono_Domicilio.Name = "Fono_Domicilio";
+            this.Fono_Domicilio.ReadOnly = true;
+            this.Fono_Domicilio.Visible = false;
+            // 
+            // email
+            // 
+            this.email.DataPropertyName = "email";
+            this.email.HeaderText = "email";
+            this.email.Name = "email";
+            this.email.ReadOnly = true;
+            this.email.Visible = false;
+            // 
+            // celular
+            // 
+            this.celular.DataPropertyName = "celular";
+            this.celular.HeaderText = "celular";
+            this.celular.Name = "celular";
+            this.celular.ReadOnly = true;
+            this.celular.Visible = false;
+            // 
+            // c_junta
+            // 
+            this.c_junta.DataPropertyName = "c_junta";
+            this.c_junta.HeaderText = "c_junta";
+            this.c_junta.Name = "c_junta";
+            this.c_junta.ReadOnly = true;
+            this.c_junta.Visible = false;
+            // 
+            // c_via
+            // 
+            this.c_via.DataPropertyName = "c_via";
+            this.c_via.HeaderText = "c_via";
+            this.c_via.Name = "c_via";
+            this.c_via.ReadOnly = true;
+            this.c_via.Visible = false;
+            // 
+            // c_num
+            // 
+            this.c_num.DataPropertyName = "c_num";
+            this.c_num.HeaderText = "c_num";
+            this.c_num.Name = "c_num";
+            this.c_num.ReadOnly = true;
+            this.c_num.Visible = false;
+            // 
+            // c_mz
+            // 
+            this.c_mz.DataPropertyName = "c_mz";
+            this.c_mz.HeaderText = "c_mz";
+            this.c_mz.Name = "c_mz";
+            this.c_mz.ReadOnly = true;
+            this.c_mz.Visible = false;
+            // 
+            // c_interior
+            // 
+            this.c_interior.DataPropertyName = "c_interior";
+            this.c_interior.HeaderText = "c_interior";
+            this.c_interior.Name = "c_interior";
+            this.c_interior.ReadOnly = true;
+            this.c_interior.Visible = false;
+            // 
+            // c_lote
+            // 
+            this.c_lote.DataPropertyName = "c_lote";
+            this.c_lote.HeaderText = "c_lote";
+            this.c_lote.Name = "c_lote";
+            this.c_lote.ReadOnly = true;
+            this.c_lote.Visible = false;
+            // 
+            // C_edificio
+            // 
+            this.C_edificio.DataPropertyName = "C_edificio";
+            this.C_edificio.HeaderText = "C_edificio";
+            this.C_edificio.Name = "C_edificio";
+            this.C_edificio.ReadOnly = true;
+            this.C_edificio.Visible = false;
+            // 
+            // c_piso
+            // 
+            this.c_piso.DataPropertyName = "c_piso";
+            this.c_piso.HeaderText = "c_piso";
+            this.c_piso.Name = "c_piso";
+            this.c_piso.ReadOnly = true;
+            this.c_piso.Visible = false;
+            // 
+            // c_dpto
+            // 
+            this.c_dpto.DataPropertyName = "c_dpto";
+            this.c_dpto.HeaderText = "c_dpto";
+            this.c_dpto.Name = "c_dpto";
+            this.c_dpto.ReadOnly = true;
+            this.c_dpto.Visible = false;
+            // 
+            // c_tienda
+            // 
+            this.c_tienda.DataPropertyName = "c_tienda";
+            this.c_tienda.HeaderText = "c_tienda";
+            this.c_tienda.Name = "c_tienda";
+            this.c_tienda.ReadOnly = true;
+            this.c_tienda.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "expediente";
+            this.dataGridViewTextBoxColumn9.HeaderText = "expediente";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            this.dataGridViewTextBoxColumn9.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "referencia";
+            this.dataGridViewTextBoxColumn10.HeaderText = "referencia";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            this.dataGridViewTextBoxColumn10.Visible = false;
+            // 
+            // Contacto
+            // 
+            this.Contacto.DataPropertyName = "Contacto";
+            this.Contacto.HeaderText = "Contacto";
+            this.Contacto.Name = "Contacto";
+            this.Contacto.ReadOnly = true;
+            this.Contacto.Visible = false;
+            // 
+            // dniRepresentante
+            // 
+            this.dniRepresentante.DataPropertyName = "dniRepresentante";
+            this.dniRepresentante.HeaderText = "dniRepresentante";
+            this.dniRepresentante.Name = "dniRepresentante";
+            this.dniRepresentante.ReadOnly = true;
+            this.dniRepresentante.Visible = false;
+            // 
+            // DireccRepresentante
+            // 
+            this.DireccRepresentante.DataPropertyName = "DireccRepresentante";
+            this.DireccRepresentante.HeaderText = "DireccRepresentante";
+            this.DireccRepresentante.Name = "DireccRepresentante";
+            this.DireccRepresentante.ReadOnly = true;
+            this.DireccRepresentante.Visible = false;
+            // 
+            // Sexo
+            // 
+            this.Sexo.DataPropertyName = "Sexo";
+            this.Sexo.HeaderText = "Sexo";
+            this.Sexo.Name = "Sexo";
+            this.Sexo.ReadOnly = true;
+            this.Sexo.Visible = false;
             // 
             // groupBox5
             // 
@@ -441,14 +783,14 @@
             // 
             this.dgvPredio.AllowUserToAddRows = false;
             this.dgvPredio.BackgroundColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPredio.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPredio.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvPredio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPredio.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.num_viap,
@@ -540,14 +882,14 @@
             this.terreno_sin_construir,
             this.valorafecto,
             this.condicionPropietario});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPredio.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPredio.DefaultCellStyle = dataGridViewCellStyle8;
             this.dgvPredio.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvPredio.EnableHeadersVisualStyles = false;
             this.dgvPredio.Location = new System.Drawing.Point(3, 16);
@@ -1265,346 +1607,18 @@
             this.condicionPropietario.ReadOnly = true;
             this.condicionPropietario.Visible = false;
             // 
-            // paterno
-            // 
-            this.paterno.DataPropertyName = "paterno";
-            this.paterno.HeaderText = "Ape. Paterno";
-            this.paterno.Name = "paterno";
-            this.paterno.ReadOnly = true;
-            this.paterno.Width = 200;
-            // 
-            // materno
-            // 
-            this.materno.DataPropertyName = "materno";
-            this.materno.HeaderText = "Ape. Materno";
-            this.materno.Name = "materno";
-            this.materno.ReadOnly = true;
-            // 
-            // nombres
-            // 
-            this.nombres.DataPropertyName = "nombres";
-            this.nombres.HeaderText = "Nombres";
-            this.nombres.Name = "nombres";
-            this.nombres.ReadOnly = true;
-            this.nombres.Width = 150;
-            // 
-            // tipoDocumentoDescripcion
-            // 
-            this.tipoDocumentoDescripcion.DataPropertyName = "tipoDocumentoDescripcion";
-            this.tipoDocumentoDescripcion.HeaderText = "tipoDocumentoDescripcion";
-            this.tipoDocumentoDescripcion.Name = "tipoDocumentoDescripcion";
-            this.tipoDocumentoDescripcion.Visible = false;
-            // 
-            // persona_ID
-            // 
-            this.persona_ID.DataPropertyName = "persona_ID";
-            this.persona_ID.HeaderText = "Código";
-            this.persona_ID.Name = "persona_ID";
-            this.persona_ID.ReadOnly = true;
-            this.persona_ID.Width = 80;
-            // 
-            // documento
-            // 
-            this.documento.DataPropertyName = "documento";
-            this.documento.HeaderText = "Documento";
-            this.documento.Name = "documento";
-            this.documento.ReadOnly = true;
-            // 
-            // direccCompleta
-            // 
-            this.direccCompleta.DataPropertyName = "direccCompleta";
-            this.direccCompleta.HeaderText = "Dirección Completa";
-            this.direccCompleta.Name = "direccCompleta";
-            this.direccCompleta.ReadOnly = true;
-            this.direccCompleta.Width = 270;
-            // 
-            // tipo_documento
-            // 
-            this.tipo_documento.DataPropertyName = "tipo_documento";
-            this.tipo_documento.HeaderText = "tipo_documento";
-            this.tipo_documento.Name = "tipo_documento";
-            this.tipo_documento.ReadOnly = true;
-            this.tipo_documento.Visible = false;
-            // 
-            // fechaNacimiento
-            // 
-            this.fechaNacimiento.DataPropertyName = "fechaNacimiento";
-            this.fechaNacimiento.HeaderText = "fechaNacimiento";
-            this.fechaNacimiento.Name = "fechaNacimiento";
-            this.fechaNacimiento.ReadOnly = true;
-            this.fechaNacimiento.Visible = false;
-            // 
-            // tipo_persona
-            // 
-            this.tipo_persona.DataPropertyName = "tipo_persona";
-            this.tipo_persona.HeaderText = "tipo_persona";
-            this.tipo_persona.Name = "tipo_persona";
-            this.tipo_persona.ReadOnly = true;
-            this.tipo_persona.Visible = false;
-            // 
-            // departamento
-            // 
-            this.departamento.DataPropertyName = "departamento";
-            this.departamento.HeaderText = "departamento";
-            this.departamento.Name = "departamento";
-            this.departamento.ReadOnly = true;
-            this.departamento.Visible = false;
-            // 
-            // provincia
-            // 
-            this.provincia.DataPropertyName = "provincia";
-            this.provincia.HeaderText = "provincia";
-            this.provincia.Name = "provincia";
-            this.provincia.ReadOnly = true;
-            this.provincia.Visible = false;
-            // 
-            // distrito
-            // 
-            this.distrito.DataPropertyName = "distrito";
-            this.distrito.HeaderText = "distrito";
-            this.distrito.Name = "distrito";
-            this.distrito.ReadOnly = true;
-            this.distrito.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "junta_ID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "junta_ID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "via_ID";
-            this.dataGridViewTextBoxColumn2.HeaderText = "via_ID";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Visible = false;
-            // 
-            // num_via
-            // 
-            this.num_via.DataPropertyName = "num_via";
-            this.num_via.HeaderText = "num_via";
-            this.num_via.Name = "num_via";
-            this.num_via.ReadOnly = true;
-            this.num_via.Visible = false;
-            // 
-            // mz
-            // 
-            this.mz.DataPropertyName = "mz";
-            this.mz.HeaderText = "mz";
-            this.mz.Name = "mz";
-            this.mz.ReadOnly = true;
-            this.mz.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "interior";
-            this.dataGridViewTextBoxColumn3.HeaderText = "interior";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Lote";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Lote";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "edificio";
-            this.dataGridViewTextBoxColumn5.HeaderText = "edificio";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "piso";
-            this.dataGridViewTextBoxColumn6.HeaderText = "piso";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Dpto";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Dpto";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            this.dataGridViewTextBoxColumn7.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "tienda";
-            this.dataGridViewTextBoxColumn8.HeaderText = "tienda";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            this.dataGridViewTextBoxColumn8.Visible = false;
-            // 
-            // fono_oficina
-            // 
-            this.fono_oficina.DataPropertyName = "fono_oficina";
-            this.fono_oficina.HeaderText = "fono_oficina";
-            this.fono_oficina.Name = "fono_oficina";
-            this.fono_oficina.ReadOnly = true;
-            this.fono_oficina.Visible = false;
-            // 
-            // Fono_Domicilio
-            // 
-            this.Fono_Domicilio.DataPropertyName = "Fono_Domicilio";
-            this.Fono_Domicilio.HeaderText = "Fono_Domicilio";
-            this.Fono_Domicilio.Name = "Fono_Domicilio";
-            this.Fono_Domicilio.ReadOnly = true;
-            this.Fono_Domicilio.Visible = false;
-            // 
-            // email
-            // 
-            this.email.DataPropertyName = "email";
-            this.email.HeaderText = "email";
-            this.email.Name = "email";
-            this.email.ReadOnly = true;
-            this.email.Visible = false;
-            // 
-            // celular
-            // 
-            this.celular.DataPropertyName = "celular";
-            this.celular.HeaderText = "celular";
-            this.celular.Name = "celular";
-            this.celular.ReadOnly = true;
-            this.celular.Visible = false;
-            // 
-            // c_junta
-            // 
-            this.c_junta.DataPropertyName = "c_junta";
-            this.c_junta.HeaderText = "c_junta";
-            this.c_junta.Name = "c_junta";
-            this.c_junta.ReadOnly = true;
-            this.c_junta.Visible = false;
-            // 
-            // c_via
-            // 
-            this.c_via.DataPropertyName = "c_via";
-            this.c_via.HeaderText = "c_via";
-            this.c_via.Name = "c_via";
-            this.c_via.ReadOnly = true;
-            this.c_via.Visible = false;
-            // 
-            // c_num
-            // 
-            this.c_num.DataPropertyName = "c_num";
-            this.c_num.HeaderText = "c_num";
-            this.c_num.Name = "c_num";
-            this.c_num.ReadOnly = true;
-            this.c_num.Visible = false;
-            // 
-            // c_mz
-            // 
-            this.c_mz.DataPropertyName = "c_mz";
-            this.c_mz.HeaderText = "c_mz";
-            this.c_mz.Name = "c_mz";
-            this.c_mz.ReadOnly = true;
-            this.c_mz.Visible = false;
-            // 
-            // c_interior
-            // 
-            this.c_interior.DataPropertyName = "c_interior";
-            this.c_interior.HeaderText = "c_interior";
-            this.c_interior.Name = "c_interior";
-            this.c_interior.ReadOnly = true;
-            this.c_interior.Visible = false;
-            // 
-            // c_lote
-            // 
-            this.c_lote.DataPropertyName = "c_lote";
-            this.c_lote.HeaderText = "c_lote";
-            this.c_lote.Name = "c_lote";
-            this.c_lote.ReadOnly = true;
-            this.c_lote.Visible = false;
-            // 
-            // C_edificio
-            // 
-            this.C_edificio.DataPropertyName = "C_edificio";
-            this.C_edificio.HeaderText = "C_edificio";
-            this.C_edificio.Name = "C_edificio";
-            this.C_edificio.ReadOnly = true;
-            this.C_edificio.Visible = false;
-            // 
-            // c_piso
-            // 
-            this.c_piso.DataPropertyName = "c_piso";
-            this.c_piso.HeaderText = "c_piso";
-            this.c_piso.Name = "c_piso";
-            this.c_piso.ReadOnly = true;
-            this.c_piso.Visible = false;
-            // 
-            // c_dpto
-            // 
-            this.c_dpto.DataPropertyName = "c_dpto";
-            this.c_dpto.HeaderText = "c_dpto";
-            this.c_dpto.Name = "c_dpto";
-            this.c_dpto.ReadOnly = true;
-            this.c_dpto.Visible = false;
-            // 
-            // c_tienda
-            // 
-            this.c_tienda.DataPropertyName = "c_tienda";
-            this.c_tienda.HeaderText = "c_tienda";
-            this.c_tienda.Name = "c_tienda";
-            this.c_tienda.ReadOnly = true;
-            this.c_tienda.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "expediente";
-            this.dataGridViewTextBoxColumn9.HeaderText = "expediente";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.ReadOnly = true;
-            this.dataGridViewTextBoxColumn9.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "referencia";
-            this.dataGridViewTextBoxColumn10.HeaderText = "referencia";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            this.dataGridViewTextBoxColumn10.Visible = false;
-            // 
-            // Contacto
-            // 
-            this.Contacto.DataPropertyName = "Contacto";
-            this.Contacto.HeaderText = "Contacto";
-            this.Contacto.Name = "Contacto";
-            this.Contacto.ReadOnly = true;
-            this.Contacto.Visible = false;
-            // 
-            // dniRepresentante
-            // 
-            this.dniRepresentante.DataPropertyName = "dniRepresentante";
-            this.dniRepresentante.HeaderText = "dniRepresentante";
-            this.dniRepresentante.Name = "dniRepresentante";
-            this.dniRepresentante.ReadOnly = true;
-            this.dniRepresentante.Visible = false;
-            // 
-            // DireccRepresentante
-            // 
-            this.DireccRepresentante.DataPropertyName = "DireccRepresentante";
-            this.DireccRepresentante.HeaderText = "DireccRepresentante";
-            this.DireccRepresentante.Name = "DireccRepresentante";
-            this.DireccRepresentante.ReadOnly = true;
-            this.DireccRepresentante.Visible = false;
-            // 
-            // Sexo
-            // 
-            this.Sexo.DataPropertyName = "Sexo";
-            this.Sexo.HeaderText = "Sexo";
-            this.Sexo.Name = "Sexo";
-            this.Sexo.ReadOnly = true;
-            this.Sexo.Visible = false;
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(599, 46);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(150, 32);
+            this.button1.TabIndex = 137;
+            this.button1.Text = "Listado de Alcabalas";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Frm_Fiscalizacion_Alcabala
             // 
@@ -1784,5 +1798,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dniRepresentante;
         private System.Windows.Forms.DataGridViewTextBoxColumn DireccRepresentante;
         private System.Windows.Forms.DataGridViewTextBoxColumn Sexo;
+        private System.Windows.Forms.Button button1;
     }
 }

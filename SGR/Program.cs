@@ -8,7 +8,7 @@ namespace SGR.WinApp
     static class Program
     {
         /// <summary>
-        /// Punto de entrada principal para la aplicación.
+        /// Punto de entrada principal para la aplicación.D:\PROYECTO_MOCHE\Rentas_Contribuyente\SGR\Layout\4-Procesos\Fraccionamiento\Fraccionamiento\Frm_CalculoFraccionamiento.cs
         /// </summary>
         [STAThread]
         static void Main()

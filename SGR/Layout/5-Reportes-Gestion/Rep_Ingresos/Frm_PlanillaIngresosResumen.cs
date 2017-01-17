@@ -17,11 +17,23 @@ namespace SGR.WinApp.Layout._5_Reportes_Gestion.Rep_Ingresos
         private List<Repo_PlanillaIngresos> coleccionResumenPorDia;
         private List<Repo_PlanillaIngresos> coleccionResumenPorDevolucion;
         private List<Repo_PlanillaIngresos> coleccionResumenPorPartida;
+        DateTime fInicio, fFin;
         Repo_PlanillaIngresosDataService repo_PlanillaIngresosDataService = new Repo_PlanillaIngresosDataService();
         Pago_PagosDataService pagos = new Pago_PagosDataService();
-        public Frm_PlanillaIngresosResumen()
+        public Frm_PlanillaIngresosResumen(DateTime fechaIni, DateTime fechaFin)
         {
             InitializeComponent();
+            this.fInicio = fechaIni;
+            this.fFin = fechaFin;           
+            inicializar(fInicio, fFin);
+        }
+
+        public void inicializar(DateTime fInicio, DateTime fFin)
+        {
+            dtpFechaDesde.Value = fInicio;
+            dtpFechaHasta.Value = fFin;
+
+            //
         }
 
         public void cargarCombos()

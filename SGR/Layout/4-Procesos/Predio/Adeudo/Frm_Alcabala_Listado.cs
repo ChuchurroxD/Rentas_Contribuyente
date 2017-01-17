@@ -14,7 +14,7 @@ using Microsoft.Reporting.WinForms;
 
 namespace SGR.WinApp.Layout._4_Procesos.Predio.Adeudo
 {
-    public partial class Frm_Alcabala_Listado : DockContent
+    public partial class Frm_Alcabala_Listado : Form
     {
         private Pred_Certificado_AlcabalaDataService Certificado_AlcabalaDataService = new Pred_Certificado_AlcabalaDataService();
         Mant_PeriodoDataService mant_PeriodoDataService = new Mant_PeriodoDataService();
@@ -354,6 +354,11 @@ namespace SGR.WinApp.Layout._4_Procesos.Predio.Adeudo
             {
                 Cursor.Current = Cursors.Default;
             }
+        }
+
+        private void dgvAlcabalListado_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

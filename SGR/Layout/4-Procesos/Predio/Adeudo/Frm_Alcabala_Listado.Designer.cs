@@ -66,6 +66,7 @@
             this.toolStripBotonReporte = new System.Windows.Forms.ToolStripButton();
             this.toolDelete = new System.Windows.Forms.ToolStripButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnImprimir = new System.Windows.Forms.Button();
             this.rbtAnulados = new System.Windows.Forms.RadioButton();
             this.rbtPendiente = new System.Windows.Forms.RadioButton();
             this.rbtCancelados = new System.Windows.Forms.RadioButton();
@@ -77,7 +78,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.comboBusquedaAnio = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnImprimir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlcabalListado)).BeginInit();
             this.toolmantenedores.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -151,6 +151,7 @@
             this.dgvAlcabalListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvAlcabalListado.Size = new System.Drawing.Size(921, 331);
             this.dgvAlcabalListado.TabIndex = 9;
+            this.dgvAlcabalListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAlcabalListado_CellContentClick);
             this.dgvAlcabalListado.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvAlcabalListado_ColumnHeaderMouseClick);
             this.dgvAlcabalListado.DoubleClick += new System.EventHandler(this.dgvAlcabalListado_DoubleClick);
             // 
@@ -443,6 +444,19 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Opcciones de Búsqueda";
             // 
+            // btnImprimir
+            // 
+            this.btnImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImprimir.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnImprimir.Image = global::SGR.WinApp.Properties.Resources.print;
+            this.btnImprimir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnImprimir.Location = new System.Drawing.Point(850, 12);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(26, 32);
+            this.btnImprimir.TabIndex = 29;
+            this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
+            // 
             // rbtAnulados
             // 
             this.rbtAnulados.AutoSize = true;
@@ -551,19 +565,6 @@
             this.label2.Size = new System.Drawing.Size(29, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Año:";
-            // 
-            // btnImprimir
-            // 
-            this.btnImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImprimir.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnImprimir.Image = global::SGR.WinApp.Properties.Resources.print;
-            this.btnImprimir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnImprimir.Location = new System.Drawing.Point(850, 12);
-            this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(26, 32);
-            this.btnImprimir.TabIndex = 29;
-            this.btnImprimir.UseVisualStyleBackColor = true;
-            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // Frm_Alcabala_Listado
             // 

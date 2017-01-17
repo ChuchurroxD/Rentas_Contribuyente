@@ -17,7 +17,7 @@ using WeifenLuo.WinFormsUI.Docking;
 
 namespace SGR.WinApp.Layout._4_Procesos.Predio.Adeudo
 {
-    public partial class Frm_ConstanciaAdeudo : DockContent
+    public partial class Frm_ConstanciaAdeudo : Form
     {
 
         Mant_PeriodoDataService mant_PeriodoDataService = new Mant_PeriodoDataService();

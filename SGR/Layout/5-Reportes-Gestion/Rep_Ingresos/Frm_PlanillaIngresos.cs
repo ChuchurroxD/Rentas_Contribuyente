@@ -177,7 +177,7 @@ namespace SGR.WinApp.Layout._5_Reportes_Gestion.Rep_Ingresos
         {
             try
             {
-                Frm_PlanillaIngresosResumen frm_PlanillaIngresosResumen = new Frm_PlanillaIngresosResumen();
+                Frm_PlanillaIngresosResumen frm_PlanillaIngresosResumen = new Frm_PlanillaIngresosResumen(dtpFechaDesde.Value, dtpFechaHasta.Value);
                 frm_PlanillaIngresosResumen.StartPosition = FormStartPosition.CenterParent;
                 frm_PlanillaIngresosResumen.ShowDialog();
             }

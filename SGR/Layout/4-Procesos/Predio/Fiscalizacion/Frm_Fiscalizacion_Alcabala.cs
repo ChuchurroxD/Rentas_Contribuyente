@@ -246,5 +246,12 @@ namespace SGR.WinApp.Layout._4_Procesos.Predio.Fiscalizacion
                 Cursor.Current = Cursors.Default;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Frm_Alcabala_Listado Frm_ListadoAlcabala = new Frm_Alcabala_Listado();
+            Frm_ListadoAlcabala.StartPosition = FormStartPosition.CenterParent;
+            Frm_ListadoAlcabala.ShowDialog();
+        }
     }
 }
