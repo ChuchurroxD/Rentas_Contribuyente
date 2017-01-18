@@ -346,6 +346,7 @@ namespace SGR.Core.Repository
                 db.AddInParameter(SQL, "expediente", DbType.String, PREDio_COntribuyente.expediente);
                 db.AddInParameter(SQL, "registro_user", DbType.String, PREDio_COntribuyente.registro_user_add);
                 db.AddInParameter(SQL, "Tipoconsulta", DbType.String, 14);
+                SQL.CommandTimeout = 600;
                 int huboexito = db.ExecuteNonQuery(SQL);
                 SQL.Dispose();
                 return huboexito;
