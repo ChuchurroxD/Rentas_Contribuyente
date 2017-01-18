@@ -868,7 +868,7 @@
     <Height>1.06251in</Height>
     <Style />
   </Body>
-  <Width>6.75435in</Width>
+  <Width>7.1936in</Width>
   <Page>
     <PageHeader>
       <Height>6.38528cm</Height>
@@ -926,7 +926,7 @@
           <Top>3.45405cm</Top>
           <Left>0.7112cm</Left>
           <Height>0.6cm</Height>
-          <Width>10.17229cm</Width>
+          <Width>9.88126cm</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
@@ -958,7 +958,7 @@
           <Top>2.85405cm</Top>
           <Left>6.23565cm</Left>
           <Height>0.6cm</Height>
-          <Width>4.64785cm</Width>
+          <Width>4.35681cm</Width>
           <ZIndex>2</ZIndex>
           <Style>
             <Border>
@@ -1022,7 +1022,7 @@
           <Top>4.65611cm</Top>
           <Left>0.7112cm</Left>
           <Height>0.6cm</Height>
-          <Width>11.36355cm</Width>
+          <Width>9.88126cm</Width>
           <ZIndex>4</ZIndex>
           <Style>
             <Border>
@@ -1068,9 +1068,9 @@
           </Paragraphs>
           <rd:DefaultName>Textbox1</rd:DefaultName>
           <Top>5.29139cm</Top>
-          <Left>12.81875cm</Left>
+          <Left>11.0848cm</Left>
           <Height>0.6cm</Height>
-          <Width>4.17855cm</Width>
+          <Width>6.90527cm</Width>
           <ZIndex>6</ZIndex>
           <Style>
             <Border>
@@ -1102,8 +1102,72 @@
           <Top>5.25611cm</Top>
           <Left>0.7112cm</Left>
           <Height>0.6cm</Height>
-          <Width>11.36355cm</Width>
+          <Width>9.88126cm</Width>
           <ZIndex>7</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox6">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>="Fecha de Impresión: " + Parameters!FechaImpresion.Value</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox1</rd:DefaultName>
+          <Top>2.95988cm</Top>
+          <Left>11.0848cm</Left>
+          <Height>0.49417cm</Height>
+          <Width>6.90527cm</Width>
+          <ZIndex>8</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox2">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>= "Usuario de Impresión: " + Parameters!Usuario.Value</Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox1</rd:DefaultName>
+          <Top>3.98555cm</Top>
+          <Left>11.0848cm</Left>
+          <Height>0.49417cm</Height>
+          <Width>6.90527cm</Width>
+          <ZIndex>9</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -1374,6 +1438,14 @@
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
     <ReportParameter Name="Predio">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="FechaImpresion">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Usuario">
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
