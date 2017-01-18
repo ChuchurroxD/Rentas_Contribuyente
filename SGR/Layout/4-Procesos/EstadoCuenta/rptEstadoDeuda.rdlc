@@ -12,13 +12,13 @@
               <Width>0.93896cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.36771cm</Width>
+              <Width>2.42063cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>2.46407cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.7075cm</Width>
+              <Width>2.70974cm</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1.63979cm</Width>
@@ -190,7 +190,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>FECHA</Value>
+                              <Value>FECHA DE VENC.</Value>
                               <Style>
                                 <FontSize>8pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -856,8 +856,9 @@
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
         <Top>0.30868cm</Top>
+        <Left>0.29104cm</Left>
         <Height>1.8cm</Height>
-        <Width>16.6798cm</Width>
+        <Width>17.69903cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -893,7 +894,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox25</rd:DefaultName>
           <Top>2.85405cm</Top>
-          <Left>0.7112cm</Left>
+          <Left>0.3937cm</Left>
           <Height>0.6cm</Height>
           <Width>5.48917cm</Width>
           <Style>
@@ -924,7 +925,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox25</rd:DefaultName>
           <Top>3.45405cm</Top>
-          <Left>0.7112cm</Left>
+          <Left>0.3937cm</Left>
           <Height>0.6cm</Height>
           <Width>9.88126cm</Width>
           <ZIndex>1</ZIndex>
@@ -956,7 +957,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox25</rd:DefaultName>
           <Top>2.85405cm</Top>
-          <Left>6.23565cm</Left>
+          <Left>5.91815cm</Left>
           <Height>0.6cm</Height>
           <Width>4.35681cm</Width>
           <ZIndex>2</ZIndex>
@@ -988,7 +989,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox25</rd:DefaultName>
           <Top>4.05405cm</Top>
-          <Left>0.7112cm</Left>
+          <Left>0.3937cm</Left>
           <Height>0.60206cm</Height>
           <Width>5.48917cm</Width>
           <ZIndex>3</ZIndex>
@@ -1020,7 +1021,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox25</rd:DefaultName>
           <Top>4.65611cm</Top>
-          <Left>0.7112cm</Left>
+          <Left>0.3937cm</Left>
           <Height>0.6cm</Height>
           <Width>9.88126cm</Width>
           <ZIndex>4</ZIndex>
@@ -1100,7 +1101,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox25</rd:DefaultName>
           <Top>5.25611cm</Top>
-          <Left>0.7112cm</Left>
+          <Left>0.3937cm</Left>
           <Height>0.6cm</Height>
           <Width>9.88126cm</Width>
           <ZIndex>7</ZIndex>
