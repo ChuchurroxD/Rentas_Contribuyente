@@ -301,7 +301,7 @@ namespace SGR.WinApp.Layout._4_Procesos.EstadoCuenta
                 ReportDataSource dataSourceEmpresa = new ReportDataSource("DataSet2", origen2);
                 frmVisor.reportViewer1.LocalReport.DataSources.Add(dataSourceEmpresa);
 
-                ReportParameter[] param = new ReportParameter[7];
+                ReportParameter[] param = new ReportParameter[9];
                 param[0] = new ReportParameter("Documento", lblDocumento.Text);
                 param[1] = new ReportParameter("Código", mant_Per_Cont.persona_ID);
                 param[2] = new ReportParameter("NombreCompleto", lblNombre.Text);
@@ -329,7 +329,8 @@ namespace SGR.WinApp.Layout._4_Procesos.EstadoCuenta
                     param[5] = new ReportParameter("Incluye", "No incluye cancelados.");
                 }
                 param[6] = new ReportParameter("Predio", cboPredio.Text);
-
+                param[7] = new ReportParameter("FechaImpresion", DateTime.Today.ToString());
+                param[8] = new ReportParameter("Usuario", GlobalesV1.Global_str_Nombre);
 
                 frmVisor.reportViewer1.LocalReport.SetParameters(param);
                 frmVisor.reportViewer1.RefreshReport();
