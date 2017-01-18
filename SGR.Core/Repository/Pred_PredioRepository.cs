@@ -715,6 +715,7 @@ namespace SGR.Core.Repository
                 db.AddInParameter(SQL, "DescripcionHistorial", DbType.String, Predio.DescripcionHistorial);
                 db.AddInParameter(SQL, "tipo_operacion", DbType.Int32, Predio.tipo_operacion);
                 db.AddInParameter(SQL, "Tipoconsulta", DbType.String, 15);
+                SQL.CommandTimeout = 600;
                 string huboexito = Convert.ToString(db.ExecuteScalar(SQL));
                 //if (huboexito == 0)
                 //{
@@ -757,6 +758,7 @@ namespace SGR.Core.Repository
                 DbCommand SQL = db.GetStoredProcCommand(nombreprocedimiento);
                 db.AddInParameter(SQL, "predio_ID", DbType.String, predio_ID);
                 db.AddInParameter(SQL, "Tipoconsulta", DbType.String, 5);
+                SQL.CommandTimeout = 600;
                 int huboexito = db.ExecuteNonQuery(SQL);
                 if (huboexito == 0)
                 {
@@ -1036,6 +1038,7 @@ namespace SGR.Core.Repository
                 db.AddInParameter(SQL, "dpto", DbType.String, dpto);
                 db.AddInParameter(SQL, "tienda", DbType.String, tienda);
                 db.AddInParameter(SQL, "kilometro", DbType.String, kilometro);
+                SQL.CommandTimeout = 600;
                 total = Convert.ToInt32(db.ExecuteScalar(SQL));
 
                 return total;
@@ -1053,6 +1056,7 @@ namespace SGR.Core.Repository
                 DbCommand SQL = db.GetStoredProcCommand(nombreprocedimiento);
                 db.AddInParameter(SQL, "Tipoconsulta", DbType.Byte, 17);
                 db.AddInParameter(SQL, "idPadre", DbType.String, predio_padre);
+                SQL.CommandTimeout = 600;
                 using (var lector = db.ExecuteReader(SQL))
                 {
                     while (lector.Read())
