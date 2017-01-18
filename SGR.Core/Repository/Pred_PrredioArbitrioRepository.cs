@@ -339,6 +339,7 @@ namespace SGR.Core.Repository
                 db.AddInParameter(SQL, "Predio_padre", DbType.String, predio_padre);
                 db.AddInParameter(SQL, "registro_user_add", DbType.String, usser);
                 db.AddInParameter(SQL, "Tipoconsulta", DbType.String, 12);
+                SQL.CommandTimeout = 600;
                 int huboexito = db.ExecuteNonQuery(SQL);
             }
             catch (Exception ex)
