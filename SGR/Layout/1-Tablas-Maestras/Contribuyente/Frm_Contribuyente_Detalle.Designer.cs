@@ -819,7 +819,7 @@
             this.groupBox2.Size = new System.Drawing.Size(978, 152);
             this.groupBox2.TabIndex = 62;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Dirección postal del contribuyente";
+            this.groupBox2.Text = "Dirección fiscal del contribuyente";
             // 
             // txtIdOculto
             // 
