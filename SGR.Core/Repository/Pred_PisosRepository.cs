@@ -101,6 +101,7 @@ namespace SGR.Core.Repository
                 db.AddInParameter(SQL, "Tipoconsulta", DbType.Byte, 11);
                 db.AddInParameter(SQL, "predio_ID", DbType.String, predio_ID);
                 db.AddInParameter(SQL, "estado", DbType.Boolean, bandera);
+                SQL.CommandTimeout = 600;
                 using (var lector = db.ExecuteReader(SQL))
                 {
                     while (lector.Read())
@@ -549,6 +550,7 @@ namespace SGR.Core.Repository
                 db.AddInParameter(SQL, "registro_user", DbType.String, pisos.registro_user_add);
                 db.AddInParameter(SQL, "piso_ID", DbType.String, pisos.piso_ID);
                 db.AddInParameter(SQL, "Tipoconsulta", DbType.String, 12);
+                SQL.CommandTimeout = 600;
                 int huboexito = db.ExecuteNonQuery(SQL);
                 if (huboexito == 0)
                 {
