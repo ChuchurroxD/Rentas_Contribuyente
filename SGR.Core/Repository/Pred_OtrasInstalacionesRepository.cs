@@ -366,6 +366,7 @@ public class Pred_OtrasInstalacionesRepository
             db.AddInParameter(SQL, "estado", DbType.Boolean, Pred_OtrasInstalaciones.Estado);
             db.AddInParameter(SQL, "PrediosOtras_id", DbType.Int32, Pred_OtrasInstalaciones.PrediosOtras_id);
             db.AddInParameter(SQL, "Tipoconsulta", DbType.String, 14);
+            SQL.CommandTimeout = 600;
             int huboexito = db.ExecuteNonQuery(SQL);
             if (huboexito == 0)
             {
