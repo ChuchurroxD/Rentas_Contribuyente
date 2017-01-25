@@ -9,6 +9,5 @@ D:\PROYECTO_MOCHE\SGR\SGR.Entity\obj\Debug\SGR.Entity.dll
 D:\PROYECTO_MOCHE\SGR\SGR.Entity\obj\Debug\SGR.Entity.pdb
 D:\Trabajo\SGR\Rentas_Contribuyente\SGR.Entity\bin\Debug\SGR.Entity.dll
 D:\Trabajo\SGR\Rentas_Contribuyente\SGR.Entity\bin\Debug\SGR.Entity.pdb
-D:\Trabajo\SGR\Rentas_Contribuyente\SGR.Entity\obj\Debug\SGR.Entity.csprojResolveAssemblyReference.cache
 D:\Trabajo\SGR\Rentas_Contribuyente\SGR.Entity\obj\Debug\SGR.Entity.dll
 D:\Trabajo\SGR\Rentas_Contribuyente\SGR.Entity\obj\Debug\SGR.Entity.pdb

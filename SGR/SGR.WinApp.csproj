@@ -1438,6 +1438,7 @@
     <EmbeddedResource Include="Layout\1-Tablas-Maestras\Grupo\Frm_grupos_detalle.resx">
       <DependentUpon>Frm_grupos_detalle.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Layout\1-Tablas-Maestras\Grupo\rptGrupo.rdlc" />
     <EmbeddedResource Include="Layout\1-Tablas-Maestras\Junta Via\Frm_Junta_Via.resx">
       <DependentUpon>Frm_Junta_Via.cs</DependentUpon>
     </EmbeddedResource>

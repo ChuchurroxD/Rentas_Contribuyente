@@ -147,13 +147,6 @@ D:\PROYECTO_MOCHE\SGR\SGR.Core\bin\Debug\SGR.Entity.pdb
 D:\PROYECTO_MOCHE\SGR\SGR.Core\obj\Debug\SGR.Core.csprojResolveAssemblyReference.cache
 D:\PROYECTO_MOCHE\SGR\SGR.Core\obj\Debug\SGR.Core.dll
 D:\PROYECTO_MOCHE\SGR\SGR.Core\obj\Debug\SGR.Core.pdb
-D:\Trabajo\SGR\Rentas_Contribuyente\SGR.Core\bin\Debug\SGR.Core.dll
-D:\Trabajo\SGR\Rentas_Contribuyente\SGR.Core\bin\Debug\SGR.Core.pdb
-D:\Trabajo\SGR\Rentas_Contribuyente\SGR.Core\bin\Debug\SGR.Entity.dll
-D:\Trabajo\SGR\Rentas_Contribuyente\SGR.Core\bin\Debug\SGR.Entity.pdb
-D:\Trabajo\SGR\Rentas_Contribuyente\SGR.Core\obj\Debug\SGR.Core.csprojResolveAssemblyReference.cache
-D:\Trabajo\SGR\Rentas_Contribuyente\SGR.Core\obj\Debug\SGR.Core.dll
-D:\Trabajo\SGR\Rentas_Contribuyente\SGR.Core\obj\Debug\SGR.Core.pdb
 D:\PROYECTO_MOCHE\Rentas_Contribuyente\SGR.Core\bin\Debug\SGR.Core.dll
 D:\PROYECTO_MOCHE\Rentas_Contribuyente\SGR.Core\bin\Debug\SGR.Core.pdb
 D:\PROYECTO_MOCHE\Rentas_Contribuyente\SGR.Core\bin\Debug\SGR.Entity.dll
@@ -161,3 +154,10 @@ D:\PROYECTO_MOCHE\Rentas_Contribuyente\SGR.Core\bin\Debug\SGR.Entity.pdb
 D:\PROYECTO_MOCHE\Rentas_Contribuyente\SGR.Core\obj\Debug\SGR.Core.csprojResolveAssemblyReference.cache
 D:\PROYECTO_MOCHE\Rentas_Contribuyente\SGR.Core\obj\Debug\SGR.Core.dll
 D:\PROYECTO_MOCHE\Rentas_Contribuyente\SGR.Core\obj\Debug\SGR.Core.pdb
+D:\Trabajo\SGR\Rentas_Contribuyente\SGR.Core\bin\Debug\SGR.Core.dll
+D:\Trabajo\SGR\Rentas_Contribuyente\SGR.Core\bin\Debug\SGR.Core.pdb
+D:\Trabajo\SGR\Rentas_Contribuyente\SGR.Core\bin\Debug\SGR.Entity.dll
+D:\Trabajo\SGR\Rentas_Contribuyente\SGR.Core\bin\Debug\SGR.Entity.pdb
+D:\Trabajo\SGR\Rentas_Contribuyente\SGR.Core\obj\Debug\SGR.Core.csprojResolveAssemblyReference.cache
+D:\Trabajo\SGR\Rentas_Contribuyente\SGR.Core\obj\Debug\SGR.Core.dll
+D:\Trabajo\SGR\Rentas_Contribuyente\SGR.Core\obj\Debug\SGR.Core.pdb

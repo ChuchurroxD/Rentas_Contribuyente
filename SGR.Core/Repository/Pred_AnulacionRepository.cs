@@ -124,5 +124,36 @@ namespace SGR.Core.Repository
                 throw new Exception(ex.Message);
             }
         }
+
+        public List<Pred_Predio> listarPrediosxPersona(String per_id)
+        {
+            try
+            {
+                var coleccion = new List<Pred_Predio>();
+                DbCommand SQL = db.GetStoredProcCommand(nombreprocedimiento);
+                db.AddInParameter(SQL, "Tipoconsulta", DbType.Byte, 4);
+                db.AddInParameter(SQL, "persona_id", DbType.String, per_id);
+                using (var lector = db.ExecuteReader(SQL))
+                {
+                    while (lector.Read())
+                    {
+                        coleccion.Add(new Pred_Predio
+                        {
+                            predio_ID = lector.GetString(lector.GetOrdinal("Predio_id")),
+                            direccion_completa = lector.IsDBNull(lector.GetOrdinal("direccion_completa")) ? default(String) : lector.GetString(lector.GetOrdinal("direccion_completa"))
+
+
+
+                        });
+                    }
+                }
+                SQL.Dispose();
+                return coleccion;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

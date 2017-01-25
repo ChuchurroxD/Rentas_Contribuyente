@@ -26,5 +26,10 @@ namespace SGR.Core.Service
         {
             return pred_AnulacionRepository.listarxExoneracion(anulacion_id);
         }
+
+        public List<Pred_Predio> listarPrediosxPersona(String per_id)
+        {
+            return pred_AnulacionRepository.listarPrediosxPersona(per_id);
+        }
     }
 }

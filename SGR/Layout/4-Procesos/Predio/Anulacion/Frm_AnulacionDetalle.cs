@@ -65,7 +65,7 @@ namespace SGR.WinApp.Layout._4_Procesos.Predio.Anulacion
         {
             cboPredio.ValueMember = "Predio_id";
             cboPredio.DisplayMember = "direccion_completa";
-            cboPredio.DataSource = Pred_PredioDataService.listarPrediosxPersona(contribuyente_id);
+            cboPredio.DataSource = pred_AnulacionDataService.listarPrediosxPersona(contribuyente_id);
         }
         
         private string MesName(int mes, string name)
